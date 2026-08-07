@@ -1,0 +1,214 @@
+.why-studio {
+  position: relative;
+  overflow: hidden;
+  background-color: #f7f8fa;
+}
+
+.why-studio__watermark {
+  position: absolute;
+  left: -8rem;
+  top: 2rem;
+  width: 28rem;
+  height: 28rem;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, transparent 58%, rgba(227, 6, 19, 0.06) 59%, transparent 60%) center / 100% 100%,
+    radial-gradient(circle, transparent 48%, rgba(227, 6, 19, 0.05) 49%, transparent 50%) center / 82% 82%,
+    radial-gradient(circle, transparent 38%, rgba(227, 6, 19, 0.04) 39%, transparent 40%) center / 64% 64%;
+  pointer-events: none;
+}
+
+.why-studio__main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .why-studio__main {
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.55fr);
+    gap: 3rem 4rem;
+    align-items: start;
+  }
+}
+
+.why-studio__intro {
+  display: flex;
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.why-studio__intro-accent {
+  width: 4px;
+  flex-shrink: 0;
+  border-radius: 9999px;
+  background: linear-gradient(180deg, var(--primary) 0%, #ff4d57 100%);
+}
+
+.why-studio__intro-copy {
+  min-width: 0;
+}
+
+.why-studio__eyebrow {
+  margin: 0 0 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.why-studio__heading {
+  margin: 0 0 1rem;
+  line-height: 1.12;
+}
+
+.why-studio__heading-line {
+  display: block;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.why-studio__heading-line--accent {
+  color: var(--primary);
+}
+
+.why-studio__lead {
+  margin: 0;
+  max-width: 22rem;
+  color: #64748b;
+  line-height: 1.65;
+  font-size: 0.9375rem;
+}
+
+.why-studio__features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .why-studio__features {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .why-studio__features {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem 1.75rem;
+  }
+}
+
+.why-studio__feature {
+  min-width: 0;
+}
+
+.why-studio__feature-icon-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.25rem;
+  height: 3.25rem;
+  margin-bottom: 0.85rem;
+  border-radius: 9999px;
+  background: rgba(227, 6, 19, 0.08);
+}
+
+.why-studio__feature-icon {
+  font-size: 1.65rem;
+  color: var(--primary);
+  font-variation-settings: 'FILL' 0, 'wght' 350, 'GRAD' 0, 'opsz' 48;
+}
+
+.why-studio__feature-title {
+  margin: 0 0 0.5rem;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.3;
+}
+
+.why-studio__feature-desc {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: #64748b;
+  line-height: 1.55;
+}
+
+.why-studio__stats {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background: #fff;
+  border-radius: 9999px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+  border: 1px solid #eef2f7;
+  padding: 1.25rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .why-studio__stats {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.35rem 2rem;
+  }
+}
+
+.why-studio__stat {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex: 1;
+  min-width: 0;
+  padding: 0.65rem 0;
+}
+
+.why-studio__stat-icon {
+  flex-shrink: 0;
+  font-size: 1.75rem;
+  color: var(--primary);
+  font-variation-settings: 'FILL' 0, 'wght' 350, 'GRAD' 0, 'opsz' 48;
+}
+
+.why-studio__stat-value {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.2;
+}
+
+.why-studio__stat-label {
+  margin: 0.15rem 0 0;
+  font-size: 0.75rem;
+  color: #64748b;
+  line-height: 1.3;
+}
+
+.why-studio__stat-divider {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .why-studio__stat-divider {
+    display: block;
+    width: 1px;
+    align-self: stretch;
+    min-height: 2.75rem;
+    background: #e8edf3;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .why-studio__stat + .why-studio__stat {
+    border-top: 1px solid #eef2f7;
+  }
+
+  .why-studio__stats {
+    border-radius: 1.25rem;
+  }
+}

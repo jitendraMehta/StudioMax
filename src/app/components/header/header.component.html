@@ -1,0 +1,149 @@
+<header class="w-full top-0 sticky z-50 bg-white/95 backdrop-blur-xl border-b border-slate-200/80 shadow-sm header-blk white-opacity-clr">
+  <div class="header-inner max-w-container-max mx-auto px-margin-desktop py-4">
+    <a class="header-inner__logo flex items-center gap-3 shrink-0" routerLink="/">
+      <img src="/studio-max.svg" alt="Studio Max Logo" class="h-10 w-auto logo" />
+    </a>
+
+    <nav class="header-inner__nav hidden lg:flex gap-8 items-center font-body-md text-body-md text-slate-700">
+        <a routerLink="/" routerLinkActive="nav-item-active" [routerLinkActiveOptions]="{ exact: true }" class="relative hover:text-primary transition-colors duration-300">Home</a>
+        <div
+          class="header-catalog"
+          (mouseenter)="openCatalogDropdown()"
+          (mouseleave)="scheduleCloseCatalogDropdown()"
+        >
+          <button
+            type="button"
+            class="header-catalog__trigger relative hover:text-primary transition-colors duration-300"
+            [class.nav-item-active]="isCatalogRouteActive()"
+            [attr.aria-expanded]="catalogOpen()"
+            aria-haspopup="true"
+            aria-controls="header-catalog-menu"
+            (click)="toggleCatalogDropdown()"
+          >
+            Catalog
+            <span
+              class="material-symbols-outlined header-catalog__chevron"
+              [class.header-catalog__chevron--open]="catalogOpen()"
+              aria-hidden="true"
+              >expand_more</span
+            >
+          </button>
+
+          <div
+            id="header-catalog-menu"
+            class="header-catalog__panel"
+            [class.header-catalog__panel--open]="catalogOpen()"
+            role="menu"
+          >
+            <div class="header-catalog__menu">
+              <a
+                routerLink="/catalog"
+                class="header-catalog__link header-catalog__link--all"
+                role="menuitem"
+                (click)="closeCatalogDropdown()"
+              >
+                View All Products
+              </a>
+              @for (item of catalogMenuItems; track item.id) {
+                <a
+                  [routerLink]="['/catalog']"
+                  [queryParams]="catalogLinkQuery(item.id)"
+                  class="header-catalog__link"
+                  role="menuitem"
+                  (click)="closeCatalogDropdown()"
+                >
+                  {{ item.label }}
+                </a>
+              }
+            </div>
+          </div>
+        </div>
+        <a routerLink="/about" routerLinkActive="nav-item-active" class="relative hover:text-primary transition-colors duration-300">About</a>
+        <a routerLink="/contact" routerLinkActive="nav-item-active" class="relative hover:text-primary transition-colors duration-300">Contact</a>
+    </nav>
+
+    <div class="header-inner__actions flex items-center gap-3 shrink-0 ml-auto lg:ml-0">
+      <button class="lg:hidden inline-flex items-center justify-center rounded-full border border-slate-200 bg-white p-3 text-slate-700 shadow-sm hover:bg-slate-50 transition">
+        <span class="material-symbols-outlined text-lg">chat</span>
+      </button>
+
+      <button class="lg:hidden order-last inline-flex items-center justify-center rounded-full bg-white p-3 text-slate-700 shadow-sm hover:bg-slate-50 transition"
+        [attr.aria-expanded]="menuOpen()"
+        (click)="toggleMenu()"
+      >
+        <span class="material-symbols-outlined text-xl">
+          {{ menuOpen() ? 'close' : 'menu' }}
+        </span>
+      </button>
+
+      <!-- <div class="hidden xl:flex items-center bg-slate-100 px-4 py-3 rounded-full shadow-sm border border-slate-200">
+        <span class="material-symbols-outlined text-slate-500 mr-3">search</span>
+        <input class="search-input text-sm text-slate-900 placeholder:text-slate-500" placeholder="Search gear..." type="text" />
+      </div> -->
+
+      <button class="hidden lg:inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-semibold text-white hover:bg-[#c30612] transition">
+        <span class="material-symbols-outlined">chat</span>
+        WhatsApp Support
+      </button>
+    </div>
+  </div>
+
+  <div class="lg:hidden">
+    <div *ngIf="menuOpen()" class="fixed inset-0 z-40 bg-slate-950/40 backdrop-blur-sm transition-opacity duration-300" (click)="toggleMenu()"></div>
+    <aside style="height: 100vh;" class="fixed inset-y-0 left-0 z-50 w-[280px] max-w-full bg-white p-6 shadow-2xl transition-transform duration-300"
+      [ngClass]="menuOpen() ? 'translate-x-0' : '-translate-x-full'"
+    >
+      <div class="flex items-center justify-between mb-8">
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.35em] text-slate-400">Menu</p>
+        </div>
+        <button type="button" class="inline-flex items-center justify-center rounded-full bg-slate-100 p-2 text-slate-700 hover:bg-slate-200" (click)="toggleMenu()">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-3 text-slate-900">
+        <a routerLink="/" routerLinkActive="nav-item-active" [routerLinkActiveOptions]="{ exact: true }" class="block rounded-3xl px-4 py-3 hover:bg-slate-50 transition">Home</a>
+        <div class="header-drawer-catalog">
+          <button
+            type="button"
+            class="header-drawer-catalog__trigger w-full rounded-3xl px-4 py-3 hover:bg-slate-50 transition flex items-center justify-between"
+            [class.nav-item-active]="isCatalogRouteActive()"
+            [attr.aria-expanded]="catalogMobileOpen()"
+            (click)="toggleCatalogMobile()"
+          >
+            Catalog
+            <span
+              class="material-symbols-outlined header-drawer-catalog__chevron"
+              [class.header-drawer-catalog__chevron--open]="catalogMobileOpen()"
+              aria-hidden="true"
+              >expand_more</span
+            >
+          </button>
+          @if (catalogMobileOpen()) {
+            <div class="header-drawer-catalog__sub">
+              <a
+                routerLink="/catalog"
+                class="header-drawer-catalog__link"
+                (click)="toggleMenu()"
+              >
+                View All Products
+              </a>
+              @for (item of catalogMenuItems; track item.id) {
+                <a
+                  [routerLink]="['/catalog']"
+                  [queryParams]="catalogLinkQuery(item.id)"
+                  class="header-drawer-catalog__link"
+                  (click)="toggleMenu()"
+                >
+                  {{ item.label }}
+                </a>
+              }
+            </div>
+          }
+        </div>
+        <a routerLink="/about" routerLinkActive="nav-item-active" class="block rounded-3xl px-4 py-3 hover:bg-slate-50 transition">About</a>
+        <a routerLink="/contact" routerLinkActive="nav-item-active" class="block rounded-3xl px-4 py-3 hover:bg-slate-50 transition">Contact</a>
+      </nav>
+    </aside>
+  </div>
+</header>

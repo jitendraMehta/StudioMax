@@ -1,0 +1,28 @@
+.home-hero-region {
+  --home-header-offset: 5rem;
+  position: relative;
+  margin-top: calc(-1 * var(--home-header-offset));
+  padding-top: var(--home-header-offset);
+  background: url(/hero-shell-bg.png) center top / cover no-repeat;
+  isolation: isolate;
+}
+
+.home-hero-region::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.72) 0%,
+    rgba(255, 255, 255, 0.55) 45%,
+    rgba(248, 250, 252, 0.82) 100%
+  );
+  pointer-events: none;
+}
+
+.home-hero-region studio-hero {
+  position: relative;
+  z-index: 1;
+  display: block;
+}

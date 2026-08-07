@@ -1,0 +1,49 @@
+<section class="why-studio py-section-gap">
+  <div class="why-studio__watermark" aria-hidden="true"></div>
+
+  <div class="max-w-container-max mx-auto px-margin-desktop why-studio__main">
+    <aside class="why-studio__intro">
+      <div class="why-studio__intro-accent" aria-hidden="true"></div>
+      <div class="why-studio__intro-copy">
+        <p class="why-studio__eyebrow">Why StudioMax</p>
+        <h2 class="why-studio__heading font-headline-lg text-headline-lg">
+          <span class="why-studio__heading-line">Built on Trust.</span>
+          <span class="why-studio__heading-line why-studio__heading-line--accent">Engineered for Excellence.</span>
+        </h2>
+        <p class="why-studio__lead">
+          We bridge the gap between global manufacturers and local production demands with unmatched quality,
+          technical expertise and dependable support.
+        </p>
+      </div>
+    </aside>
+
+    <div class="why-studio__features">
+      @for (f of features; track f.id) {
+        <article class="why-studio__feature">
+          <span class="why-studio__feature-icon-wrap" aria-hidden="true">
+            <span class="material-symbols-outlined why-studio__feature-icon">{{ f.icon }}</span>
+          </span>
+          <h3 class="why-studio__feature-title">{{ f.title }}</h3>
+          <p class="why-studio__feature-desc">{{ f.description }}</p>
+        </article>
+      }
+    </div>
+  </div>
+
+  <div class="max-w-container-max mx-auto px-margin-desktop">
+    <div class="why-studio__stats">
+      @for (stat of stats; track stat.id; let last = $last) {
+        <div class="why-studio__stat">
+          <span class="material-symbols-outlined why-studio__stat-icon" aria-hidden="true">{{ stat.icon }}</span>
+          <div class="why-studio__stat-copy">
+            <p class="why-studio__stat-value">{{ stat.value }}</p>
+            <p class="why-studio__stat-label">{{ stat.label }}</p>
+          </div>
+        </div>
+        @if (!last) {
+          <span class="why-studio__stat-divider" aria-hidden="true"></span>
+        }
+      }
+    </div>
+  </div>
+</section>

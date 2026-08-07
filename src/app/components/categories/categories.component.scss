@@ -1,0 +1,147 @@
+.core-collections__header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.core-collections__title {
+  color: #0f172a;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.core-collections__title::after {
+  content: '';
+  display: block;
+  width: 3rem;
+  height: 3px;
+  margin: 0.75rem auto 0;
+  background-color: var(--primary);
+  border-radius: 9999px;
+}
+
+.core-collections__lead {
+  margin-top: 1.25rem;
+  line-height: 1.6;
+}
+
+.core-collections__view-all {
+  margin-top: 1.25rem;
+  color: #0f172a;
+  transition: color 0.2s ease;
+
+  .material-symbols-outlined {
+    color: var(--primary);
+    transition: transform 0.2s ease;
+  }
+
+  &:hover {
+    color: var(--primary);
+
+    .material-symbols-outlined {
+      transform: translateX(2px);
+    }
+  }
+}
+
+.core-collections__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+.core-collections__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  padding: 1.5rem 1.25rem 1.75rem;
+  background-color: #f8f8f8;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+
+  &:hover {
+    border-color: #d4d4d4;
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+    transform: translateY(-2px);
+
+    .core-collections__image {
+      transform: scale(1.03);
+    }
+
+    .core-collections__arrow {
+      transform: translateX(3px);
+    }
+  }
+}
+
+.core-collections__media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 160px;
+  margin-bottom: 1.25rem;
+  padding: 0.5rem 0.75rem;
+}
+
+.core-collections__image {
+  max-width: 100%;
+  max-height: 140px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 18px rgba(15, 23, 42, 0.12));
+  transition: transform 0.35s ease;
+}
+
+.core-collections__card-title {
+  color: #0f172a;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+  line-height: 1.25;
+}
+
+.core-collections__card-subtitle {
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.6875rem;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+
+.core-collections__arrow {
+  color: var(--primary);
+  font-size: 1.25rem;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  transition: transform 0.25s ease;
+}
+
+@media (max-width: 639px) {
+  .core-collections__media {
+    min-height: 140px;
+  }
+
+  .core-collections__image {
+    max-height: 120px;
+  }
+}

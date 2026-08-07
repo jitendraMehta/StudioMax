@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Studio Max">
+  <rect width="64" height="64" rx="14" fill="#ffffff"/>
+  <rect x="1" y="1" width="62" height="62" rx="13" fill="none" stroke="#e8eaee" stroke-width="2"/>
+  <path
+    d="M10 46 C22 22 42 22 54 46"
+    fill="none"
+    stroke="#e30613"
+    stroke-width="4.5"
+    stroke-linecap="round"
+  />
+  <text
+    x="32"
+    y="36"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="20"
+    font-weight="800"
+    letter-spacing="-0.5"
+    fill="#0f172a"
+  >SM</text>
+</svg>

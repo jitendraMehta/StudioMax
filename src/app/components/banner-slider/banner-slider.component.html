@@ -1,0 +1,31 @@
+<section class="banner-slider-root bg-surface">
+  <div class="banner-carousel" 
+       (pointerdown)="onPointerDown($event)"
+       (pointermove)="onPointerMove($event)"
+       (pointerup)="onPointerUp($event)"
+       (pointercancel)="onPointerCancel()"
+       (mouseenter)="pauseAutoplay()"
+       (mouseleave)="resumeAutoplay()"
+  >
+    <div class="banner-track" [style.transform]="'translateX(' + (-current * 100) + '%)'">
+      <article *ngFor="let slide of slides" class="banner-slide">
+        <div class="banner-image-wrap">
+          <img loading="lazy" class="banner-image" [src]="slide.image" [alt]="slide.alt" />
+        </div>
+      </article>
+    </div>
+
+    <div class="banner-controls">
+      <button type="button" class="banner-arrow" (click)="prev()" aria-label="Previous slide">‹</button>
+      <button type="button" class="banner-arrow" (click)="next()" aria-label="Next slide">›</button>
+    </div>
+
+    <div class="banner-dots">
+      <button *ngFor="let slide of slides; let i = index" type="button"
+              class="dot" [class.active]="i === current"
+              (click)="setSlide(i)"
+              [attr.aria-label]="'Go to slide ' + (i + 1)">
+      </button>
+    </div>
+  </div>
+</section>

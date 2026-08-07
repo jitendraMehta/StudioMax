@@ -1,0 +1,144 @@
+<main class="about-page">
+ 
+
+  <!-- Why Professionals Choose StudioMax -->
+  <section class="about-why" aria-labelledby="about-why-heading">
+    <div class="max-w-container-max mx-auto px-margin-desktop">
+      <header class="about-section-head">
+        <span class="about-section-head__rule" aria-hidden="true"></span>
+        <h2 id="about-why-heading" class="about-section-head__title">
+          Why Professionals Choose <span class="about-section-head__accent">StudioMax</span>
+        </h2>
+        <p class="about-section-head__sub">
+          We combine premium quality with expert support to deliver the best audio experience.
+        </p>
+      </header>
+
+      <div class="about-why__grid">
+        @for (f of whyFeatures; track f.id) {
+          <article class="about-why__card">
+            <span class="material-symbols-outlined about-why__icon" aria-hidden="true">{{ f.icon }}</span>
+            <h3 class="about-why__card-title">{{ f.title }}</h3>
+            <p class="about-why__card-desc">{{ f.description }}</p>
+          </article>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Manufacturing & Quality -->
+  <section class="about-quality" aria-labelledby="about-quality-heading">
+    <div class="max-w-container-max mx-auto px-margin-desktop about-quality__inner">
+      <div class="about-quality__copy">
+        <h2 id="about-quality-heading" class="about-title about-title--left">
+          Our Manufacturing &amp; Quality Standards
+          <span class="about-title__rule" aria-hidden="true"></span>
+        </h2>
+        <p class="about-quality__lead">
+          We work with authorized manufacturers and follow strict quality control processes to ensure every
+          product meets professional-grade performance and reliability standards.
+        </p>
+        <ul class="about-quality__list">
+          @for (item of qualityChecks; track item.id) {
+            <li class="about-quality__list-item">
+              <span class="material-symbols-outlined about-quality__check" aria-hidden="true">check_circle</span>
+              {{ item.label }}
+            </li>
+          }
+        </ul>
+      </div>
+
+      <div class="about-quality__gallery-wrap">
+        <div class="about-quality__gallery">
+          @for (img of gallery; track img.id) {
+            <figure class="about-quality__figure" [class.about-quality__figure--tall]="img.tall">
+              <img class="about-quality__img" [src]="img.src" [alt]="img.alt" loading="lazy" />
+            </figure>
+          }
+        </div>
+        <div class="about-quality__badge">
+          <span class="material-symbols-outlined about-quality__badge-icon" aria-hidden="true">verified_user</span>
+          <span class="about-quality__badge-text">Quality Checked at Every Step</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="about-stats" aria-label="Company highlights">
+    <div class="max-w-container-max mx-auto px-margin-desktop">
+      <div class="about-stats__bar">
+        @for (stat of stats; track stat.id; let last = $last) {
+          <div class="about-stats__item">
+            <span class="material-symbols-outlined about-stats__icon" aria-hidden="true">{{ stat.icon }}</span>
+            <div class="about-stats__copy">
+              <p class="about-stats__value">{{ stat.value }}</p>
+              <p class="about-stats__label">{{ stat.label }}</p>
+            </div>
+          </div>
+          @if (!last) {
+            <span class="about-stats__divider" aria-hidden="true"></span>
+          }
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="about-team" aria-labelledby="about-team-heading">
+    <div class="max-w-container-max mx-auto px-margin-desktop">
+      <header class="about-section-head">
+        <span class="about-section-head__rule" aria-hidden="true"></span>
+        <h2 id="about-team-heading" class="about-section-head__title">
+          The People Behind <span class="about-section-head__accent">StudioMax</span>
+        </h2>
+        <p class="about-section-head__sub">
+          A passionate team of audio professionals dedicated to providing world-class products and unmatched
+          service.
+        </p>
+      </header>
+
+      <ul class="about-team__grid">
+          <li class="about-team__member">
+            <img
+              class="about-team__photo"
+              src="/vijay-padalia.jpg"
+              alt="Vijay Padalia"
+              width="160"
+              height="160"
+              loading="lazy"
+            />
+            <p class="about-team__name">Vijay Padalia</p>
+            <p class="about-team__role">Founder & CEO</p>
+          </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA (About-specific copy) -->
+  <section class="about-cta" aria-labelledby="about-cta-heading">
+    <div class="about-cta__glow about-cta__glow--left" aria-hidden="true"></div>
+    <div class="about-cta__glow about-cta__glow--right" aria-hidden="true"></div>
+
+    <div class="about-cta__inner max-w-container-max mx-auto px-margin-desktop">
+      <div class="about-cta__copy">
+        <h2 id="about-cta-heading" class="about-cta__title">Let's Build Something Amazing Together</h2>
+        <p class="about-cta__lead">
+          Have questions or need expert advice? Our team is here to help you find the perfect audio solution.
+        </p>
+      </div>
+
+      <div class="about-cta__actions">
+        <button type="button" class="about-cta__btn about-cta__btn--primary">
+          <span class="material-symbols-outlined about-cta__btn-icon" aria-hidden="true">chat</span>
+          WhatsApp Inquiry
+          <span class="material-symbols-outlined about-cta__btn-arrow" aria-hidden="true">arrow_forward</span>
+        </button>
+        <button type="button" class="about-cta__btn about-cta__btn--secondary">
+          Talk to Expert
+          <span class="material-symbols-outlined about-cta__btn-arrow" aria-hidden="true">arrow_forward</span>
+        </button>
+      </div>
+    </div>
+  </section>
+</main>

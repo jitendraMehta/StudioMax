@@ -1,0 +1,317 @@
+<main class="catalog-page">
+  <!-- Hero -->
+  <section class="catalog-hero" aria-labelledby="catalog-hero-heading">
+    <div class="max-w-container-max mx-auto px-margin-desktop catalog-hero__inner">
+      <div class="catalog-hero__copy">
+        <h1 id="catalog-hero-heading" class="catalog-hero__title">
+          Product <span class="catalog-hero__title-accent">Catalog</span>
+        </h1>
+        <p class="catalog-hero__lead">
+          Browse our complete range of professional audio components.<br />
+          High performance. Trusted quality.
+        </p>
+      </div>
+
+      <a class="catalog-download" href="#" (click)="$event.preventDefault()">
+        <span class="catalog-download__icon-wrap" aria-hidden="true">
+          <span class="material-symbols-outlined catalog-download__icon">download</span>
+        </span>
+        <span class="catalog-download__copy">
+          <span class="catalog-download__title">Download Full Catalog</span>
+          <span class="catalog-download__sub">Get our complete product brochure in PDF format.</span>
+        </span>
+        <span class="material-symbols-outlined catalog-download__arrow" aria-hidden="true">arrow_forward</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Main -->
+  <div class="max-w-container-max mx-auto px-margin-desktop catalog-main">
+    <div class="catalog-main__layout">
+      <!-- Sidebar -->
+      <aside class="catalog-sidebar" aria-label="Catalog filters">
+        <section class="catalog-sidebar__block">
+          <h2 class="catalog-sidebar__heading">Categories</h2>
+          <ul class="catalog-categories">
+            @for (cat of categories; track cat.id) {
+              <li>
+                <button
+                  type="button"
+                  class="catalog-categories__item"
+                  [class.catalog-categories__item--active]="isCategoryActive(cat.id)"
+                  (click)="selectCategory(cat.id)"
+                >
+                  <span class="material-symbols-outlined catalog-categories__icon" aria-hidden="true">{{
+                    cat.icon
+                  }}</span>
+                  <span class="catalog-categories__label">{{ cat.label }}</span>
+                  @if (cat.id !== 'all') {
+                    <span class="catalog-categories__count">{{ cat.count }}</span>
+                  }
+                </button>
+              </li>
+            }
+          </ul>
+        </section>
+
+        <section class="catalog-sidebar__block catalog-sidebar__block--filters">
+          <h2 class="catalog-sidebar__heading">Filters</h2>
+
+          <div class="catalog-filter">
+            <label class="catalog-filter__label" for="catalog-brand">Brand</label>
+            <div class="catalog-filter__select-wrap">
+              <select
+                id="catalog-brand"
+                class="catalog-filter__select"
+                [ngModel]="selectedBrand()"
+                (ngModelChange)="onBrandChange($event)"
+              >
+                <option value="">Select Brand</option>
+                @for (brand of brandOptions; track brand) {
+                  <option [value]="brand">{{ brand }}</option>
+                }
+              </select>
+              <span class="material-symbols-outlined catalog-filter__chevron" aria-hidden="true">expand_more</span>
+            </div>
+          </div>
+
+          <div class="catalog-filter">
+            <span class="catalog-filter__label">Price Range</span>
+            <div class="catalog-price">
+              <input
+                type="range"
+                class="catalog-price__range catalog-price__range--min"
+                min="0"
+                [max]="priceCeiling"
+                step="500"
+                [ngModel]="priceMin()"
+                (ngModelChange)="onPriceMinChange(+$event)"
+                aria-label="Minimum price"
+              />
+              <input
+                type="range"
+                class="catalog-price__range catalog-price__range--max"
+                min="0"
+                [max]="priceCeiling"
+                step="500"
+                [ngModel]="priceMax()"
+                (ngModelChange)="onPriceMaxChange(+$event)"
+                aria-label="Maximum price"
+              />
+              <div class="catalog-price__labels">
+                <span>₹0</span>
+                <span>₹50,000+</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog-filter">
+            <span class="catalog-filter__label">Power Handling (Watt)</span>
+            <ul class="catalog-checklist">
+              @for (range of powerRangeOptions; track range.id) {
+                <li>
+                  <label class="catalog-check">
+                    <input
+                      type="checkbox"
+                      [checked]="isPowerRangeSelected(range.id)"
+                      (change)="togglePowerRange(range.id, $any($event.target).checked)"
+                    />
+                    <span class="catalog-check__label"
+                      >{{ range.label }} ({{ powerRangeCounts()[range.id] }})</span
+                    >
+                  </label>
+                </li>
+              }
+            </ul>
+          </div>
+
+          <div class="catalog-filter">
+            <span class="catalog-filter__label">Availability</span>
+            <ul class="catalog-checklist">
+              <li>
+                <label class="catalog-check">
+                  <input
+                    type="checkbox"
+                    [ngModel]="filterInStock()"
+                    (ngModelChange)="filterInStock.set($event); onAvailabilityChange()"
+                  />
+                  <span class="catalog-check__label">In Stock ({{ availabilityCounts().inStock }})</span>
+                </label>
+              </li>
+              <li>
+                <label class="catalog-check">
+                  <input
+                    type="checkbox"
+                    [ngModel]="filterOutOfStock()"
+                    (ngModelChange)="filterOutOfStock.set($event); onAvailabilityChange()"
+                  />
+                  <span class="catalog-check__label">Out of Stock ({{ availabilityCounts().outOfStock }})</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <button type="button" class="catalog-clear" (click)="clearAllFilters()">
+            <span class="material-symbols-outlined catalog-clear__icon" aria-hidden="true">refresh</span>
+            Clear All Filters
+          </button>
+        </section>
+      </aside>
+
+      <!-- Products -->
+      <section class="catalog-content" aria-label="Products">
+        <div class="catalog-toolbar">
+          <p class="catalog-toolbar__count">
+            @if (showingRange().total === 0) {
+              Showing 0 products
+            } @else {
+              Showing {{ showingRange().from }} – {{ showingRange().to }} of {{ showingRange().total }} products
+            }
+          </p>
+
+          <div class="catalog-toolbar__actions">
+            <label class="catalog-sort">
+              <span class="catalog-sort__label">Sort by:</span>
+              <div class="catalog-sort__wrap">
+                <select
+                  class="catalog-sort__select"
+                  [ngModel]="sortBy()"
+                  (ngModelChange)="onSortChange($event)"
+                >
+                  @for (opt of sortOptions; track opt.value) {
+                    <option [value]="opt.value">{{ opt.label }}</option>
+                  }
+                </select>
+                <span class="material-symbols-outlined catalog-sort__chevron" aria-hidden="true">expand_more</span>
+              </div>
+            </label>
+
+            <div class="catalog-view-toggle" role="group" aria-label="Product view">
+              <button
+                type="button"
+                class="catalog-view-toggle__btn"
+                [class.catalog-view-toggle__btn--active]="viewMode() === 'grid'"
+                (click)="setViewMode('grid')"
+                aria-label="Grid view"
+                [attr.aria-pressed]="viewMode() === 'grid'"
+              >
+                <span class="material-symbols-outlined" aria-hidden="true">grid_view</span>
+              </button>
+              <button
+                type="button"
+                class="catalog-view-toggle__btn"
+                [class.catalog-view-toggle__btn--active]="viewMode() === 'list'"
+                (click)="setViewMode('list')"
+                aria-label="List view"
+                [attr.aria-pressed]="viewMode() === 'list'"
+              >
+                <span class="material-symbols-outlined" aria-hidden="true">view_list</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        @if (pagedProducts().length === 0) {
+          <div class="catalog-empty">
+            <p>No products match your filters. Try adjusting categories or filters.</p>
+            <button type="button" class="catalog-empty__btn" (click)="clearAllFilters()">Clear All Filters</button>
+          </div>
+        } @else {
+          <div
+            class="catalog-products"
+            [class.catalog-products--list]="viewMode() === 'list'"
+            [class.catalog-products--grid]="viewMode() === 'grid'"
+          >
+            @for (product of pagedProducts(); track trackByProductId($index, product)) {
+              <article class="catalog-card">
+                <div class="catalog-card__media">
+                  <button
+                    type="button"
+                    class="catalog-card__wishlist"
+                    [class.catalog-card__wishlist--active]="isWishlisted(product.id)"
+                    (click)="toggleWishlist(product.id)"
+                    [attr.aria-label]="isWishlisted(product.id) ? 'Remove from wishlist' : 'Add to wishlist'"
+                  >
+                    <span class="material-symbols-outlined" aria-hidden="true">{{
+                      isWishlisted(product.id) ? 'favorite' : 'favorite_border'
+                    }}</span>
+                  </button>
+                  <img class="catalog-card__img" [src]="product.image" [alt]="product.model" loading="lazy" />
+                </div>
+                <div class="catalog-card__body">
+                  <h3 class="catalog-card__model">{{ product.model }}</h3>
+                  <p class="catalog-card__category">{{ product.categoryLabel }}</p>
+                  <p class="catalog-card__desc">{{ product.description }}</p>
+                  <button type="button" class="catalog-card__cta">
+                    View Details
+                    <span class="material-symbols-outlined catalog-card__cta-arrow" aria-hidden="true"
+                      >arrow_forward</span
+                    >
+                  </button>
+                </div>
+              </article>
+            }
+          </div>
+        }
+
+        @if (totalPages() > 1) {
+          <nav class="catalog-pagination" aria-label="Catalog pagination">
+            <button
+              type="button"
+              class="catalog-pagination__arrow"
+              (click)="prevPage()"
+              [disabled]="page() === 1"
+              aria-label="Previous page"
+            >
+              <span class="material-symbols-outlined" aria-hidden="true">chevron_left</span>
+            </button>
+
+            @for (item of paginationItems(); track $index) {
+              @if (item === 'ellipsis') {
+                <span class="catalog-pagination__ellipsis" aria-hidden="true">…</span>
+              } @else {
+                <button
+                  type="button"
+                  class="catalog-pagination__page"
+                  [class.catalog-pagination__page--active]="page() === item"
+                  (click)="setPage(item)"
+                  [attr.aria-current]="page() === item ? 'page' : null"
+                >
+                  {{ item }}
+                </button>
+              }
+            }
+
+            <button
+              type="button"
+              class="catalog-pagination__arrow"
+              (click)="nextPage()"
+              [disabled]="page() === totalPages()"
+              aria-label="Next page"
+            >
+              <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span>
+            </button>
+          </nav>
+        }
+      </section>
+    </div>
+  </div>
+
+  <!-- Trust bar -->
+  <section class="catalog-trust" aria-label="Service highlights">
+    <div class="max-w-container-max mx-auto px-margin-desktop catalog-trust__inner">
+      @for (item of trustItems; track item.title; let last = $last) {
+        <article class="catalog-trust__item">
+          <span class="material-symbols-outlined catalog-trust__icon" aria-hidden="true">{{ item.icon }}</span>
+          <div>
+            <h3 class="catalog-trust__title">{{ item.title }}</h3>
+            <p class="catalog-trust__sub">{{ item.subtitle }}</p>
+          </div>
+        </article>
+        @if (!last) {
+          <span class="catalog-trust__divider" aria-hidden="true"></span>
+        }
+      }
+    </div>
+  </section>
+</main>

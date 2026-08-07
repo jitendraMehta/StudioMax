@@ -1,0 +1,16 @@
+<section class="trust-bar" aria-label="Service highlights">
+  <div class="trust-bar__inner max-w-container-max mx-auto px-margin-desktop">
+    @for (item of items; track item.title; let last = $last) {
+      <article class="trust-bar__item">
+        <span class="material-symbols-outlined trust-bar__icon" aria-hidden="true">{{ item.icon }}</span>
+        <div class="trust-bar__copy">
+          <h3 class="trust-bar__title">{{ item.title }}</h3>
+          <p class="trust-bar__subtitle">{{ item.subtitle }}</p>
+        </div>
+      </article>
+      @if (!last) {
+        <span class="trust-bar__divider" aria-hidden="true"></span>
+      }
+    }
+  </div>
+</section>

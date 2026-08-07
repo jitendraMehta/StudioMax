@@ -1,0 +1,116 @@
+<section class="relative hero-section">
+
+  <div class="carousel-root"
+
+       (pointerdown)="onPointerDown($event)"
+
+       (pointermove)="onPointerMove($event)"
+
+       (pointerup)="onPointerUp($event)"
+
+       (pointercancel)="onPointerCancel($event)"
+
+       (mouseenter)="pauseAutoplay()"
+
+       (mouseleave)="resumeAutoplay()"
+
+  >
+
+    <div class="carousel-track" [style.transform]="'translateX(' + (-current * 100) + '%)'">
+
+      <div *ngFor="let s of slides; let i = index" class="carousel-slide">
+
+        <div class="hero-slide-grid max-w-container-max mx-auto px-margin-desktop">
+
+          <div class="hero-copy">
+
+            <p *ngIf="s.subtitle" class="hero-eyebrow">{{ s.subtitle }}</p>
+
+            <h2 class="hero-heading font-display-lg text-display-lg">
+
+              <span class="hero-heading__lead">{{ titleLead(s) }}</span>
+
+              <span *ngIf="s.titleAccent" class="hero-heading__accent">{{ s.titleAccent }}</span>
+
+            </h2>
+
+            <p *ngIf="s.description" class="hero-description text-body-lg">
+
+              {{ s.description }}
+
+            </p>
+
+            <div class="hero-actions">
+
+              <a *ngIf="s.cta" class="hero-btn hero-btn--primary" href="#">
+
+                {{ s.cta }}
+
+                <span class="material-symbols-outlined hero-btn__arrow" aria-hidden="true">arrow_forward</span>
+
+              </a>
+
+              <a class="hero-btn hero-btn--secondary" href="#">Request Quote</a>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="hero-media">
+
+            <div class="hero-media__decor" aria-hidden="true"></div>
+
+            <div class="hero-media__frame">
+
+              <img loading="lazy" class="hero-image" alt="Hero image {{ i }}" [src]="s.image" />
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="hero-carousel-nav max-w-container-max mx-auto px-margin-desktop">
+
+      <button type="button" (click)="prev()" class="hero-nav-arrow" aria-label="Previous slide">‹</button>
+
+      <button type="button" (click)="next()" class="hero-nav-arrow" aria-label="Next slide">›</button>
+
+      <div class="hero-dots" role="tablist" aria-label="Hero slides">
+
+        <button
+
+          *ngFor="let s of slides; let i = index"
+
+          type="button"
+
+          (click)="setSlide(i)"
+
+          [class.active]="i === current"
+
+          class="hero-dot"
+
+          [attr.aria-label]="'Go to slide ' + (i + 1)"
+
+          [attr.aria-selected]="i === current"
+
+          role="tab"
+
+        ></button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+

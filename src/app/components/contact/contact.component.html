@@ -1,0 +1,216 @@
+<main class="contact-page">
+  <!-- Hero: info + form -->
+  <section class="contact-hero" aria-labelledby="contact-hero-heading">
+    <div class="max-w-container-max mx-auto px-margin-desktop contact-hero__grid">
+      <div class="contact-hero__info">
+        <p class="contact-hero__eyebrow">Contact Us</p>
+        <h1 id="contact-hero-heading" class="contact-hero__title">
+          We're Here to <span class="contact-hero__title-accent">Help You</span>
+        </h1>
+        <p class="contact-hero__lead">
+          Whether you have a question about a product, need technical assistance, or want to place a bulk order,
+          our team is ready to assist you.
+        </p>
+
+        <ul class="contact-hero__channels">
+          @for (channel of contactChannels; track channel.id) {
+            <li class="contact-channel">
+              <span class="contact-channel__icon-wrap" aria-hidden="true">
+                <span class="material-symbols-outlined contact-channel__icon">{{ channel.icon }}</span>
+              </span>
+              <div class="contact-channel__body">
+                <p class="contact-channel__title">{{ channel.title }}</p>
+                @if (channel.href) {
+                  <a class="contact-channel__primary contact-channel__primary--link" [href]="channel.href">{{
+                    channel.primary
+                  }}</a>
+                } @else {
+                  <p class="contact-channel__primary">{{ channel.primary }}</p>
+                }
+                @if (channel.secondary) {
+                  <p class="contact-channel__secondary">{{ channel.secondary }}</p>
+                }
+              </div>
+            </li>
+          }
+        </ul>
+      </div>
+
+      <div class="contact-form-card">
+        <header class="contact-form-card__head">
+          <h2 class="contact-form-card__title">Send Us a Message</h2>
+          <p class="contact-form-card__sub">Fill out the form and our team will get back to you.</p>
+        </header>
+
+        <form class="contact-form" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" novalidate>
+          <div class="contact-form__row">
+            <div class="contact-form__field">
+              <label class="contact-form__label" for="contact-name">Your Name *</label>
+              <input
+                id="contact-name"
+                name="name"
+                type="text"
+                class="contact-form__input"
+                placeholder="Your Name"
+                [(ngModel)]="model.name"
+                required
+              />
+            </div>
+            <div class="contact-form__field">
+              <label class="contact-form__label" for="contact-email">Your Email *</label>
+              <input
+                id="contact-email"
+                name="email"
+                type="email"
+                class="contact-form__input"
+                placeholder="Your Email"
+                [(ngModel)]="model.email"
+                required
+                email
+              />
+            </div>
+          </div>
+
+          <div class="contact-form__field">
+            <label class="contact-form__label" for="contact-phone">Phone Number</label>
+            <input
+              id="contact-phone"
+              name="phone"
+              type="tel"
+              class="contact-form__input"
+              placeholder="Your Phone Number"
+              [(ngModel)]="model.phone"
+            />
+          </div>
+
+          <div class="contact-form__field">
+            <label class="contact-form__label" for="contact-subject">Subject</label>
+            <div class="contact-form__select-wrap">
+              <select
+                id="contact-subject"
+                name="subject"
+                class="contact-form__input contact-form__select"
+                [(ngModel)]="model.subject"
+                required
+              >
+                <option value="" disabled>Select a subject</option>
+                @for (option of subjectOptions; track option) {
+                  <option [value]="option">{{ option }}</option>
+                }
+              </select>
+              <span class="material-symbols-outlined contact-form__select-chevron" aria-hidden="true"
+                >expand_more</span
+              >
+            </div>
+          </div>
+
+          <div class="contact-form__field">
+            <label class="contact-form__label" for="contact-message">Your Message *</label>
+            <textarea
+              id="contact-message"
+              name="message"
+              class="contact-form__input contact-form__textarea"
+              rows="5"
+              placeholder="How can we help you?"
+              [(ngModel)]="model.message"
+              required
+            ></textarea>
+          </div>
+
+          <button class="contact-form__submit" type="submit" [disabled]="submitting()">
+            <span class="material-symbols-outlined contact-form__submit-icon" aria-hidden="true">send</span>
+            {{ submitting() ? 'Sending…' : 'Send Message' }}
+          </button>
+
+          @if (status()) {
+            <p class="contact-form__status" role="status">{{ status() }}</p>
+          }
+
+          <p class="contact-form__privacy">
+            <span class="material-symbols-outlined contact-form__privacy-icon" aria-hidden="true">lock</span>
+            Your information is safe with us. We respect your privacy.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map + regional offices -->
+  <section class="contact-locations" aria-labelledby="contact-offices-heading">
+    <div class="max-w-container-max mx-auto px-margin-desktop contact-locations__grid">
+      <div class="contact-map">
+        <iframe
+          class="contact-map__embed"
+          [title]="headOffice.title + ' map'"
+          [src]="mapEmbedUrl"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="contact-map__pin" aria-hidden="true">
+          <span class="material-symbols-outlined">location_on</span>
+        </div>
+        <div class="contact-map__card">
+          <h3 class="contact-map__card-title">{{ headOffice.title }}</h3>
+          <p class="contact-map__card-address">{{ headOffice.address }}</p>
+          <a
+            class="contact-map__directions"
+            [href]="headOffice.directionsUrl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get Directions
+            <span class="material-symbols-outlined contact-map__directions-icon" aria-hidden="true"
+              >arrow_forward</span
+            >
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-offices">
+        <header class="contact-offices__head">
+          <h2 id="contact-offices-heading" class="contact-offices__title">Our Regional Offices</h2>
+          <p class="contact-offices__sub">
+            We are present in major cities across India to serve you better.
+          </p>
+        </header>
+
+        <ul class="contact-offices__list">
+          @for (office of regionalOffices; track office.id) {
+            <li class="contact-office">
+              <span class="contact-office__pin material-symbols-outlined" aria-hidden="true">location_on</span>
+              <div class="contact-office__body">
+                <p class="contact-office__city">{{ office.city }}</p>
+                <p class="contact-office__address">{{ office.address }}</p>
+              </div>
+              <a class="contact-office__phone" [href]="'tel:' + office.tel">{{ office.phone }}</a>
+            </li>
+          }
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp assistance -->
+  <section class="contact-assist" aria-labelledby="contact-assist-heading">
+    <div class="max-w-container-max mx-auto px-margin-desktop">
+      <div class="contact-assist__banner">
+        <div class="contact-assist__copy">
+          <span class="contact-assist__icon-wrap" aria-hidden="true">
+            <span class="material-symbols-outlined contact-assist__icon">headset_mic</span>
+          </span>
+          <div>
+            <h2 id="contact-assist-heading" class="contact-assist__title">Need Immediate Assistance?</h2>
+            <p class="contact-assist__text">
+              Chat with our expert team on WhatsApp for quick support.
+            </p>
+          </div>
+        </div>
+        <a class="contact-assist__btn" href="#" rel="noopener noreferrer">
+          <span class="material-symbols-outlined contact-assist__btn-icon" aria-hidden="true">chat</span>
+          Chat on WhatsApp
+          <span class="material-symbols-outlined contact-assist__btn-arrow" aria-hidden="true">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
