@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { STUDIO_WHATSAPP_URL } from '../../constants/contact';
 
 @Component({
   selector: 'studio-cta',
@@ -9,4 +10,6 @@ import { CommonModule } from '@angular/common';
  templateUrl: './cta.component.html',
  styleUrls: ['./cta.component.scss'],
 })
-export class CtaComponent {}
+export class CtaComponent {
+  readonly whatsappUrl = STUDIO_WHATSAPP_URL;
+}

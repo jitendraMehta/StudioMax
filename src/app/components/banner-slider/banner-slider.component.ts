@@ -1,5 +1,5 @@
-import { ChangeDetectionStrategy, Component, OnDestroy, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component, OnDestroy, afterNextRender, inject, PLATFORM_ID } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 
 interface BannerSlide {
   image: string;
@@ -14,7 +14,9 @@ interface BannerSlide {
   styleUrls: ['./banner-slider.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class BannerSliderComponent implements OnInit, OnDestroy {
+export class BannerSliderComponent implements OnDestroy {
+  private readonly platformId = inject(PLATFORM_ID);
+
   slides: BannerSlide[] = [
     {
       image: 'hero-banner-1.png',
@@ -36,8 +38,12 @@ export class BannerSliderComponent implements OnInit, OnDestroy {
   private dragging = false;
   private readonly autoplayInterval = 5000;
 
-  ngOnInit(): void {
-    this.startAutoplay();
+  constructor() {
+    afterNextRender(() => {
+      if (isPlatformBrowser(this.platformId)) {
+        this.startAutoplay();
+      }
+    });
   }
 
   ngOnDestroy(): void {

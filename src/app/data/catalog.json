@@ -1,0 +1,3641 @@
+{
+  "categories": [
+    {
+      "id": "dj-speakers",
+      "label": "DJ Speakers",
+      "icon": "speaker_group",
+      "showInNav": true,
+      "description": "High-performance speakers designed for DJs and live events.",
+      "tileImage": "/speakers.png",
+      "overview": "StudioMax supplies the full Studio Max DJ speaker line in 12\", 15\", and 18\" sizes. Select a size tab to browse every model and contact us for datasheets and pricing.",
+      "modelGroupHeading": "Choose Speaker Size",
+      "modelGroupHeadingEmphasis": "Size",
+      "modelGroups": [
+        {
+          "id": "12-inch",
+          "tabLabel": "12 Inch Speakers",
+          "sectionTitle": "12 Inch Speakers"
+        },
+        {
+          "id": "15-inch",
+          "tabLabel": "15 Inch Speakers",
+          "sectionTitle": "15 Inch Speakers"
+        },
+        {
+          "id": "18-inch",
+          "tabLabel": "18 Inch Speakers",
+          "sectionTitle": "18 Inch Speakers"
+        }
+      ]
+    },
+    {
+      "id": "pa-speakers",
+      "label": "PA Speakers",
+      "icon": "speaker",
+      "showInNav": true,
+      "description": "Portable and install PA solutions including powered cubes and column speakers.",
+      "tileImage": "/pa-speaker.png",
+      "overview": "StudioMax supplies Almax Audio PA speakers for speech, announcements, and background music. Browse Cube 30 and metal column models below—contact us for pricing and integration support across India."
+    },
+    {
+      "id": "microphone-stands",
+      "label": "Microphone stands",
+      "icon": "mic_external_on",
+      "showInNav": true,
+      "description": "Table and floor microphone stands for stage, studio, and speech.",
+      "tileImage": "/microphone-stands.png",
+      "overview": "StudioMax supplies the full Almax Audio microphone stand range—table and floor models for vocals, instruments, and presentations. Select a style tab to browse all models and enquire for pricing across India.",
+      "modelGroupHeading": "Choose Stand Type",
+      "modelGroupHeadingEmphasis": "Type",
+      "modelGroups": [
+        {
+          "id": "table-stand",
+          "tabLabel": "Table Stand",
+          "sectionTitle": "Table Stand"
+        },
+        {
+          "id": "floor-stand",
+          "tabLabel": "Floor Stand",
+          "sectionTitle": "Floor Stand"
+        }
+      ]
+    },
+    {
+      "id": "trumpet",
+      "label": "Trumpet & Reflex Horn",
+      "icon": "campaign",
+      "showInNav": true,
+      "description": "Trumpet and reflex horns for focused projection in PA and install systems.",
+      "tileImage": "/trumpet.png",
+      "overview": "StudioMax supplies the Almax Audio trumpet and reflex horn line in 12″, 18″, and 22″ formats. Browse all models below and contact us for pricing and OEM support across India."
+    },
+    {
+      "id": "hf-tweeter",
+      "label": "HF Tweeter",
+      "icon": "graphic_eq",
+      "showInNav": true,
+      "description": "High-frequency drivers engineered for detail and longevity.",
+      "tileImage": "/HF-tweeter.png",
+      "overview": "High-frequency tweeters and compression drivers engineered for detail, efficiency, and long service life. Compare every HF model in our range below, including impedance, power ratings, and application notes.",
+      "modelGroupHeading": "Choose Style",
+      "modelGroupHeadingEmphasis": "Style",
+      "modelGroups": [
+        {
+          "id": "standard",
+          "tabLabel": "Standard Range",
+          "sectionTitle": "Standard Range"
+        },
+        {
+          "id": "pro",
+          "tabLabel": "Pro Range",
+          "sectionTitle": "Pro Range"
+        }
+      ]
+    },
+    {
+      "id": "driver",
+      "label": "Driver Unit & Diaphragm",
+      "icon": "settings_input_component",
+      "showInNav": true,
+      "description": "Driver units and diaphragms for custom speaker builds.",
+      "tileImage": "/PA-driver-unit.png",
+      "overview": "Driver units and diaphragms for custom speaker builds, repairs, and OEM production. The full StudioMax driver catalogue is listed below with specifications for each model so you can match replacements or new designs accurately.",
+      "modelGroupHeading": "Choose Style",
+      "modelGroupHeadingEmphasis": "Style",
+      "modelGroups": [
+        {
+          "id": "standard",
+          "tabLabel": "Standard Range",
+          "sectionTitle": "Standard Range"
+        },
+        {
+          "id": "pro",
+          "tabLabel": "Pro Range",
+          "sectionTitle": "Pro Range"
+        }
+      ]
+    },
+    {
+      "id": "wires-cables",
+      "label": "Wires & Cables",
+      "icon": "cable",
+      "showInNav": true,
+      "description": "Professional cables for reliable signal and power.",
+      "tileImage": "/driver.jpeg",
+      "overview": "Signal and power cables selected for low noise, secure connectors, and professional install practice. Every cable model in our range is listed below with length, connector, and use-case details plus enquiry options.",
+      "modelGroupHeading": "Choose Style",
+      "modelGroupHeadingEmphasis": "Style",
+      "modelGroups": [
+        {
+          "id": "standard",
+          "tabLabel": "Standard Range",
+          "sectionTitle": "Standard Range"
+        },
+        {
+          "id": "pro",
+          "tabLabel": "Pro Range",
+          "sectionTitle": "Pro Range"
+        }
+      ]
+    },
+    {
+      "id": "microphones",
+      "label": "Microphones",
+      "icon": "mic",
+      "showInNav": true,
+      "description": "Microphones for vocals, instruments, and speech.",
+      "tileImage": "/driver.jpeg",
+      "overview": "Dynamic and vocal microphones for stage, speech, and instrument capture. See the complete StudioMax microphone range below—each model with description, specs, pricing, and availability.",
+      "modelGroupHeading": "Choose Style",
+      "modelGroupHeadingEmphasis": "Style",
+      "modelGroups": [
+        {
+          "id": "standard",
+          "tabLabel": "Standard Range",
+          "sectionTitle": "Standard Range"
+        },
+        {
+          "id": "pro",
+          "tabLabel": "Pro Range",
+          "sectionTitle": "Pro Range"
+        }
+      ]
+    },
+    {
+      "id": "accessories",
+      "label": "Accessories",
+      "icon": "extension",
+      "showInNav": true,
+      "description": "Essential hardware for mounting, connectivity, and installs.",
+      "tileImage": "/driver.jpeg",
+      "overview": "Mounting hardware, connectors, and install essentials that complete a professional audio deployment. Browse all accessory models below with specifications and direct enquiry for trade and bulk pricing.",
+      "modelGroupHeading": "Choose Style",
+      "modelGroupHeadingEmphasis": "Style",
+      "modelGroups": [
+        {
+          "id": "standard",
+          "tabLabel": "Standard Range",
+          "sectionTitle": "Standard Range"
+        },
+        {
+          "id": "pro",
+          "tabLabel": "Pro Range",
+          "sectionTitle": "Pro Range"
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-dj-speakers-SM-1210",
+      "model": "SM-1210",
+      "categoryId": "dj-speakers",
+      "categoryLabel": "DJ Speakers",
+      "modelGroupId": "12-inch",
+      "description": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details.",
+      "longDescription": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details. Model SM-1210.",
+      "brand": "Studio Max",
+      "priceInr": 0,
+      "powerWatts": 0,
+      "inStock": true,
+      "image": "/speakers.png",
+      "featured": true,
+      "specs": [
+        {
+          "label": "Detailed specifications",
+          "value": "Contact StudioMax for datasheet (Studio Max)"
+        }
+      ],
+      "highlights": [
+        "Studio Max professional DJ speaker range",
+        "Genuine StudioMax authorized distribution",
+        "Pan India enquiry and support"
+      ]
+    },
+    {
+      "id": "prod-dj-speakers-SM-1220",
+      "model": "SM-1220",
+      "categoryId": "dj-speakers",
+      "categoryLabel": "DJ Speakers",
+      "modelGroupId": "12-inch",
+      "description": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details.",
+      "longDescription": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details. Model SM-1220.",
+      "brand": "Studio Max",
+      "priceInr": 0,
+      "powerWatts": 200,
+      "inStock": true,
+      "image": "/speakers.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Peak power",
+          "value": "200 W / Peak 400 W"
+        },
+        {
+          "label": "Voice coil",
+          "value": "51.1 mm / 2″ CCAW"
+        },
+        {
+          "label": "Continuous power capacity",
+          "value": "Out power coil"
+        },
+        {
+          "label": "Sensitivity",
+          "value": "97±2 dB"
+        },
+        {
+          "label": "Frequency response",
+          "value": "35 Hz – 2 kHz"
+        },
+        {
+          "label": "Nominal",
+          "value": "12″ / 305 mm"
+        },
+        {
+          "label": "Nominal imp / DC resistance",
+          "value": "8 Ω / 6.2 Ω"
+        },
+        {
+          "label": "Nominal power handling",
+          "value": "200 W"
+        },
+        {
+          "label": "Magnet size / grade",
+          "value": "156×60×20"
+        },
+        {
+          "label": "Basket",
+          "value": "Steel"
+        },
+        {
+          "label": "Net weight",
+          "value": "4.200 kg"
+        }
+      ],
+      "highlights": [
+        "Studio Max professional DJ speaker range",
+        "Genuine StudioMax authorized distribution",
+        "Pan India enquiry and support"
+      ]
+    },
+    {
+      "id": "prod-dj-speakers-SM-1225",
+      "model": "SM-1225",
+      "categoryId": "dj-speakers",
+      "categoryLabel": "DJ Speakers",
+      "modelGroupId": "12-inch",
+      "description": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details.",
+      "longDescription": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details. Model SM-1225.",
+      "brand": "Studio Max",
+      "priceInr": 0,
+      "powerWatts": 250,
+      "inStock": true,
+      "image": "/speakers.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Peak power",
+          "value": "250 W / Peak 500 W"
+        },
+        {
+          "label": "Voice coil",
+          "value": "62.5 mm / 2.5″ CCAW"
+        },
+        {
+          "label": "Continuous power capacity",
+          "value": "In/out copper coil"
+        },
+        {
+          "label": "Sensitivity",
+          "value": "97±2 dB"
+        },
+        {
+          "label": "Frequency response",
+          "value": "35 Hz – 2 kHz"
+        },
+        {
+          "label": "Nominal",
+          "value": "12″ / 310 mm"
+        },
+        {
+          "label": "Nominal imp / DC resistance",
+          "value": "8 Ω / 6.3 Ω"
+        },
+        {
+          "label": "Nominal power handling",
+          "value": "250 W"
+        },
+        {
+          "label": "Magnet size / grade",
+          "value": "155×80×20"
+        },
+        {
+          "label": "Basket",
+          "value": "Steel"
+        },
+        {
+          "label": "Net weight",
+          "value": "5.600 kg"
+        }
+      ],
+      "highlights": [
+        "Studio Max professional DJ speaker range",
+        "Genuine StudioMax authorized distribution",
+        "Pan India enquiry and support"
+      ]
+    },
+    {
+      "id": "prod-dj-speakers-SM-1230-rc",
+      "model": "SM-1230 RC",
+      "categoryId": "dj-speakers",
+      "categoryLabel": "DJ Speakers",
+      "modelGroupId": "12-inch",
+      "description": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details.",
+      "longDescription": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details. Model SM-1230 RC.",
+      "brand": "Studio Max",
+      "priceInr": 0,
+      "powerWatts": 300,
+      "inStock": true,
+      "image": "/speakers.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Peak power",
+          "value": "300 W / Peak 600 W"
+        },
+        {
+          "label": "Continuous power capacity",
+          "value": "In/out copper coil"
+        },
+        {
+          "label": "Sensitivity",
+          "value": "97±2 dB"
+        },
+        {
+          "label": "Frequency response",
+          "value": "35 Hz – 2 kHz"
+        },
+        {
+          "label": "Nominal",
+          "value": "12″ / 320 mm"
+        },
+        {
+          "label": "Nominal imp / DC resistance",
+          "value": "8 Ω / 6.3 Ω"
+        },
+        {
+          "label": "Nominal power handling",
+          "value": "300 W"
+        },
+        {
+          "label": "Magnet size / grade",
+          "value": "185×90×20 / Y35"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
+        },
+        {
+          "label": "Net weight",
+          "value": "7.200 kg"
+        }
+      ],
+      "highlights": [
+        "Studio Max professional DJ speaker range",
+        "Genuine StudioMax authorized distribution",
+        "Pan India enquiry and support"
+      ]
+    },
+    {
+      "id": "prod-dj-speakers-SM-1235-rc",
+      "model": "SM-1235 RC",
+      "categoryId": "dj-speakers",
+      "categoryLabel": "DJ Speakers",
+      "modelGroupId": "12-inch",
+      "description": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details.",
+      "longDescription": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details. Model SM-1235 RC.",
+      "brand": "Studio Max",
+      "priceInr": 0,
+      "powerWatts": 350,
+      "inStock": true,
+      "image": "/speakers.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Peak power",
+          "value": "350 W / Peak 700 W"
+        },
+        {
+          "label": "Voice coil",
+          "value": "76.2 mm / 3″ CCAW"
+        },
+        {
+          "label": "Continuous power capacity",
+          "value": "In/out power coil"
+        },
+        {
+          "label": "Sensitivity",
+          "value": "97±2 dB"
+        },
+        {
+          "label": "Frequency response",
+          "value": "35 Hz – 2 kHz"
+        },
+        {
+          "label": "Nominal",
+          "value": "12″ / 325 mm"
+        },
+        {
+          "label": "Nominal imp / DC resistance",
+          "value": "8 Ω / 6.3 Ω"
+        },
+        {
+          "label": "Nominal power handling",
+          "value": "350 W"
+        },
+        {
+          "label": "Magnet size / grade",
+          "value": "185×90×20"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
+        },
+        {
+          "label": "Net weight",
+          "value": "7.400 kg"
+        }
+      ],
+      "highlights": [
+        "Studio Max professional DJ speaker range",
+        "Genuine StudioMax authorized distribution",
+        "Pan India enquiry and support"
+      ]
+    },
+    {
+      "id": "prod-dj-speakers-SM-1240-rc",
+      "model": "SM-1240 RC",
+      "categoryId": "dj-speakers",
+      "categoryLabel": "DJ Speakers",
+      "modelGroupId": "12-inch",
+      "description": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details.",
+      "longDescription": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details. Model SM-1240 RC.",
+      "brand": "Studio Max",
+      "priceInr": 0,
+      "powerWatts": 400,
+      "inStock": true,
+      "image": "/speakers.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Peak power",
+          "value": "400 W / Peak 800 W"
+        },
+        {
+          "label": "Continuous power capacity",
+          "value": "In/out voice coil"
+        },
+        {
+          "label": "Sensitivity",
+          "value": "97±2 dB"
+        },
+        {
+          "label": "Frequency response",
+          "value": "35 Hz – 2 kHz"
+        },
+        {
+          "label": "Nominal",
+          "value": "12″ / 320 mm"
+        },
+        {
+          "label": "Nominal imp / DC resistance",
+          "value": "8 Ω / 6.3 Ω"
+        },
+        {
+          "label": "Nominal power handling",
+          "value": "400 W"
+        },
+        {
+          "label": "Magnet size / grade",
+          "value": "190×90×20 / Y35"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
+        },
+        {
+          "label": "Net weight",
+          "value": "7.800 kg"
+        }
+      ],
+      "highlights": [
+        "Studio Max professional DJ speaker range",
+        "Genuine StudioMax authorized distribution",
+        "Pan India enquiry and support"
+      ]
+    },
+    {
+      "id": "prod-dj-speakers-SM-1245-la",
+      "model": "SM-1245 LA",
+      "categoryId": "dj-speakers",
+      "categoryLabel": "DJ Speakers",
+      "modelGroupId": "12-inch",
+      "description": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details.",
+      "longDescription": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details. Model SM-1245 LA.",
+      "brand": "Studio Max",
+      "priceInr": 0,
+      "powerWatts": 450,
+      "inStock": true,
+      "image": "/speakers.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Peak power",
+          "value": "900 W"
+        },
+        {
+          "label": "Voice coil",
+          "value": "76.2 mm / 3″ CCAW"
+        },
+        {
+          "label": "Continuous power capacity",
+          "value": "In/out voice coil"
+        },
+        {
+          "label": "Sensitivity",
+          "value": "97±2 dB"
+        },
+        {
+          "label": "Frequency response",
+          "value": "35 Hz – 2 kHz"
+        },
+        {
+          "label": "Nominal",
+          "value": "12″ / 320 mm"
+        },
+        {
+          "label": "Nominal imp / DC resistance",
+          "value": "8 Ω / 5.7 Ω"
+        },
+        {
+          "label": "Nominal power handling",
+          "value": "450 W"
+        },
+        {
+          "label": "Magnet size / grade",
+          "value": "190×90×25 mm / Y35"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
+        },
+        {
+          "label": "Net weight",
+          "value": "7.900 kg"
+        }
+      ],
+      "highlights": [
+        "Studio Max professional DJ speaker range",
+        "Genuine StudioMax authorized distribution",
+        "Pan India enquiry and support"
+      ]
+    },
+    {
+      "id": "prod-dj-speakers-SM-1282-pd",
+      "model": "SM-1282 PD",
+      "categoryId": "dj-speakers",
+      "categoryLabel": "DJ Speakers",
+      "modelGroupId": "12-inch",
+      "description": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details.",
+      "longDescription": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details. Model SM-1282 PD.",
+      "brand": "Studio Max",
+      "priceInr": 0,
+      "powerWatts": 0,
+      "inStock": true,
+      "image": "/speakers.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Detailed specifications",
+          "value": "Contact StudioMax for datasheet (Studio Max)"
+        }
+      ],
+      "highlights": [
+        "Studio Max professional DJ speaker range",
+        "Genuine StudioMax authorized distribution",
+        "Pan India enquiry and support"
+      ]
+    },
+    {
+      "id": "prod-dj-speakers-SM-15-800-pulse",
+      "model": "SM-15/800 PULSE",
+      "categoryId": "dj-speakers",
+      "categoryLabel": "DJ Speakers",
+      "modelGroupId": "15-inch",
+      "description": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details.",
+      "longDescription": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details. Model SM-15/800 PULSE.",
+      "brand": "Studio Max",
+      "priceInr": 0,
+      "powerWatts": 0,
+      "inStock": true,
+      "image": "/speakers.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Detailed specifications",
+          "value": "Contact StudioMax for datasheet (Studio Max)"
+        }
+      ],
+      "highlights": [
+        "Studio Max professional DJ speaker range",
+        "Genuine StudioMax authorized distribution",
+        "Pan India enquiry and support"
+      ]
+    },
+    {
+      "id": "prod-dj-speakers-SM-1510-bne",
+      "model": "SM-1510 BNE",
+      "categoryId": "dj-speakers",
+      "categoryLabel": "DJ Speakers",
+      "modelGroupId": "15-inch",
+      "description": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details.",
+      "longDescription": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details. Model SM-1510 BNE.",
+      "brand": "Studio Max",
+      "priceInr": 0,
+      "powerWatts": 1000,
+      "inStock": true,
+      "image": "/speakers.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Peak power",
+          "value": "1000 W / Peak 2000 W"
+        },
+        {
+          "label": "Voice coil",
+          "value": "99.5 mm / 4″"
+        },
+        {
+          "label": "Continuous power capacity",
+          "value": "In/out copper coil"
+        },
+        {
+          "label": "Sensitivity",
+          "value": "97±2 dB"
+        },
+        {
+          "label": "Frequency response",
+          "value": "35 Hz – 2 kHz"
+        },
+        {
+          "label": "Nominal",
+          "value": "15″ / 310 mm"
+        },
+        {
+          "label": "Nominal imp / DC resistance",
+          "value": "8 Ω / 6.2 Ω"
+        },
+        {
+          "label": "Nominal power handling",
+          "value": "1000 W"
+        },
+        {
+          "label": "Magnet size / grade",
+          "value": "220×110×25 Y35"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
+        },
+        {
+          "label": "Net weight",
+          "value": "12.100 kg"
+        }
+      ],
+      "highlights": [
+        "Studio Max professional DJ speaker range",
+        "Genuine StudioMax authorized distribution",
+        "Pan India enquiry and support"
+      ]
+    },
+    {
+      "id": "prod-dj-speakers-SM-1510-rc",
+      "model": "SM-1510 RC",
+      "categoryId": "dj-speakers",
+      "categoryLabel": "DJ Speakers",
+      "modelGroupId": "15-inch",
+      "description": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details.",
+      "longDescription": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details. Model SM-1510 RC.",
+      "brand": "Studio Max",
+      "priceInr": 0,
+      "powerWatts": 1000,
+      "inStock": true,
+      "image": "/speakers.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Peak power",
+          "value": "1000 W / Peak 2000 W"
+        },
+        {
+          "label": "Voice coil",
+          "value": "99.2 mm / 4″"
+        },
+        {
+          "label": "Continuous power capacity",
+          "value": "In/out copper coil"
+        },
+        {
+          "label": "Sensitivity",
+          "value": "97±2 dB"
+        },
+        {
+          "label": "Frequency response",
+          "value": "35 Hz – 2 kHz"
+        },
+        {
+          "label": "Nominal",
+          "value": "15″ / 390 mm"
+        },
+        {
+          "label": "Nominal imp / DC resistance",
+          "value": "8 Ω / 6.2 Ω"
+        },
+        {
+          "label": "Nominal power handling",
+          "value": "1000 W"
+        },
+        {
+          "label": "Magnet size / grade",
+          "value": "220×110×25 / Y35"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
+        },
+        {
+          "label": "Net weight",
+          "value": "12.100 kg"
+        }
+      ],
+      "highlights": [
+        "Studio Max professional DJ speaker range",
+        "Genuine StudioMax authorized distribution",
+        "Pan India enquiry and support"
+      ]
+    },
+    {
+      "id": "prod-dj-speakers-SM-1520",
+      "model": "SM-1520",
+      "categoryId": "dj-speakers",
+      "categoryLabel": "DJ Speakers",
+      "modelGroupId": "15-inch",
+      "description": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details.",
+      "longDescription": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details. Model SM-1520.",
+      "brand": "Studio Max",
+      "priceInr": 0,
+      "powerWatts": 200,
+      "inStock": true,
+      "image": "/speakers.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Peak power",
+          "value": "200 W / Peak 400 W"
+        },
+        {
+          "label": "Voice coil",
+          "value": "51.1 mm / 2″"
+        },
+        {
+          "label": "Continuous power capacity",
+          "value": "Out power coil"
+        },
+        {
+          "label": "Sensitivity",
+          "value": "97±2 dB"
+        },
+        {
+          "label": "Frequency response",
+          "value": "35 Hz – 2 kHz"
+        },
+        {
+          "label": "Nominal",
+          "value": "15″"
+        },
+        {
+          "label": "Nominal imp / DC resistance",
+          "value": "8 Ω / 6.2 Ω"
+        },
+        {
+          "label": "Nominal power handling",
+          "value": "200 W"
+        },
+        {
+          "label": "Magnet size / grade",
+          "value": "156×60×20"
+        },
+        {
+          "label": "Basket",
+          "value": "Steel"
+        },
+        {
+          "label": "Net weight",
+          "value": "4.900 kg"
+        }
+      ],
+      "highlights": [
+        "Studio Max professional DJ speaker range",
+        "Genuine StudioMax authorized distribution",
+        "Pan India enquiry and support"
+      ]
+    },
+    {
+      "id": "prod-dj-speakers-SM-1540-bne",
+      "model": "SM-1540 BNE",
+      "categoryId": "dj-speakers",
+      "categoryLabel": "DJ Speakers",
+      "modelGroupId": "15-inch",
+      "description": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details.",
+      "longDescription": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details. Model SM-1540 BNE.",
+      "brand": "Studio Max",
+      "priceInr": 0,
+      "powerWatts": 400,
+      "inStock": true,
+      "image": "/speakers.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Peak power",
+          "value": "400 W / Peak 800 W"
+        },
+        {
+          "label": "Voice coil",
+          "value": "3″ / 76.2 mm"
+        },
+        {
+          "label": "Continuous power capacity",
+          "value": "In/out copper coil"
+        },
+        {
+          "label": "Sensitivity",
+          "value": "97±2 dB"
+        },
+        {
+          "label": "Frequency response",
+          "value": "35 Hz – 2 kHz"
+        },
+        {
+          "label": "Nominal",
+          "value": "15″ / 390 mm"
+        },
+        {
+          "label": "Nominal imp / DC resistance",
+          "value": "8 Ω / 6.2 Ω"
+        },
+        {
+          "label": "Nominal power handling",
+          "value": "400 W"
+        },
+        {
+          "label": "Magnet size / grade",
+          "value": "190×90×25"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
+        },
+        {
+          "label": "Net weight",
+          "value": "8.700 kg"
+        }
+      ],
+      "highlights": [
+        "Studio Max professional DJ speaker range",
+        "Genuine StudioMax authorized distribution",
+        "Pan India enquiry and support"
+      ]
+    },
+    {
+      "id": "prod-dj-speakers-SM-1540-v3",
+      "model": "SM-1540 V3",
+      "categoryId": "dj-speakers",
+      "categoryLabel": "DJ Speakers",
+      "modelGroupId": "15-inch",
+      "description": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details.",
+      "longDescription": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details. Model SM-1540 V3.",
+      "brand": "Studio Max",
+      "priceInr": 0,
+      "powerWatts": 400,
+      "inStock": true,
+      "image": "/speakers.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Peak power",
+          "value": "400 W / Peak 800 W"
+        },
+        {
+          "label": "Voice coil",
+          "value": "3″ / 76.2 mm"
+        },
+        {
+          "label": "Continuous power capacity",
+          "value": "Copper coil"
+        },
+        {
+          "label": "Sensitivity",
+          "value": "97±2 dB"
+        },
+        {
+          "label": "Frequency response",
+          "value": "35 Hz – 2 kHz"
+        },
+        {
+          "label": "Nominal",
+          "value": "15″ / 392 mm"
+        },
+        {
+          "label": "Nominal imp / DC resistance",
+          "value": "8 Ω / 6.2 Ω"
+        },
+        {
+          "label": "Nominal power handling",
+          "value": "400 W"
+        },
+        {
+          "label": "Magnet size / grade",
+          "value": "190×90×25"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
+        },
+        {
+          "label": "Net weight",
+          "value": "8.700 kg"
+        }
+      ],
+      "highlights": [
+        "Studio Max professional DJ speaker range",
+        "Genuine StudioMax authorized distribution",
+        "Pan India enquiry and support"
+      ]
+    },
+    {
+      "id": "prod-dj-speakers-SM-1545-sumo",
+      "model": "SM-1545 SUMO",
+      "categoryId": "dj-speakers",
+      "categoryLabel": "DJ Speakers",
+      "modelGroupId": "15-inch",
+      "description": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details.",
+      "longDescription": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details. Model SM-1545 SUMO.",
+      "brand": "Studio Max",
+      "priceInr": 0,
+      "powerWatts": 450,
+      "inStock": true,
+      "image": "/speakers.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Peak power",
+          "value": "900 W"
+        },
+        {
+          "label": "Voice coil",
+          "value": "76.2 mm / 3″ CCAW"
+        },
+        {
+          "label": "Continuous power capacity",
+          "value": "In/out voice coil"
+        },
+        {
+          "label": "Sensitivity",
+          "value": "97±2 dB"
+        },
+        {
+          "label": "Frequency response",
+          "value": "35 Hz – 2 kHz"
+        },
+        {
+          "label": "Nominal",
+          "value": "15″ / 393 mm"
+        },
+        {
+          "label": "Nominal imp / DC resistance",
+          "value": "8 Ω / 5.8 Ω"
+        },
+        {
+          "label": "Nominal power handling",
+          "value": "450 W"
+        },
+        {
+          "label": "Magnet size / grade",
+          "value": "190×90×25 mm / Y35"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
+        },
+        {
+          "label": "Net weight",
+          "value": "10.200 kg"
+        }
+      ],
+      "highlights": [
+        "Studio Max professional DJ speaker range",
+        "Genuine StudioMax authorized distribution",
+        "Pan India enquiry and support"
+      ]
+    },
+    {
+      "id": "prod-dj-speakers-SM-1545-v3",
+      "model": "SM-1545 V3",
+      "categoryId": "dj-speakers",
+      "categoryLabel": "DJ Speakers",
+      "modelGroupId": "15-inch",
+      "description": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details.",
+      "longDescription": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details. Model SM-1545 V3.",
+      "brand": "Studio Max",
+      "priceInr": 0,
+      "powerWatts": 450,
+      "inStock": true,
+      "image": "/speakers.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Peak power",
+          "value": "450 W / Peak 900 W"
+        },
+        {
+          "label": "Voice coil",
+          "value": "76.2 mm / 3″"
+        },
+        {
+          "label": "Continuous power capacity",
+          "value": "In/out copper coil"
+        },
+        {
+          "label": "Sensitivity",
+          "value": "97±2 dB"
+        },
+        {
+          "label": "Frequency response",
+          "value": "35 Hz – 2 kHz"
+        },
+        {
+          "label": "Nominal",
+          "value": "15″"
+        },
+        {
+          "label": "Nominal imp / DC resistance",
+          "value": "8 Ω / 6.2 Ω"
+        },
+        {
+          "label": "Nominal power handling",
+          "value": "450 W"
+        },
+        {
+          "label": "Magnet size / grade",
+          "value": "190×90×25 / Y35"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
+        },
+        {
+          "label": "Net weight",
+          "value": "10.200 kg"
+        }
+      ],
+      "highlights": [
+        "Studio Max professional DJ speaker range",
+        "Genuine StudioMax authorized distribution",
+        "Pan India enquiry and support"
+      ]
+    },
+    {
+      "id": "prod-dj-speakers-SM-1550",
+      "model": "SM-1550",
+      "categoryId": "dj-speakers",
+      "categoryLabel": "DJ Speakers",
+      "modelGroupId": "15-inch",
+      "description": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details.",
+      "longDescription": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details. Model SM-1550.",
+      "brand": "Studio Max",
+      "priceInr": 0,
+      "powerWatts": 500,
+      "inStock": true,
+      "image": "/speakers.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Peak power",
+          "value": "500 W / Peak 1000 W"
+        },
+        {
+          "label": "Voice coil",
+          "value": "3.25″ / 82.5 mm"
+        },
+        {
+          "label": "Continuous power capacity",
+          "value": "In/out copper coil"
+        },
+        {
+          "label": "Sensitivity",
+          "value": "97±2 dB"
+        },
+        {
+          "label": "Frequency response",
+          "value": "35 Hz – 2 kHz"
+        },
+        {
+          "label": "Nominal",
+          "value": "15″ / 390 mm"
+        },
+        {
+          "label": "Nominal imp / DC resistance",
+          "value": "8 Ω / 6.2 Ω"
+        },
+        {
+          "label": "Nominal power handling",
+          "value": "500 W"
+        },
+        {
+          "label": "Magnet size / grade",
+          "value": "200×110×25 Y35"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
+        },
+        {
+          "label": "Net weight",
+          "value": "10.200 kg"
+        }
+      ],
+      "highlights": [
+        "Studio Max professional DJ speaker range",
+        "Genuine StudioMax authorized distribution",
+        "Pan India enquiry and support"
+      ]
+    },
+    {
+      "id": "prod-dj-speakers-SM-1560-bne",
+      "model": "SM-1560 BNE",
+      "categoryId": "dj-speakers",
+      "categoryLabel": "DJ Speakers",
+      "modelGroupId": "15-inch",
+      "description": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details.",
+      "longDescription": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details. Model SM-1560 BNE.",
+      "brand": "Studio Max",
+      "priceInr": 0,
+      "powerWatts": 600,
+      "inStock": true,
+      "image": "/speakers.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Peak power",
+          "value": "600 W / Peak 1200 W"
+        },
+        {
+          "label": "Voice coil",
+          "value": "4″ / 99.2 mm"
+        },
+        {
+          "label": "Continuous power capacity",
+          "value": "In/out copper coil"
+        },
+        {
+          "label": "Sensitivity",
+          "value": "97±2 dB"
+        },
+        {
+          "label": "Frequency response",
+          "value": "35 Hz – 2 kHz"
+        },
+        {
+          "label": "Nominal",
+          "value": "15″ / 390 mm"
+        },
+        {
+          "label": "Nominal imp / DC resistance",
+          "value": "8 Ω / 6.2 Ω"
+        },
+        {
+          "label": "Nominal power handling",
+          "value": "600 W"
+        },
+        {
+          "label": "Magnet size / grade",
+          "value": "220×110×25 Y35"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
+        },
+        {
+          "label": "Net weight",
+          "value": "12.200 kg"
+        }
+      ],
+      "highlights": [
+        "Studio Max professional DJ speaker range",
+        "Genuine StudioMax authorized distribution",
+        "Pan India enquiry and support"
+      ]
+    },
+    {
+      "id": "prod-dj-speakers-SM-1560-panther",
+      "model": "SM-1560 Panther",
+      "categoryId": "dj-speakers",
+      "categoryLabel": "DJ Speakers",
+      "modelGroupId": "15-inch",
+      "description": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details.",
+      "longDescription": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details. Model SM-1560 Panther.",
+      "brand": "Studio Max",
+      "priceInr": 0,
+      "powerWatts": 600,
+      "inStock": true,
+      "image": "/speakers.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Peak power",
+          "value": "600 W / Peak 1200 W"
+        },
+        {
+          "label": "Voice coil",
+          "value": "4″ / 99.2 mm"
+        },
+        {
+          "label": "Continuous power capacity",
+          "value": "In/out copper coil"
+        },
+        {
+          "label": "Sensitivity",
+          "value": "97±2 dB"
+        },
+        {
+          "label": "Frequency response",
+          "value": "35 Hz – 2 kHz"
+        },
+        {
+          "label": "Nominal",
+          "value": "15″ / 394 mm"
+        },
+        {
+          "label": "Nominal imp / DC resistance",
+          "value": "8 Ω / 6.2 Ω"
+        },
+        {
+          "label": "Nominal power handling",
+          "value": "600 W"
+        },
+        {
+          "label": "Magnet size / grade",
+          "value": "220×110×25 Y35"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
+        },
+        {
+          "label": "Net weight",
+          "value": "12.100 kg"
+        }
+      ],
+      "highlights": [
+        "Studio Max professional DJ speaker range",
+        "Genuine StudioMax authorized distribution",
+        "Pan India enquiry and support"
+      ]
+    },
+    {
+      "id": "prod-dj-speakers-SM-1580-thunderbolt",
+      "model": "SM-1580 THUNDERBOLT",
+      "categoryId": "dj-speakers",
+      "categoryLabel": "DJ Speakers",
+      "modelGroupId": "15-inch",
+      "description": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details.",
+      "longDescription": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details. Model SM-1580 THUNDERBOLT.",
+      "brand": "Studio Max",
+      "priceInr": 0,
+      "powerWatts": 0,
+      "inStock": true,
+      "image": "/speakers.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Detailed specifications",
+          "value": "Contact StudioMax for datasheet (Studio Max)"
+        }
+      ],
+      "highlights": [
+        "Studio Max professional DJ speaker range",
+        "Genuine StudioMax authorized distribution",
+        "Pan India enquiry and support"
+      ]
+    },
+    {
+      "id": "prod-dj-speakers-SM-1582",
+      "model": "SM-1582",
+      "categoryId": "dj-speakers",
+      "categoryLabel": "DJ Speakers",
+      "modelGroupId": "15-inch",
+      "description": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details.",
+      "longDescription": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details. Model SM-1582.",
+      "brand": "Studio Max",
+      "priceInr": 0,
+      "powerWatts": 500,
+      "inStock": true,
+      "image": "/speakers.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Peak power",
+          "value": "500 W / Peak 1000 W"
+        },
+        {
+          "label": "Voice coil",
+          "value": "82.5 mm / 3.25″"
+        },
+        {
+          "label": "Continuous power capacity",
+          "value": "In/out CCAW coil"
+        },
+        {
+          "label": "Sensitivity",
+          "value": "97±2 dB"
+        },
+        {
+          "label": "Frequency response",
+          "value": "35 Hz – 2 kHz"
+        },
+        {
+          "label": "Nominal",
+          "value": "15″ / 392 mm"
+        },
+        {
+          "label": "Nominal imp / DC resistance",
+          "value": "8 Ω / 6.2 Ω"
+        },
+        {
+          "label": "Nominal power handling",
+          "value": "500 W"
+        },
+        {
+          "label": "Magnet size / grade",
+          "value": "200×110×25 Y35"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
+        },
+        {
+          "label": "Net weight",
+          "value": "12.300 kg"
+        }
+      ],
+      "highlights": [
+        "Studio Max professional DJ speaker range",
+        "Genuine StudioMax authorized distribution",
+        "Pan India enquiry and support"
+      ]
+    },
+    {
+      "id": "prod-dj-speakers-SM-1586",
+      "model": "SM-1586",
+      "categoryId": "dj-speakers",
+      "categoryLabel": "DJ Speakers",
+      "modelGroupId": "15-inch",
+      "description": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details.",
+      "longDescription": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details. Model SM-1586.",
+      "brand": "Studio Max",
+      "priceInr": 0,
+      "powerWatts": 500,
+      "inStock": true,
+      "image": "/speakers.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Peak power",
+          "value": "500 W / Peak 1000 W"
+        },
+        {
+          "label": "Voice coil",
+          "value": "86 mm / 3.5″"
+        },
+        {
+          "label": "Continuous power capacity",
+          "value": "In/out copper coil"
+        },
+        {
+          "label": "Sensitivity",
+          "value": "97±2 dB"
+        },
+        {
+          "label": "Frequency response",
+          "value": "25 Hz – 2 kHz"
+        },
+        {
+          "label": "Nominal",
+          "value": "15″ / 392 mm"
+        },
+        {
+          "label": "Nominal imp / DC resistance",
+          "value": "8 Ω / 6.2 Ω"
+        },
+        {
+          "label": "Nominal power handling",
+          "value": "500 W"
+        },
+        {
+          "label": "Magnet size / grade",
+          "value": "200×110×25 Y35"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
+        },
+        {
+          "label": "Net weight",
+          "value": "12.500 kg"
+        }
+      ],
+      "highlights": [
+        "Studio Max professional DJ speaker range",
+        "Genuine StudioMax authorized distribution",
+        "Pan India enquiry and support"
+      ]
+    },
+    {
+      "id": "prod-dj-speakers-SM-1810-v3",
+      "model": "SM-1810 V3",
+      "categoryId": "dj-speakers",
+      "categoryLabel": "DJ Speakers",
+      "modelGroupId": "18-inch",
+      "description": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details.",
+      "longDescription": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details. Model SM-1810 V3.",
+      "brand": "Studio Max",
+      "priceInr": 0,
+      "powerWatts": 1000,
+      "inStock": true,
+      "image": "/speakers.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Peak power",
+          "value": "1000 W / Peak 2000 W"
+        },
+        {
+          "label": "Voice coil",
+          "value": "99.2 mm / 4″"
+        },
+        {
+          "label": "Continuous power capacity",
+          "value": "In/out copper coil"
+        },
+        {
+          "label": "Sensitivity",
+          "value": "97±2 dB"
+        },
+        {
+          "label": "Frequency response",
+          "value": "35 Hz – 2 kHz"
+        },
+        {
+          "label": "Nominal",
+          "value": "18″ / 457.2 mm"
+        },
+        {
+          "label": "Nominal imp / DC resistance",
+          "value": "8 Ω / 6.2 Ω"
+        },
+        {
+          "label": "Nominal power handling",
+          "value": "1000 W"
+        },
+        {
+          "label": "Magnet size / grade",
+          "value": "220×110×25 Y35"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
+        },
+        {
+          "label": "Net weight",
+          "value": "12.600 kg"
+        }
+      ],
+      "highlights": [
+        "Studio Max professional DJ speaker range",
+        "Genuine StudioMax authorized distribution",
+        "Pan India enquiry and support"
+      ]
+    },
+    {
+      "id": "prod-dj-speakers-SM-1845",
+      "model": "SM-1845",
+      "categoryId": "dj-speakers",
+      "categoryLabel": "DJ Speakers",
+      "modelGroupId": "18-inch",
+      "description": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details.",
+      "longDescription": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details. Model SM-1845.",
+      "brand": "Studio Max",
+      "priceInr": 0,
+      "powerWatts": 1500,
+      "inStock": true,
+      "image": "/speakers.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Peak power",
+          "value": "1500 W / Peak 3000 W"
+        },
+        {
+          "label": "Voice coil",
+          "value": "114.3 mm / 4.5″"
+        },
+        {
+          "label": "Continuous power capacity",
+          "value": "In/out copper coil"
+        },
+        {
+          "label": "Sensitivity",
+          "value": "97±2 dB"
+        },
+        {
+          "label": "Frequency response",
+          "value": "35 Hz – 2 kHz"
+        },
+        {
+          "label": "Nominal",
+          "value": "18″ / 457.2 mm"
+        },
+        {
+          "label": "Nominal imp / DC resistance",
+          "value": "8 Ω / 6.2 Ω"
+        },
+        {
+          "label": "Nominal power handling",
+          "value": "1500 W"
+        },
+        {
+          "label": "Magnet size / grade",
+          "value": "255×120×25 Y35"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
+        },
+        {
+          "label": "Net weight",
+          "value": "20.400 kg"
+        }
+      ],
+      "highlights": [
+        "Studio Max professional DJ speaker range",
+        "Genuine StudioMax authorized distribution",
+        "Pan India enquiry and support"
+      ]
+    },
+    {
+      "id": "prod-dj-speakers-SM-1850-pdc",
+      "model": "SM-1850 PDC",
+      "categoryId": "dj-speakers",
+      "categoryLabel": "DJ Speakers",
+      "modelGroupId": "18-inch",
+      "description": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details.",
+      "longDescription": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details. Model SM-1850 PDC.",
+      "brand": "Studio Max",
+      "priceInr": 0,
+      "powerWatts": 2000,
+      "inStock": true,
+      "image": "/speakers.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Peak power",
+          "value": "2000 W / Peak 4000 W"
+        },
+        {
+          "label": "Voice coil",
+          "value": "127 mm / 5″"
+        },
+        {
+          "label": "Continuous power capacity",
+          "value": "In/out copper coil"
+        },
+        {
+          "label": "Sensitivity",
+          "value": "97±2 dB"
+        },
+        {
+          "label": "Frequency response",
+          "value": "35 Hz – 2 kHz"
+        },
+        {
+          "label": "Nominal",
+          "value": "18″ / 452.2 mm"
+        },
+        {
+          "label": "Nominal imp / DC resistance",
+          "value": "8 Ω / 6.2 Ω"
+        },
+        {
+          "label": "Nominal power handling",
+          "value": "2000 W"
+        },
+        {
+          "label": "Magnet size / grade",
+          "value": "280×140×25 Y35"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
+        },
+        {
+          "label": "Net weight",
+          "value": "20.500 kg"
+        }
+      ],
+      "highlights": [
+        "Studio Max professional DJ speaker range",
+        "Genuine StudioMax authorized distribution",
+        "Pan India enquiry and support"
+      ]
+    },
+    {
+      "id": "prod-dj-speakers-SM-1860",
+      "model": "SM-1860",
+      "categoryId": "dj-speakers",
+      "categoryLabel": "DJ Speakers",
+      "modelGroupId": "18-inch",
+      "description": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details.",
+      "longDescription": "Professional DJ speaker from the Studio Max range. Enquire with StudioMax for pricing and technical details. Model SM-1860.",
+      "brand": "Studio Max",
+      "priceInr": 0,
+      "powerWatts": 2000,
+      "inStock": true,
+      "image": "/speakers.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Peak power",
+          "value": "2000 W / Peak 4000 W"
+        },
+        {
+          "label": "Voice coil",
+          "value": "5″ / 127 mm"
+        },
+        {
+          "label": "Continuous power capacity",
+          "value": "In/out copper coil"
+        },
+        {
+          "label": "Sensitivity",
+          "value": "97±2 dB"
+        },
+        {
+          "label": "Frequency response",
+          "value": "35 Hz – 2 kHz"
+        },
+        {
+          "label": "Nominal",
+          "value": "18″ / 457.2 mm"
+        },
+        {
+          "label": "Nominal imp / DC resistance",
+          "value": "8 Ω / 6.2 Ω"
+        },
+        {
+          "label": "Nominal power handling",
+          "value": "2000 W"
+        },
+        {
+          "label": "Magnet size / grade",
+          "value": "280×140×25 Y35"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
+        },
+        {
+          "label": "Net weight",
+          "value": "22.700 kg"
+        }
+      ],
+      "highlights": [
+        "Studio Max professional DJ speaker range",
+        "Genuine StudioMax authorized distribution",
+        "Pan India enquiry and support"
+      ]
+    },
+    {
+      "id": "prod-pa-speakers-cube-30",
+      "model": "Cube 30",
+      "categoryId": "pa-speakers",
+      "image": "/pa-speaker.png",
+      "specs": [
+        {
+          "label": "Model",
+          "value": "Cube 30"
+        },
+        {
+          "label": "Output power",
+          "value": "20 W RMS / 25 W max"
+        },
+        {
+          "label": "Speaker",
+          "value": "8″ / 4 Ω"
+        },
+        {
+          "label": "Input",
+          "value": "3 mic / 1 AUX"
+        },
+        {
+          "label": "Tone control",
+          "value": "Bass / treble (+/−) 10 dB"
+        },
+        {
+          "label": "Frequency response",
+          "value": "80 Hz – 10 kHz"
+        },
+        {
+          "label": "Power supply",
+          "value": "AC 220–250 V 50/60 Hz; DC 12 V; inbuilt rechargeable battery"
+        },
+        {
+          "label": "Battery usage time",
+          "value": "4 hours at moderate volume"
+        },
+        {
+          "label": "Indicator",
+          "value": "Main / battery charging and amplifier ON"
+        },
+        {
+          "label": "Dimensions (H × W × D)",
+          "value": "345 × 275 × 170 mm"
+        },
+        {
+          "label": "Weight",
+          "value": "6.500 kg"
+        }
+      ]
+    },
+    {
+      "id": "prod-pa-speakers-metal-column-speaker",
+      "model": "Metal Column Speaker",
+      "categoryId": "pa-speakers",
+      "image": "/pa-speaker.png",
+      "specs": [
+        {
+          "label": "Model variants",
+          "value": "SCM 10 T / SCM 15 T"
+        },
+        {
+          "label": "Input power",
+          "value": "20 W RMS / 30 W max"
+        },
+        {
+          "label": "Power taps",
+          "value": "10 W"
+        },
+        {
+          "label": "Dimensions (W × H × D)",
+          "value": "165 × 885 × 145 mm"
+        },
+        {
+          "label": "Weight (SCM 10 T)",
+          "value": "2.83 kg"
+        },
+        {
+          "label": "Weight (SCM 15 T)",
+          "value": "2.85 kg"
+        }
+      ]
+    },
+    {
+      "id": "prod-microphone-stands-book-stand",
+      "model": "Book Stand",
+      "categoryId": "microphone-stands",
+      "modelGroupId": "floor-stand",
+      "image": "/microphone-stands.png",
+      "specs": [
+        {
+          "label": "Minimum Order Quantity",
+          "value": "25 Piece"
+        },
+        {
+          "label": "Material",
+          "value": "ABS & MS"
+        },
+        {
+          "label": "Finishing Type",
+          "value": "Color Coated"
+        },
+        {
+          "label": "Brand",
+          "value": "G & S"
+        },
+        {
+          "label": "Size",
+          "value": "10 *18 Inch"
+        },
+        {
+          "label": "Shape",
+          "value": "Rectangular"
+        },
+        {
+          "label": "Usage/Application",
+          "value": "Book Stand"
+        }
+      ]
+    },
+    {
+      "id": "prod-microphone-stands-boom-stand-floor",
+      "model": "Boom Stand Floor",
+      "categoryId": "microphone-stands",
+      "modelGroupId": "floor-stand",
+      "image": "/microphone-stands.png",
+      "specs": [
+        {
+          "label": "Color",
+          "value": "Silver / Black"
+        },
+        {
+          "label": "Brand",
+          "value": "Almax"
+        },
+        {
+          "label": "Item Weight",
+          "value": "1800 gms."
+        },
+        {
+          "label": "Item Dimension",
+          "value": "18*172*12 cm"
+        },
+        {
+          "label": "Style",
+          "value": "Holder, Tripod"
+        },
+        {
+          "label": "Base Type",
+          "value": "Tripod"
+        }
+      ]
+    },
+    {
+      "id": "prod-microphone-stands-boom-stand-floor-black",
+      "model": "Boom Stand Floor (Black)",
+      "categoryId": "microphone-stands",
+      "modelGroupId": "floor-stand",
+      "image": "/microphone-stands.png",
+      "specs": [
+        {
+          "label": "Color",
+          "value": "Silver / Black"
+        },
+        {
+          "label": "Brand",
+          "value": "Almax"
+        },
+        {
+          "label": "Item Weight",
+          "value": "1800 gms."
+        },
+        {
+          "label": "Item Dimension",
+          "value": "18*172*12 cm"
+        },
+        {
+          "label": "Style",
+          "value": "Holder, Tripod"
+        },
+        {
+          "label": "Base Type",
+          "value": "Tripod"
+        }
+      ]
+    },
+    {
+      "id": "prod-microphone-stands-boom-stand-table",
+      "model": "Boom Stand table",
+      "categoryId": "microphone-stands",
+      "modelGroupId": "table-stand",
+      "image": "/microphone-stands.png",
+      "specs": [
+        {
+          "label": "Color",
+          "value": "Silver, Black"
+        },
+        {
+          "label": "Height",
+          "value": "42 inches"
+        },
+        {
+          "label": "Weight",
+          "value": "1.9 kgs"
+        }
+      ]
+    },
+    {
+      "id": "prod-microphone-stands-boom-stand-table-black",
+      "model": "Boom Stand Table Black",
+      "categoryId": "microphone-stands",
+      "modelGroupId": "table-stand",
+      "image": "/microphone-stands.png",
+      "specs": [
+        {
+          "label": "Color",
+          "value": "Silver, Black"
+        },
+        {
+          "label": "Height",
+          "value": "42 inches"
+        },
+        {
+          "label": "Weight",
+          "value": "1.9 kgs"
+        }
+      ]
+    },
+    {
+      "id": "prod-microphone-stands-desk-stand-ats",
+      "model": "Desk Stand (Ats)",
+      "categoryId": "microphone-stands",
+      "modelGroupId": "table-stand",
+      "image": "/microphone-stands.png",
+      "specs": [
+        {
+          "label": "Color",
+          "value": "Silver / Black"
+        },
+        {
+          "label": "Brand",
+          "value": "Almax"
+        },
+        {
+          "label": "Item Dimension",
+          "value": "12*10*13 cm"
+        },
+        {
+          "label": "Height",
+          "value": "350-530 MM"
+        },
+        {
+          "label": "Base Dia",
+          "value": "150 MM"
+        },
+        {
+          "label": "Weight",
+          "value": "4.58kg"
+        }
+      ]
+    },
+    {
+      "id": "prod-microphone-stands-folding-stand-92-table",
+      "model": "Folding stand 92 table",
+      "categoryId": "microphone-stands",
+      "modelGroupId": "table-stand",
+      "image": "/microphone-stands.png",
+      "specs": [
+        {
+          "label": "Color",
+          "value": "Silver, Black"
+        },
+        {
+          "label": "Height",
+          "value": "42 inches"
+        },
+        {
+          "label": "Weight",
+          "value": "1.3 kgs"
+        }
+      ]
+    },
+    {
+      "id": "prod-microphone-stands-mic-stand-floor1",
+      "model": "Folding Stand Floor",
+      "categoryId": "microphone-stands",
+      "modelGroupId": "floor-stand",
+      "image": "/microphone-stands.png",
+      "specs": [
+        {
+          "label": "Height",
+          "value": "63 inch"
+        },
+        {
+          "label": "Weight",
+          "value": "1.9 kgs"
+        }
+      ]
+    },
+    {
+      "id": "prod-microphone-stands-mic-stand-dgn-dlx",
+      "model": "Mic Stand DGN (Dlx)",
+      "categoryId": "microphone-stands",
+      "modelGroupId": "floor-stand",
+      "image": "/microphone-stands.png",
+      "specs": [
+        {
+          "label": "Color",
+          "value": "Silver/ Black"
+        },
+        {
+          "label": "Brand",
+          "value": "Almax"
+        },
+        {
+          "label": "Material",
+          "value": "Plating, TPI"
+        },
+        {
+          "label": "Item Weight",
+          "value": "7.8kg"
+        },
+        {
+          "label": "Item Dimension L*W*H",
+          "value": "49 * 35 * 7 cm"
+        },
+        {
+          "label": "Base Dia",
+          "value": "230 MM"
+        },
+        {
+          "label": "Height",
+          "value": "920-1500 MM"
+        }
+      ]
+    },
+    {
+      "id": "prod-microphone-stands-mic-stand-dgt-dlx",
+      "model": "Mic stand DGT (DLX)",
+      "categoryId": "microphone-stands",
+      "modelGroupId": "table-stand",
+      "image": "/microphone-stands.png",
+      "specs": [
+        {
+          "label": "Color",
+          "value": "Silver / Black"
+        },
+        {
+          "label": "Brand",
+          "value": "Almax"
+        },
+        {
+          "label": "Item Dimension",
+          "value": "12*10*13 cm"
+        },
+        {
+          "label": "Height",
+          "value": "350-530 MM"
+        },
+        {
+          "label": "Base Dia",
+          "value": "150 MM"
+        },
+        {
+          "label": "Weight",
+          "value": "4.58kg"
+        }
+      ]
+    },
+    {
+      "id": "prod-microphone-stands-mic-stand-floor-dgn-a",
+      "model": "Mic stand floor DGN (A)",
+      "categoryId": "microphone-stands",
+      "modelGroupId": "floor-stand",
+      "image": "/microphone-stands.png",
+      "specs": [
+        {
+          "label": "Color",
+          "value": "Black, Silver"
+        },
+        {
+          "label": "Height",
+          "value": "63 inches"
+        },
+        {
+          "label": "Base Diemeter",
+          "value": "320 MM"
+        },
+        {
+          "label": "Brand",
+          "value": "Almax"
+        }
+      ]
+    },
+    {
+      "id": "prod-microphone-stands-mic-stand-round-base-floor-a",
+      "model": "Mic stand round base floor (A)",
+      "categoryId": "microphone-stands",
+      "modelGroupId": "floor-stand",
+      "image": "/microphone-stands.png",
+      "specs": [
+        {
+          "label": "Height",
+          "value": "63 inches"
+        }
+      ]
+    },
+    {
+      "id": "prod-microphone-stands-mic-stand-round-base-floor-b",
+      "model": "Mic Stand Round Base Floor B+",
+      "categoryId": "microphone-stands",
+      "modelGroupId": "floor-stand",
+      "image": "/microphone-stands.png",
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Miled Steel"
+        },
+        {
+          "label": "Height",
+          "value": "63 inches"
+        }
+      ]
+    },
+    {
+      "id": "prod-microphone-stands-mic-stand-round-base-floor-c",
+      "model": "Mic stand round base floor (C)",
+      "categoryId": "microphone-stands",
+      "modelGroupId": "floor-stand",
+      "image": "/microphone-stands.png",
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Miled Steel"
+        },
+        {
+          "label": "Height",
+          "value": "63 inches"
+        }
+      ]
+    },
+    {
+      "id": "prod-microphone-stands-mic-stand-round-base-table-a",
+      "model": "Mic stand round base table (A)",
+      "categoryId": "microphone-stands",
+      "modelGroupId": "table-stand",
+      "image": "/microphone-stands.png",
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Miled Steel"
+        },
+        {
+          "label": "Height",
+          "value": "42 inches"
+        }
+      ]
+    },
+    {
+      "id": "prod-microphone-stands-mic-stand-round-base-table-b",
+      "model": "Mic Stand Round Base table B+",
+      "categoryId": "microphone-stands",
+      "modelGroupId": "table-stand",
+      "image": "/microphone-stands.png",
+      "specs": [
+        {
+          "label": "Normal diameter",
+          "value": "15 inch"
+        },
+        {
+          "label": "Nominal impedance",
+          "value": "8Ω"
+        },
+        {
+          "label": "DC resistance",
+          "value": "5.8Ω"
+        },
+        {
+          "label": "Nominal Power Handling",
+          "value": "400w"
+        },
+        {
+          "label": "Continuous power Handling",
+          "value": "800w"
+        },
+        {
+          "label": "Sensitivity(1W/1m)",
+          "value": "98dB"
+        },
+        {
+          "label": "Frequency range",
+          "value": "40-4500 Hz"
+        },
+        {
+          "label": "Voice coil diameter",
+          "value": "3 in (75.5 mm)"
+        },
+        {
+          "label": "Voice coil material",
+          "value": "Ccaw"
+        },
+        {
+          "label": "Former material",
+          "value": "Kapton"
+        },
+        {
+          "label": "Winding height",
+          "value": "24mm"
+        },
+        {
+          "label": "Magnet",
+          "value": "Ф190×H25"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
+        }
+      ]
+    },
+    {
+      "id": "prod-microphone-stands-mic-stand-round-base-table-c",
+      "model": "Mic Stand Round Base Table C",
+      "categoryId": "microphone-stands",
+      "modelGroupId": "table-stand",
+      "image": "/microphone-stands.png",
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Miled Steel"
+        },
+        {
+          "label": "Height",
+          "value": "42 inches"
+        }
+      ]
+    },
+    {
+      "id": "prod-microphone-stands-three-leg-mic-stand-floor-c",
+      "model": "Three leg mic stand floor (C)",
+      "categoryId": "microphone-stands",
+      "modelGroupId": "floor-stand",
+      "image": "/microphone-stands.png",
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Miled Steel"
+        },
+        {
+          "label": "Height",
+          "value": "63 inches"
+        }
+      ]
+    },
+    {
+      "id": "prod-microphone-stands-three-leg-mic-stand-table-a",
+      "model": "Three leg mic stand table (A)",
+      "categoryId": "microphone-stands",
+      "modelGroupId": "table-stand",
+      "image": "/microphone-stands.png",
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Miled Steel"
+        },
+        {
+          "label": "Height",
+          "value": "42 inches"
+        },
+        {
+          "label": "Base Type",
+          "value": "3 leg"
+        }
+      ]
+    },
+    {
+      "id": "prod-microphone-stands-three-leg-mic-stand-table-c",
+      "model": "Three leg mic stand table (C)",
+      "categoryId": "microphone-stands",
+      "modelGroupId": "table-stand",
+      "image": "/microphone-stands.png",
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Miled Steel"
+        },
+        {
+          "label": "Height",
+          "value": "42 inches"
+        },
+        {
+          "label": "Base Type",
+          "value": "3 leg"
+        }
+      ]
+    },
+    {
+      "id": "prod-trumpet-12-inch-d-type-reflex-horn",
+      "model": "12 inch D type reflex horn",
+      "categoryId": "trumpet",
+      "image": "/trumpet.png",
+      "specs": [
+        {
+          "label": "Brand",
+          "value": "Almax"
+        },
+        {
+          "label": "Color",
+          "value": "Silver /Grey"
+        },
+        {
+          "label": "Size",
+          "value": "12 Inches"
+        },
+        {
+          "label": "Usage",
+          "value": "Public Meetings"
+        }
+      ]
+    },
+    {
+      "id": "prod-trumpet-12-inches-alu-trumpet-with-iron-nali",
+      "model": "12 inches alu trumpet with iron nali",
+      "categoryId": "trumpet",
+      "image": "/trumpet.png",
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Aluminium & Iron"
+        },
+        {
+          "label": "Brand",
+          "value": "Almax"
+        },
+        {
+          "label": "Overall Dia",
+          "value": "12 Inches"
+        },
+        {
+          "label": "Usage",
+          "value": "Public Meetings"
+        },
+        {
+          "label": "Color",
+          "value": "Silver / Grey"
+        }
+      ]
+    },
+    {
+      "id": "prod-trumpet-12-inches-full-aluminium-trumpet",
+      "model": "12 inches full Aluminium trumpet",
+      "categoryId": "trumpet",
+      "image": "/trumpet.png",
+      "specs": [
+        {
+          "label": "Brand",
+          "value": "Almax"
+        },
+        {
+          "label": "Color",
+          "value": "Silver"
+        },
+        {
+          "label": "Material",
+          "value": "Full Aluminium"
+        },
+        {
+          "label": "Overall Dia",
+          "value": "12 Inches"
+        },
+        {
+          "label": "Usage",
+          "value": "Public Meetings"
+        }
+      ]
+    },
+    {
+      "id": "prod-trumpet-12-inches-full-iron-trumpet",
+      "model": "12 inches full iron trumpet",
+      "categoryId": "trumpet",
+      "image": "/trumpet.png",
+      "specs": [
+        {
+          "label": "Brand",
+          "value": "Almax"
+        },
+        {
+          "label": "Material",
+          "value": "Full Iron"
+        },
+        {
+          "label": "Color",
+          "value": "Blue"
+        },
+        {
+          "label": "Overall Dia",
+          "value": "12 Inches"
+        },
+        {
+          "label": "Surface Finish",
+          "value": "Color Coated"
+        },
+        {
+          "label": "Usage",
+          "value": "Political Rallies"
+        }
+      ]
+    },
+    {
+      "id": "prod-trumpet-18-inches-full-iron-trumpet",
+      "model": "18 inches Full iron trumpet",
+      "categoryId": "trumpet",
+      "image": "/trumpet.png",
+      "specs": [
+        {
+          "label": "Brand",
+          "value": "Almax"
+        },
+        {
+          "label": "Color",
+          "value": "Grey"
+        },
+        {
+          "label": "Overall Dia",
+          "value": "18 Inches"
+        },
+        {
+          "label": "Material",
+          "value": "Full Iron"
+        },
+        {
+          "label": "Usage",
+          "value": "Public Meetings"
+        },
+        {
+          "label": "Surface Finish",
+          "value": "Color Coated"
+        }
+      ]
+    },
+    {
+      "id": "prod-trumpet-22-inches-alu-trumpet-with-iron-nali",
+      "model": "22 inches Alu trumpet with iron nali",
+      "categoryId": "trumpet",
+      "image": "/trumpet.png",
+      "specs": [
+        {
+          "label": "Brand",
+          "value": "Almax"
+        },
+        {
+          "label": "Material",
+          "value": "Iron & Aluminium"
+        },
+        {
+          "label": "Overall Dia",
+          "value": "22 Inches"
+        },
+        {
+          "label": "Usage",
+          "value": "Political Rallies"
+        },
+        {
+          "label": "Color",
+          "value": "Silver & Grey"
+        }
+      ]
+    },
+    {
+      "id": "prod-trumpet-22-inches-full-alu-trumpet",
+      "model": "22 inches full alu trumpet",
+      "categoryId": "trumpet",
+      "image": "/trumpet.png",
+      "specs": [
+        {
+          "label": "Brand",
+          "value": "Almax"
+        },
+        {
+          "label": "Color",
+          "value": "Silver"
+        },
+        {
+          "label": "Material",
+          "value": "Full Aluminium"
+        },
+        {
+          "label": "Overall Dia",
+          "value": "22 Inches"
+        },
+        {
+          "label": "Usage",
+          "value": "Political Rallies"
+        }
+      ]
+    },
+    {
+      "id": "prod-trumpet-reflex-horn-18-inches-wfb",
+      "model": "Reflex Horn 18 inches (wfb)",
+      "categoryId": "trumpet",
+      "image": "/trumpet.png",
+      "specs": [
+        {
+          "label": "Brand",
+          "value": "Almax"
+        },
+        {
+          "label": "Color",
+          "value": "Dark Grey"
+        },
+        {
+          "label": "Overall Dia",
+          "value": "18 Inches"
+        },
+        {
+          "label": "Surface Finish",
+          "value": "Powder Coated"
+        },
+        {
+          "label": "Material",
+          "value": "Aluminium"
+        },
+        {
+          "label": "Usage",
+          "value": "Public Meetings"
+        }
+      ]
+    },
+    {
+      "id": "prod-hf-tweeter-1",
+      "model": "SM-HF-Pro",
+      "categoryId": "hf-tweeter",
+      "categoryLabel": "HF Tweeter",
+      "description": "HF tweeter drivers and assemblies engineered for extended high-frequency detail and longevity.",
+      "longDescription": "HF tweeter drivers and assemblies engineered for extended high-frequency detail and longevity. The SM-HF-Pro is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
+      "brand": "Studio Max",
+      "priceInr": 34062,
+      "powerWatts": 75,
+      "inStock": true,
+      "image": "/trumpet.png",
+      "featured": true,
+      "specs": [
+        {
+          "label": "Power handling",
+          "value": "75 W RMS"
+        },
+        {
+          "label": "Impedance",
+          "value": "8 Ω"
+        },
+        {
+          "label": "Frequency response",
+          "value": "48 Hz – 18 kHz"
+        },
+        {
+          "label": "Enclosure / build",
+          "value": "Professional grade"
+        },
+        {
+          "label": "Warranty",
+          "value": "12 months"
+        }
+      ],
+      "highlights": [
+        "Designed for hf tweeter applications",
+        "Tested for reliability in professional environments",
+        "Pan India shipping available",
+        "Genuine StudioMax authorized distribution"
+      ],
+      "modelGroupId": "standard"
+    },
+    {
+      "id": "prod-hf-tweeter-2",
+      "model": "SM-HF-Plus",
+      "categoryId": "hf-tweeter",
+      "categoryLabel": "HF Tweeter",
+      "description": "HF tweeter drivers and assemblies engineered for extended high-frequency detail and longevity.",
+      "longDescription": "HF tweeter drivers and assemblies engineered for extended high-frequency detail and longevity. The SM-HF-Plus is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
+      "brand": "StudioMax",
+      "priceInr": 35199,
+      "powerWatts": 120,
+      "inStock": true,
+      "image": "/trumpet.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Power handling",
+          "value": "120 W RMS"
+        },
+        {
+          "label": "Impedance",
+          "value": "4 Ω"
+        },
+        {
+          "label": "Frequency response",
+          "value": "53 Hz – 19 kHz"
+        },
+        {
+          "label": "Enclosure / build",
+          "value": "Professional grade"
+        },
+        {
+          "label": "Warranty",
+          "value": "12 months"
+        }
+      ],
+      "highlights": [
+        "Designed for hf tweeter applications",
+        "Tested for reliability in professional environments",
+        "Bulk order pricing on request",
+        "Genuine StudioMax authorized distribution"
+      ],
+      "modelGroupId": "pro"
+    },
+    {
+      "id": "prod-hf-tweeter-3",
+      "model": "SM-HF-Elite",
+      "categoryId": "hf-tweeter",
+      "categoryLabel": "HF Tweeter",
+      "description": "HF tweeter drivers and assemblies engineered for extended high-frequency detail and longevity.",
+      "longDescription": "HF tweeter drivers and assemblies engineered for extended high-frequency detail and longevity. The SM-HF-Elite is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
+      "brand": "ProAudio Labs",
+      "priceInr": 36336,
+      "powerWatts": 250,
+      "inStock": true,
+      "image": "/trumpet.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Power handling",
+          "value": "250 W RMS"
+        },
+        {
+          "label": "Impedance",
+          "value": "8 Ω"
+        },
+        {
+          "label": "Frequency response",
+          "value": "58 Hz – 20 kHz"
+        },
+        {
+          "label": "Enclosure / build",
+          "value": "Professional grade"
+        },
+        {
+          "label": "Warranty",
+          "value": "12 months"
+        }
+      ],
+      "highlights": [
+        "Designed for hf tweeter applications",
+        "Tested for reliability in professional environments",
+        "Pan India shipping available",
+        "Genuine StudioMax authorized distribution"
+      ],
+      "modelGroupId": "standard"
+    },
+    {
+      "id": "prod-hf-tweeter-4",
+      "model": "SM-HF-Standard",
+      "categoryId": "hf-tweeter",
+      "categoryLabel": "HF Tweeter",
+      "description": "HF tweeter drivers and assemblies engineered for extended high-frequency detail and longevity.",
+      "longDescription": "HF tweeter drivers and assemblies engineered for extended high-frequency detail and longevity. The SM-HF-Standard is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
+      "brand": "SoundTech",
+      "priceInr": 37473,
+      "powerWatts": 600,
+      "inStock": true,
+      "image": "/trumpet.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Power handling",
+          "value": "600 W RMS"
+        },
+        {
+          "label": "Impedance",
+          "value": "16 Ω"
+        },
+        {
+          "label": "Frequency response",
+          "value": "63 Hz – 21 kHz"
+        },
+        {
+          "label": "Enclosure / build",
+          "value": "Professional grade"
+        },
+        {
+          "label": "Warranty",
+          "value": "12 months"
+        }
+      ],
+      "highlights": [
+        "Designed for hf tweeter applications",
+        "Tested for reliability in professional environments",
+        "Bulk order pricing on request",
+        "Genuine StudioMax authorized distribution"
+      ],
+      "modelGroupId": "pro"
+    },
+    {
+      "id": "prod-hf-tweeter-5",
+      "model": "SM-HF-Max",
+      "categoryId": "hf-tweeter",
+      "categoryLabel": "HF Tweeter",
+      "description": "HF tweeter drivers and assemblies engineered for extended high-frequency detail and longevity.",
+      "longDescription": "HF tweeter drivers and assemblies engineered for extended high-frequency detail and longevity. The SM-HF-Max is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
+      "brand": "Krown",
+      "priceInr": 38610,
+      "powerWatts": 850,
+      "inStock": false,
+      "image": "/trumpet.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Power handling",
+          "value": "850 W RMS"
+        },
+        {
+          "label": "Impedance",
+          "value": "8 Ω"
+        },
+        {
+          "label": "Frequency response",
+          "value": "68 Hz – 22 kHz"
+        },
+        {
+          "label": "Enclosure / build",
+          "value": "Professional grade"
+        },
+        {
+          "label": "Warranty",
+          "value": "12 months"
+        }
+      ],
+      "highlights": [
+        "Designed for hf tweeter applications",
+        "Tested for reliability in professional environments",
+        "Pan India shipping available",
+        "Genuine StudioMax authorized distribution"
+      ],
+      "modelGroupId": "standard"
+    },
+    {
+      "id": "prod-driver-1",
+      "model": "SM-DU-Pro",
+      "categoryId": "driver",
+      "categoryLabel": "Driver Unit & Diaphragm",
+      "description": "High-performance driver units and diaphragms for clarity, durability, and consistent output.",
+      "longDescription": "High-performance driver units and diaphragms for clarity, durability, and consistent output. The SM-DU-Pro is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
+      "brand": "Studio Max",
+      "priceInr": 39747,
+      "powerWatts": 75,
+      "inStock": true,
+      "image": "/PA-driver-unit.png",
+      "featured": true,
+      "specs": [
+        {
+          "label": "Power handling",
+          "value": "75 W RMS"
+        },
+        {
+          "label": "Impedance",
+          "value": "8 Ω"
+        },
+        {
+          "label": "Frequency response",
+          "value": "48 Hz – 18 kHz"
+        },
+        {
+          "label": "Enclosure / build",
+          "value": "Professional grade"
+        },
+        {
+          "label": "Warranty",
+          "value": "12 months"
+        }
+      ],
+      "highlights": [
+        "Designed for driver unit & diaphragm applications",
+        "Tested for reliability in professional environments",
+        "Pan India shipping available",
+        "Genuine StudioMax authorized distribution"
+      ],
+      "modelGroupId": "standard"
+    },
+    {
+      "id": "prod-driver-2",
+      "model": "SM-DU-Plus",
+      "categoryId": "driver",
+      "categoryLabel": "Driver Unit & Diaphragm",
+      "description": "High-performance driver units and diaphragms for clarity, durability, and consistent output.",
+      "longDescription": "High-performance driver units and diaphragms for clarity, durability, and consistent output. The SM-DU-Plus is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
+      "brand": "StudioMax",
+      "priceInr": 40884,
+      "powerWatts": 120,
+      "inStock": true,
+      "image": "/PA-driver-unit.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Power handling",
+          "value": "120 W RMS"
+        },
+        {
+          "label": "Impedance",
+          "value": "4 Ω"
+        },
+        {
+          "label": "Frequency response",
+          "value": "53 Hz – 19 kHz"
+        },
+        {
+          "label": "Enclosure / build",
+          "value": "Professional grade"
+        },
+        {
+          "label": "Warranty",
+          "value": "12 months"
+        }
+      ],
+      "highlights": [
+        "Designed for driver unit & diaphragm applications",
+        "Tested for reliability in professional environments",
+        "Bulk order pricing on request",
+        "Genuine StudioMax authorized distribution"
+      ],
+      "modelGroupId": "pro"
+    },
+    {
+      "id": "prod-driver-3",
+      "model": "SM-DU-Elite",
+      "categoryId": "driver",
+      "categoryLabel": "Driver Unit & Diaphragm",
+      "description": "High-performance driver units and diaphragms for clarity, durability, and consistent output.",
+      "longDescription": "High-performance driver units and diaphragms for clarity, durability, and consistent output. The SM-DU-Elite is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
+      "brand": "ProAudio Labs",
+      "priceInr": 42021,
+      "powerWatts": 250,
+      "inStock": true,
+      "image": "/PA-driver-unit.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Power handling",
+          "value": "250 W RMS"
+        },
+        {
+          "label": "Impedance",
+          "value": "8 Ω"
+        },
+        {
+          "label": "Frequency response",
+          "value": "58 Hz – 20 kHz"
+        },
+        {
+          "label": "Enclosure / build",
+          "value": "Professional grade"
+        },
+        {
+          "label": "Warranty",
+          "value": "12 months"
+        }
+      ],
+      "highlights": [
+        "Designed for driver unit & diaphragm applications",
+        "Tested for reliability in professional environments",
+        "Pan India shipping available",
+        "Genuine StudioMax authorized distribution"
+      ],
+      "modelGroupId": "standard"
+    },
+    {
+      "id": "prod-driver-4",
+      "model": "SM-DU-Standard",
+      "categoryId": "driver",
+      "categoryLabel": "Driver Unit & Diaphragm",
+      "description": "High-performance driver units and diaphragms for clarity, durability, and consistent output.",
+      "longDescription": "High-performance driver units and diaphragms for clarity, durability, and consistent output. The SM-DU-Standard is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
+      "brand": "SoundTech",
+      "priceInr": 43158,
+      "powerWatts": 600,
+      "inStock": true,
+      "image": "/PA-driver-unit.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Power handling",
+          "value": "600 W RMS"
+        },
+        {
+          "label": "Impedance",
+          "value": "16 Ω"
+        },
+        {
+          "label": "Frequency response",
+          "value": "63 Hz – 21 kHz"
+        },
+        {
+          "label": "Enclosure / build",
+          "value": "Professional grade"
+        },
+        {
+          "label": "Warranty",
+          "value": "12 months"
+        }
+      ],
+      "highlights": [
+        "Designed for driver unit & diaphragm applications",
+        "Tested for reliability in professional environments",
+        "Bulk order pricing on request",
+        "Genuine StudioMax authorized distribution"
+      ],
+      "modelGroupId": "pro"
+    },
+    {
+      "id": "prod-driver-5",
+      "model": "SM-DU-Max",
+      "categoryId": "driver",
+      "categoryLabel": "Driver Unit & Diaphragm",
+      "description": "High-performance driver units and diaphragms for clarity, durability, and consistent output.",
+      "longDescription": "High-performance driver units and diaphragms for clarity, durability, and consistent output. The SM-DU-Max is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
+      "brand": "Krown",
+      "priceInr": 44295,
+      "powerWatts": 850,
+      "inStock": false,
+      "image": "/PA-driver-unit.png",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Power handling",
+          "value": "850 W RMS"
+        },
+        {
+          "label": "Impedance",
+          "value": "8 Ω"
+        },
+        {
+          "label": "Frequency response",
+          "value": "68 Hz – 22 kHz"
+        },
+        {
+          "label": "Enclosure / build",
+          "value": "Professional grade"
+        },
+        {
+          "label": "Warranty",
+          "value": "12 months"
+        }
+      ],
+      "highlights": [
+        "Designed for driver unit & diaphragm applications",
+        "Tested for reliability in professional environments",
+        "Pan India shipping available",
+        "Genuine StudioMax authorized distribution"
+      ],
+      "modelGroupId": "standard"
+    },
+    {
+      "id": "prod-wires-cables-1",
+      "model": "SM-WC-Pro",
+      "categoryId": "wires-cables",
+      "categoryLabel": "Wires & Cables",
+      "description": "Professional wires and cables for dependable signal and power in install and live applications.",
+      "longDescription": "Professional wires and cables for dependable signal and power in install and live applications. The SM-WC-Pro is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
+      "brand": "Studio Max",
+      "priceInr": 45432,
+      "powerWatts": 75,
+      "inStock": true,
+      "image": "/driver.jpeg",
+      "featured": true,
+      "specs": [
+        {
+          "label": "Power handling",
+          "value": "75 W RMS"
+        },
+        {
+          "label": "Impedance",
+          "value": "8 Ω"
+        },
+        {
+          "label": "Frequency response",
+          "value": "48 Hz – 18 kHz"
+        },
+        {
+          "label": "Enclosure / build",
+          "value": "Professional grade"
+        },
+        {
+          "label": "Warranty",
+          "value": "12 months"
+        }
+      ],
+      "highlights": [
+        "Designed for wires & cables applications",
+        "Tested for reliability in professional environments",
+        "Pan India shipping available",
+        "Genuine StudioMax authorized distribution"
+      ],
+      "modelGroupId": "standard"
+    },
+    {
+      "id": "prod-wires-cables-2",
+      "model": "SM-WC-Plus",
+      "categoryId": "wires-cables",
+      "categoryLabel": "Wires & Cables",
+      "description": "Professional wires and cables for dependable signal and power in install and live applications.",
+      "longDescription": "Professional wires and cables for dependable signal and power in install and live applications. The SM-WC-Plus is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
+      "brand": "StudioMax",
+      "priceInr": 46569,
+      "powerWatts": 120,
+      "inStock": true,
+      "image": "/driver.jpeg",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Power handling",
+          "value": "120 W RMS"
+        },
+        {
+          "label": "Impedance",
+          "value": "4 Ω"
+        },
+        {
+          "label": "Frequency response",
+          "value": "53 Hz – 19 kHz"
+        },
+        {
+          "label": "Enclosure / build",
+          "value": "Professional grade"
+        },
+        {
+          "label": "Warranty",
+          "value": "12 months"
+        }
+      ],
+      "highlights": [
+        "Designed for wires & cables applications",
+        "Tested for reliability in professional environments",
+        "Bulk order pricing on request",
+        "Genuine StudioMax authorized distribution"
+      ],
+      "modelGroupId": "pro"
+    },
+    {
+      "id": "prod-wires-cables-3",
+      "model": "SM-WC-Elite",
+      "categoryId": "wires-cables",
+      "categoryLabel": "Wires & Cables",
+      "description": "Professional wires and cables for dependable signal and power in install and live applications.",
+      "longDescription": "Professional wires and cables for dependable signal and power in install and live applications. The SM-WC-Elite is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
+      "brand": "ProAudio Labs",
+      "priceInr": 47706,
+      "powerWatts": 250,
+      "inStock": true,
+      "image": "/driver.jpeg",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Power handling",
+          "value": "250 W RMS"
+        },
+        {
+          "label": "Impedance",
+          "value": "8 Ω"
+        },
+        {
+          "label": "Frequency response",
+          "value": "58 Hz – 20 kHz"
+        },
+        {
+          "label": "Enclosure / build",
+          "value": "Professional grade"
+        },
+        {
+          "label": "Warranty",
+          "value": "12 months"
+        }
+      ],
+      "highlights": [
+        "Designed for wires & cables applications",
+        "Tested for reliability in professional environments",
+        "Pan India shipping available",
+        "Genuine StudioMax authorized distribution"
+      ],
+      "modelGroupId": "standard"
+    },
+    {
+      "id": "prod-wires-cables-4",
+      "model": "SM-WC-Standard",
+      "categoryId": "wires-cables",
+      "categoryLabel": "Wires & Cables",
+      "description": "Professional wires and cables for dependable signal and power in install and live applications.",
+      "longDescription": "Professional wires and cables for dependable signal and power in install and live applications. The SM-WC-Standard is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
+      "brand": "SoundTech",
+      "priceInr": 48843,
+      "powerWatts": 600,
+      "inStock": true,
+      "image": "/driver.jpeg",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Power handling",
+          "value": "600 W RMS"
+        },
+        {
+          "label": "Impedance",
+          "value": "16 Ω"
+        },
+        {
+          "label": "Frequency response",
+          "value": "63 Hz – 21 kHz"
+        },
+        {
+          "label": "Enclosure / build",
+          "value": "Professional grade"
+        },
+        {
+          "label": "Warranty",
+          "value": "12 months"
+        }
+      ],
+      "highlights": [
+        "Designed for wires & cables applications",
+        "Tested for reliability in professional environments",
+        "Bulk order pricing on request",
+        "Genuine StudioMax authorized distribution"
+      ],
+      "modelGroupId": "pro"
+    },
+    {
+      "id": "prod-wires-cables-5",
+      "model": "SM-WC-Max",
+      "categoryId": "wires-cables",
+      "categoryLabel": "Wires & Cables",
+      "description": "Professional wires and cables for dependable signal and power in install and live applications.",
+      "longDescription": "Professional wires and cables for dependable signal and power in install and live applications. The SM-WC-Max is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
+      "brand": "Krown",
+      "priceInr": 49980,
+      "powerWatts": 850,
+      "inStock": false,
+      "image": "/driver.jpeg",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Power handling",
+          "value": "850 W RMS"
+        },
+        {
+          "label": "Impedance",
+          "value": "8 Ω"
+        },
+        {
+          "label": "Frequency response",
+          "value": "68 Hz – 22 kHz"
+        },
+        {
+          "label": "Enclosure / build",
+          "value": "Professional grade"
+        },
+        {
+          "label": "Warranty",
+          "value": "12 months"
+        }
+      ],
+      "highlights": [
+        "Designed for wires & cables applications",
+        "Tested for reliability in professional environments",
+        "Pan India shipping available",
+        "Genuine StudioMax authorized distribution"
+      ],
+      "modelGroupId": "standard"
+    },
+    {
+      "id": "prod-microphones-1",
+      "model": "SM-MC-Pro",
+      "categoryId": "microphones",
+      "categoryLabel": "Microphones",
+      "description": "Microphones tuned for vocals, instruments, and speech in studio and live environments.",
+      "longDescription": "Microphones tuned for vocals, instruments, and speech in studio and live environments. The SM-MC-Pro is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
+      "brand": "Studio Max",
+      "priceInr": 5117,
+      "powerWatts": 75,
+      "inStock": true,
+      "image": "/driver.jpeg",
+      "featured": true,
+      "specs": [
+        {
+          "label": "Power handling",
+          "value": "75 W RMS"
+        },
+        {
+          "label": "Impedance",
+          "value": "8 Ω"
+        },
+        {
+          "label": "Frequency response",
+          "value": "48 Hz – 18 kHz"
+        },
+        {
+          "label": "Enclosure / build",
+          "value": "Professional grade"
+        },
+        {
+          "label": "Warranty",
+          "value": "12 months"
+        }
+      ],
+      "highlights": [
+        "Designed for microphones applications",
+        "Tested for reliability in professional environments",
+        "Pan India shipping available",
+        "Genuine StudioMax authorized distribution"
+      ],
+      "modelGroupId": "standard"
+    },
+    {
+      "id": "prod-microphones-2",
+      "model": "SM-MC-Plus",
+      "categoryId": "microphones",
+      "categoryLabel": "Microphones",
+      "description": "Microphones tuned for vocals, instruments, and speech in studio and live environments.",
+      "longDescription": "Microphones tuned for vocals, instruments, and speech in studio and live environments. The SM-MC-Plus is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
+      "brand": "StudioMax",
+      "priceInr": 6254,
+      "powerWatts": 120,
+      "inStock": true,
+      "image": "/driver.jpeg",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Power handling",
+          "value": "120 W RMS"
+        },
+        {
+          "label": "Impedance",
+          "value": "4 Ω"
+        },
+        {
+          "label": "Frequency response",
+          "value": "53 Hz – 19 kHz"
+        },
+        {
+          "label": "Enclosure / build",
+          "value": "Professional grade"
+        },
+        {
+          "label": "Warranty",
+          "value": "12 months"
+        }
+      ],
+      "highlights": [
+        "Designed for microphones applications",
+        "Tested for reliability in professional environments",
+        "Bulk order pricing on request",
+        "Genuine StudioMax authorized distribution"
+      ],
+      "modelGroupId": "pro"
+    },
+    {
+      "id": "prod-microphones-3",
+      "model": "SM-MC-Elite",
+      "categoryId": "microphones",
+      "categoryLabel": "Microphones",
+      "description": "Microphones tuned for vocals, instruments, and speech in studio and live environments.",
+      "longDescription": "Microphones tuned for vocals, instruments, and speech in studio and live environments. The SM-MC-Elite is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
+      "brand": "ProAudio Labs",
+      "priceInr": 7391,
+      "powerWatts": 250,
+      "inStock": true,
+      "image": "/driver.jpeg",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Power handling",
+          "value": "250 W RMS"
+        },
+        {
+          "label": "Impedance",
+          "value": "8 Ω"
+        },
+        {
+          "label": "Frequency response",
+          "value": "58 Hz – 20 kHz"
+        },
+        {
+          "label": "Enclosure / build",
+          "value": "Professional grade"
+        },
+        {
+          "label": "Warranty",
+          "value": "12 months"
+        }
+      ],
+      "highlights": [
+        "Designed for microphones applications",
+        "Tested for reliability in professional environments",
+        "Pan India shipping available",
+        "Genuine StudioMax authorized distribution"
+      ],
+      "modelGroupId": "standard"
+    },
+    {
+      "id": "prod-microphones-4",
+      "model": "SM-MC-Standard",
+      "categoryId": "microphones",
+      "categoryLabel": "Microphones",
+      "description": "Microphones tuned for vocals, instruments, and speech in studio and live environments.",
+      "longDescription": "Microphones tuned for vocals, instruments, and speech in studio and live environments. The SM-MC-Standard is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
+      "brand": "SoundTech",
+      "priceInr": 8528,
+      "powerWatts": 600,
+      "inStock": true,
+      "image": "/driver.jpeg",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Power handling",
+          "value": "600 W RMS"
+        },
+        {
+          "label": "Impedance",
+          "value": "16 Ω"
+        },
+        {
+          "label": "Frequency response",
+          "value": "63 Hz – 21 kHz"
+        },
+        {
+          "label": "Enclosure / build",
+          "value": "Professional grade"
+        },
+        {
+          "label": "Warranty",
+          "value": "12 months"
+        }
+      ],
+      "highlights": [
+        "Designed for microphones applications",
+        "Tested for reliability in professional environments",
+        "Bulk order pricing on request",
+        "Genuine StudioMax authorized distribution"
+      ],
+      "modelGroupId": "pro"
+    },
+    {
+      "id": "prod-microphones-5",
+      "model": "SM-MC-Max",
+      "categoryId": "microphones",
+      "categoryLabel": "Microphones",
+      "description": "Microphones tuned for vocals, instruments, and speech in studio and live environments.",
+      "longDescription": "Microphones tuned for vocals, instruments, and speech in studio and live environments. The SM-MC-Max is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
+      "brand": "Krown",
+      "priceInr": 9665,
+      "powerWatts": 850,
+      "inStock": false,
+      "image": "/driver.jpeg",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Power handling",
+          "value": "850 W RMS"
+        },
+        {
+          "label": "Impedance",
+          "value": "8 Ω"
+        },
+        {
+          "label": "Frequency response",
+          "value": "68 Hz – 22 kHz"
+        },
+        {
+          "label": "Enclosure / build",
+          "value": "Professional grade"
+        },
+        {
+          "label": "Warranty",
+          "value": "12 months"
+        }
+      ],
+      "highlights": [
+        "Designed for microphones applications",
+        "Tested for reliability in professional environments",
+        "Pan India shipping available",
+        "Genuine StudioMax authorized distribution"
+      ],
+      "modelGroupId": "standard"
+    },
+    {
+      "id": "prod-accessories-1",
+      "model": "SM-AC-Pro",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "description": "Essential audio accessories for connectivity, mounting, and day-to-day professional use.",
+      "longDescription": "Essential audio accessories for connectivity, mounting, and day-to-day professional use. The SM-AC-Pro is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
+      "brand": "Studio Max",
+      "priceInr": 10802,
+      "powerWatts": 75,
+      "inStock": true,
+      "image": "/driver.jpeg",
+      "featured": true,
+      "specs": [
+        {
+          "label": "Power handling",
+          "value": "75 W RMS"
+        },
+        {
+          "label": "Impedance",
+          "value": "8 Ω"
+        },
+        {
+          "label": "Frequency response",
+          "value": "48 Hz – 18 kHz"
+        },
+        {
+          "label": "Enclosure / build",
+          "value": "Professional grade"
+        },
+        {
+          "label": "Warranty",
+          "value": "12 months"
+        }
+      ],
+      "highlights": [
+        "Designed for accessories applications",
+        "Tested for reliability in professional environments",
+        "Pan India shipping available",
+        "Genuine StudioMax authorized distribution"
+      ],
+      "modelGroupId": "standard"
+    },
+    {
+      "id": "prod-accessories-2",
+      "model": "SM-AC-Plus",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "description": "Essential audio accessories for connectivity, mounting, and day-to-day professional use.",
+      "longDescription": "Essential audio accessories for connectivity, mounting, and day-to-day professional use. The SM-AC-Plus is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
+      "brand": "StudioMax",
+      "priceInr": 11939,
+      "powerWatts": 120,
+      "inStock": true,
+      "image": "/driver.jpeg",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Power handling",
+          "value": "120 W RMS"
+        },
+        {
+          "label": "Impedance",
+          "value": "4 Ω"
+        },
+        {
+          "label": "Frequency response",
+          "value": "53 Hz – 19 kHz"
+        },
+        {
+          "label": "Enclosure / build",
+          "value": "Professional grade"
+        },
+        {
+          "label": "Warranty",
+          "value": "12 months"
+        }
+      ],
+      "highlights": [
+        "Designed for accessories applications",
+        "Tested for reliability in professional environments",
+        "Bulk order pricing on request",
+        "Genuine StudioMax authorized distribution"
+      ],
+      "modelGroupId": "pro"
+    },
+    {
+      "id": "prod-accessories-3",
+      "model": "SM-AC-Elite",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "description": "Essential audio accessories for connectivity, mounting, and day-to-day professional use.",
+      "longDescription": "Essential audio accessories for connectivity, mounting, and day-to-day professional use. The SM-AC-Elite is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
+      "brand": "ProAudio Labs",
+      "priceInr": 13076,
+      "powerWatts": 250,
+      "inStock": true,
+      "image": "/driver.jpeg",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Power handling",
+          "value": "250 W RMS"
+        },
+        {
+          "label": "Impedance",
+          "value": "8 Ω"
+        },
+        {
+          "label": "Frequency response",
+          "value": "58 Hz – 20 kHz"
+        },
+        {
+          "label": "Enclosure / build",
+          "value": "Professional grade"
+        },
+        {
+          "label": "Warranty",
+          "value": "12 months"
+        }
+      ],
+      "highlights": [
+        "Designed for accessories applications",
+        "Tested for reliability in professional environments",
+        "Pan India shipping available",
+        "Genuine StudioMax authorized distribution"
+      ],
+      "modelGroupId": "standard"
+    },
+    {
+      "id": "prod-accessories-4",
+      "model": "SM-AC-Standard",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "description": "Essential audio accessories for connectivity, mounting, and day-to-day professional use.",
+      "longDescription": "Essential audio accessories for connectivity, mounting, and day-to-day professional use. The SM-AC-Standard is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
+      "brand": "SoundTech",
+      "priceInr": 14213,
+      "powerWatts": 600,
+      "inStock": true,
+      "image": "/driver.jpeg",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Power handling",
+          "value": "600 W RMS"
+        },
+        {
+          "label": "Impedance",
+          "value": "16 Ω"
+        },
+        {
+          "label": "Frequency response",
+          "value": "63 Hz – 21 kHz"
+        },
+        {
+          "label": "Enclosure / build",
+          "value": "Professional grade"
+        },
+        {
+          "label": "Warranty",
+          "value": "12 months"
+        }
+      ],
+      "highlights": [
+        "Designed for accessories applications",
+        "Tested for reliability in professional environments",
+        "Bulk order pricing on request",
+        "Genuine StudioMax authorized distribution"
+      ],
+      "modelGroupId": "pro"
+    },
+    {
+      "id": "prod-accessories-5",
+      "model": "SM-AC-Max",
+      "categoryId": "accessories",
+      "categoryLabel": "Accessories",
+      "description": "Essential audio accessories for connectivity, mounting, and day-to-day professional use.",
+      "longDescription": "Essential audio accessories for connectivity, mounting, and day-to-day professional use. The SM-AC-Max is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
+      "brand": "Krown",
+      "priceInr": 15350,
+      "powerWatts": 850,
+      "inStock": false,
+      "image": "/driver.jpeg",
+      "featured": false,
+      "specs": [
+        {
+          "label": "Power handling",
+          "value": "850 W RMS"
+        },
+        {
+          "label": "Impedance",
+          "value": "8 Ω"
+        },
+        {
+          "label": "Frequency response",
+          "value": "68 Hz – 22 kHz"
+        },
+        {
+          "label": "Enclosure / build",
+          "value": "Professional grade"
+        },
+        {
+          "label": "Warranty",
+          "value": "12 months"
+        }
+      ],
+      "highlights": [
+        "Designed for accessories applications",
+        "Tested for reliability in professional environments",
+        "Pan India shipping available",
+        "Genuine StudioMax authorized distribution"
+      ],
+      "modelGroupId": "standard"
+    }
+  ]
+}

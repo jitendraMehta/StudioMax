@@ -1,0 +1,191 @@
+<main class="category-detail">
+  <section class="category-detail__hero">
+    <div class="category-detail__shell max-w-container-max mx-auto w-full box-border px-margin-desktop">
+      <nav class="category-detail__breadcrumb" aria-label="Breadcrumb">
+        <a routerLink="/">Home</a>
+        <span class="category-detail__breadcrumb-sep" aria-hidden="true">&gt;</span>
+        <a routerLink="/catalog">Products</a>
+        <span class="category-detail__breadcrumb-sep" aria-hidden="true">&gt;</span>
+        <span class="category-detail__breadcrumb-current">{{ categoryLabel() }}</span>
+      </nav>
+
+      <h1 class="category-detail__title">{{ categoryLabel() }}</h1>
+      <p class="category-detail__hero-lead">{{ categoryOverview() }}</p>
+    </div>
+  </section>
+
+  <section class="category-detail__ideal" aria-labelledby="ideal-for-heading">
+    <div class="category-detail__shell max-w-container-max mx-auto w-full box-border px-margin-desktop">
+      <h2 id="ideal-for-heading" class="category-detail__ideal-heading">Ideal For</h2>
+      <ul class="category-detail__ideal-list">
+        @for (item of idealFor; track item.label) {
+          <li class="category-detail__ideal-item">
+            <span class="category-detail__ideal-icon-wrap" aria-hidden="true">
+              <span class="material-symbols-outlined">{{ item.icon }}</span>
+            </span>
+            <span class="category-detail__ideal-label">{{ item.label }}</span>
+          </li>
+        }
+      </ul>
+    </div>
+  </section>
+
+  <section class="category-detail__main">
+    <div class="category-detail__shell max-w-container-max mx-auto w-full box-border px-margin-desktop">
+    @if (hasModelGroups()) {
+      <header class="category-detail__choose-head">
+        <h2 class="category-detail__choose-title">
+          @if (modelGroupHeadingEmphasis()) {
+            {{ modelGroupHeadingPrefix() }}
+            <span class="category-detail__choose-emphasis">
+              {{ modelGroupHeadingEmphasis() }}
+              <span class="category-detail__choose-emphasis-rule" aria-hidden="true"></span>
+            </span>
+          } @else {
+            {{ modelGroupHeading() }}
+          }
+        </h2>
+      </header>
+
+      <div class="category-detail__tabs" role="tablist" aria-label="Model groups">
+        @for (group of modelGroups(); track group.id) {
+          <button
+            type="button"
+            class="category-detail__tab"
+            role="tab"
+            [class.category-detail__tab--active]="isGroupActive(group.id)"
+            [class.category-detail__tab--empty]="group.productCount === 0"
+            [disabled]="group.productCount === 0"
+            [attr.aria-selected]="isGroupActive(group.id)"
+            (click)="selectGroup(group.id, group.productCount)"
+          >
+            <span class="category-detail__tab-label">{{ group.tabLabel }}</span>
+            <span class="category-detail__tab-count">{{ group.productCount }} Models</span>
+          </button>
+        }
+      </div>
+
+      @if (activeGroup(); as group) {
+        <header class="category-detail__group-head">
+          <h3 class="category-detail__group-title">{{ group.sectionTitle }}</h3>
+          <span class="category-detail__group-rule" aria-hidden="true"></span>
+        </header>
+      }
+    } @else {
+      <header class="category-detail__group-head">
+        <h3 class="category-detail__group-title">Models</h3>
+        <span class="category-detail__group-rule" aria-hidden="true"></span>
+      </header>
+    }
+
+    @if (groupProducts().length === 0) {
+      <p class="category-detail__empty">
+        {{ hasModelGroups() ? 'No models in this group yet.' : 'No models in this category yet.' }}
+      </p>
+    } @else {
+      <ul class="category-detail__model-grid">
+        @for (product of groupProducts(); track product.id) {
+          <li>
+            <article
+              class="category-detail__model-card"
+              [class.category-detail__model-card--open]="isProductExpanded(product.id)"
+            >
+              <div class="category-detail__model-card-head">
+                <div class="category-detail__model-card-main">
+                  <div class="category-detail__model-card-media">
+                    <img [src]="product.image" [alt]="product.model" loading="lazy" />
+                  </div>
+                  <div class="category-detail__model-card-copy">
+                    <h4 class="category-detail__model-card-name">{{ product.model }}</h4>
+                    <p class="category-detail__model-card-type">{{ productTypeLabel() }}</p>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="category-detail__model-card-toggle"
+                  [attr.aria-expanded]="isProductExpanded(product.id)"
+                  [attr.aria-label]="
+                    isProductExpanded(product.id) ? 'Collapse ' + product.model : 'Expand ' + product.model
+                  "
+                  (click)="toggleProduct(product)"
+                >
+                  <span class="material-symbols-outlined" aria-hidden="true">
+                    {{ isProductExpanded(product.id) ? 'expand_less' : 'expand_more' }}
+                  </span>
+                </button>
+              </div>
+
+              @if (isProductExpanded(product.id)) {
+                <div class="category-detail__model-card-body">
+                  @if (specColumns(product); as cols) {
+                    <dl class="category-detail__model-specs">
+                      <div class="category-detail__model-specs-col">
+                        @for (spec of cols[0]; track spec.label) {
+                          <div class="category-detail__model-spec-row">
+                            <dt>{{ spec.label }}</dt>
+                            <dd>{{ spec.value }}</dd>
+                          </div>
+                        }
+                      </div>
+                      <div class="category-detail__model-specs-col">
+                        @for (spec of cols[1]; track spec.label) {
+                          <div class="category-detail__model-spec-row">
+                            <dt>{{ spec.label }}</dt>
+                            <dd>{{ spec.value }}</dd>
+                          </div>
+                        }
+                      </div>
+                    </dl>
+                  }
+                  <div class="category-detail__model-actions">
+                    
+                    <a
+                      class="category-detail__model-btn category-detail__model-btn--primary"
+                      [href]="whatsappProductUrl(product.model)"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span class="material-symbols-outlined" aria-hidden="true">chat</span>
+                      WhatsApp Inquiry
+                    </a>
+                  </div>
+                </div>
+              }
+            </article>
+          </li>
+        }
+      </ul>
+    }
+
+    <div class="category-detail__highlights" aria-labelledby="category-highlights-heading">
+      <header class="category-detail__group-head category-detail__group-head--spaced">
+        <h2 id="category-highlights-heading" class="category-detail__group-title">Highlights</h2>
+        <span class="category-detail__group-rule" aria-hidden="true"></span>
+      </header>
+
+      <div class="category-detail__highlights-grid">
+        @for (item of categoryHighlights; track item.title) {
+          <article class="category-detail__highlight-tile">
+            <span class="category-detail__highlight-icon-wrap" aria-hidden="true">
+              <span class="material-symbols-outlined">{{ item.icon }}</span>
+            </span>
+            <h3 class="category-detail__highlight-title">{{ item.title }}</h3>
+            <p class="category-detail__highlight-text">{{ item.text }}</p>
+          </article>
+        }
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="category-detail__trust" aria-label="Why StudioMax">
+    <div class="category-detail__shell max-w-container-max mx-auto w-full box-border px-margin-desktop category-detail__trust-inner">
+      @for (marker of trustMarkers; track marker.label) {
+        <div class="category-detail__trust-item">
+          <span class="material-symbols-outlined category-detail__trust-icon" aria-hidden="true">{{ marker.icon }}</span>
+          <span class="category-detail__trust-label">{{ marker.label }}</span>
+        </div>
+      }
+    </div>
+  </section>
+</main>

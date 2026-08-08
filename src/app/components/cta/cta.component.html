@@ -16,11 +16,16 @@
     </div>
 
     <div class="studio-cta__actions">
-      <button type="button" class="studio-cta__btn studio-cta__btn--primary">
+      <a
+        class="studio-cta__btn studio-cta__btn--primary"
+        [href]="whatsappUrl"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <span class="material-symbols-outlined studio-cta__btn-icon" aria-hidden="true">chat</span>
         WhatsApp Inquiry
         <span class="material-symbols-outlined studio-cta__btn-arrow" aria-hidden="true">arrow_forward</span>
-      </button>
+      </a>
       <button type="button" class="studio-cta__btn studio-cta__btn--secondary">
         Talk to Expert
         <span class="material-symbols-outlined studio-cta__btn-arrow" aria-hidden="true">arrow_forward</span>

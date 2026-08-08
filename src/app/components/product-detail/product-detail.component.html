@@ -1,0 +1,80 @@
+<main class="product-detail">
+  @if (product(); as item) {
+    <section class="product-detail__hero" aria-label="Product overview">
+      <div class="max-w-container-max mx-auto px-margin-desktop product-detail__hero-inner">
+        <nav class="product-detail__breadcrumb" aria-label="Breadcrumb">
+          <a routerLink="/">Home</a>
+          <span aria-hidden="true">/</span>
+          <a routerLink="/catalog">Catalog</a>
+          <span aria-hidden="true">/</span>
+          <a [routerLink]="categoryListRoute(item.categoryId)">{{ item.categoryLabel }}</a>
+          <span aria-hidden="true">/</span>
+          <span class="product-detail__breadcrumb-current">{{ item.model }}</span>
+        </nav>
+
+        <div class="product-detail__layout">
+          <div class="product-detail__gallery">
+            <img class="product-detail__image" [src]="item.image" [alt]="item.model" />
+          </div>
+
+          <div class="product-detail__summary">
+            <p class="product-detail__category">{{ item.categoryLabel }}</p>
+            <h1 class="product-detail__title">{{ item.model }}</h1>
+            <p class="product-detail__brand">Brand: {{ item.brand }}</p>
+            <p class="product-detail__price">{{ formatInr(item.priceInr) }}</p>
+
+            <p
+              class="product-detail__stock"
+              [class.product-detail__stock--in]="item.inStock"
+              [class.product-detail__stock--out]="!item.inStock"
+            >
+              {{ item.inStock ? 'In stock' : 'Out of stock' }}
+            </p>
+
+            <p class="product-detail__lead">{{ item.longDescription }}</p>
+
+            <div class="product-detail__actions">
+              @if (whatsappUrl(); as waUrl) {
+                <a class="product-detail__btn product-detail__btn--primary" [href]="waUrl" target="_blank" rel="noopener noreferrer">
+                  <span class="material-symbols-outlined" aria-hidden="true">chat</span>
+                  WhatsApp Inquiry
+                </a>
+              }
+              <a
+                class="product-detail__btn product-detail__btn--secondary"
+                [routerLink]="categoryListRoute(item.categoryId)"
+              >
+                Back to {{ item.categoryLabel }}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-detail__details max-w-container-max mx-auto px-margin-desktop" aria-label="Product details">
+      <div class="product-detail__panels">
+        <article class="product-detail__panel">
+          <h2 class="product-detail__heading">Highlights</h2>
+          <ul class="product-detail__list">
+            @for (point of item.highlights; track point) {
+              <li>{{ point }}</li>
+            }
+          </ul>
+        </article>
+
+        <article class="product-detail__panel">
+          <h2 class="product-detail__heading">Specifications</h2>
+          <dl class="product-detail__specs">
+            @for (spec of item.specs; track spec.label) {
+              <div class="product-detail__spec-row">
+                <dt>{{ spec.label }}</dt>
+                <dd>{{ spec.value }}</dd>
+              </div>
+            }
+          </dl>
+        </article>
+      </div>
+    </section>
+  }
+</main>

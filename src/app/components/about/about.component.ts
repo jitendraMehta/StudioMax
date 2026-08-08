@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Feature } from '../../models/site.model';
+import { STUDIO_WHATSAPP_URL } from '../../constants/contact';
 
 interface JourneyMilestone {
   year: string;
@@ -36,6 +37,8 @@ interface GalleryImage {
   styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent {
+  readonly whatsappUrl = STUDIO_WHATSAPP_URL;
+
   readonly journey: JourneyMilestone[] = [
     {
       year: '2010',

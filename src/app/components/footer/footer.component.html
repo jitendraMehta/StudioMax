@@ -27,7 +27,7 @@
       <h4 class="site-footer__heading">Top Categories</h4>
       <nav class="site-footer__links" aria-label="Top categories">
         @for (link of categoryLinks; track link.label) {
-          <a class="site-footer__link" [routerLink]="link.route" [queryParams]="link.queryParams">{{ link.label }}</a>
+          <a class="site-footer__link" [routerLink]="link.route">{{ link.label }}</a>
         }
       </nav>
     </div>
@@ -50,7 +50,7 @@
         </li>
         <li class="site-footer__contact-item">
           <span class="material-symbols-outlined site-footer__contact-icon" aria-hidden="true">call</span>
-          <a class="site-footer__link site-footer__link--inline" href="tel:+9198738 38630">+91 98738 38630</a>
+          <a class="site-footer__link site-footer__link--inline" [href]="phoneTel">{{ phoneDisplay }}</a>
         </li>
         <li class="site-footer__contact-item">
           <span class="material-symbols-outlined site-footer__contact-icon" aria-hidden="true">mail</span>

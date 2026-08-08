@@ -1,34 +1,91 @@
-<section class="core-collections py-section-gap bg-white">
+<section class="core-collections py-section-gap bg-white" aria-labelledby="core-collections-heading">
   <div class="max-w-container-max mx-auto px-margin-desktop">
     <header class="core-collections__header">
-      <h2 class="core-collections__title font-headline-lg text-headline-lg">Core Collections</h2>
+      <h2 id="core-collections-heading" class="core-collections__title font-headline-lg text-headline-lg">
+        Core Collections
+      </h2>
       <p class="core-collections__lead text-on-surface-variant max-w-xl mx-auto">
         Professional inventory for demanding environments, built for precision, clarity, and studio-grade reliability.
       </p>
-      <a class="core-collections__view-all inline-flex items-center gap-2 font-label-md" href="#">
+      <a class="core-collections__view-all inline-flex items-center gap-2 font-label-md" routerLink="/catalog">
         View All Categories <span class="material-symbols-outlined text-lg">arrow_forward</span>
       </a>
     </header>
 
-    <div class="core-collections__grid">
-      <ng-container *ngFor="let cat of categories; trackBy: trackById">
-        <article
-          class="core-collections__card group"
-          [appInView]="'opacity-100 translate-y-0'"
+    <div
+      class="core-collections__carousel"
+      role="region"
+      aria-roledescription="carousel"
+      aria-label="Core collection categories"
+      (pointerdown)="onPointerDown($event)"
+      (pointerup)="onPointerUp($event)"
+      (pointercancel)="onPointerCancel()"
+      (mouseenter)="pauseAutoplay()"
+      (mouseleave)="resumeAutoplay()"
+    >
+      <div class="core-collections__viewport">
+        <div
+          class="core-collections__track"
+          [style.transform]="trackTransform()"
+          [style.--items-per-view]="itemsPerView()"
         >
-          <div class="core-collections__media">
-            <img
-              loading="lazy"
-              class="core-collections__image"
-              [alt]="cat.alt || cat.title"
-              [src]="cat.image"
-            />
-          </div>
-          <h3 class="core-collections__card-title font-headline-md text-headline-md">{{ cat.title }}</h3>
-          <p class="core-collections__card-subtitle text-label-md">{{ cat.subtitle }}</p>
-          <span class="core-collections__arrow material-symbols-outlined" aria-hidden="true">arrow_forward</span>
-        </article>
-      </ng-container>
+          @for (cat of collections; track trackById($index, cat)) {
+            <article class="core-collections__slide">
+              <a
+                class="core-collections__card group"
+                [routerLink]="catalogCategoryLink(cat) ?? ['/catalog']"
+              >
+                <div class="core-collections__media">
+                  <img
+                    loading="lazy"
+                    class="core-collections__image"
+                    [alt]="cat.imageAlt || cat.title"
+                    [src]="cat.image"
+                  />
+                </div>
+                <h3 class="core-collections__card-title font-headline-md text-headline-md">{{ cat.title }}</h3>
+                <p class="core-collections__card-subtitle text-label-md">{{ cat.subtitle }}</p>
+                <span class="core-collections__arrow material-symbols-outlined" aria-hidden="true">arrow_forward</span>
+              </a>
+            </article>
+          }
+        </div>
+      </div>
+
+      <div class="core-collections__controls">
+        <button
+          type="button"
+          class="core-collections__arrow-btn"
+          (click)="prev()"
+          [disabled]="current() === 0"
+          aria-label="Previous collections"
+        >
+          <span class="material-symbols-outlined" aria-hidden="true">chevron_left</span>
+        </button>
+        <button
+          type="button"
+          class="core-collections__arrow-btn"
+          (click)="next()"
+          [disabled]="current() === maxIndex()"
+          aria-label="Next collections"
+        >
+          <span class="material-symbols-outlined" aria-hidden="true">chevron_right</span>
+        </button>
+      </div>
+
+      <div class="core-collections__dots" role="tablist" aria-label="Carousel pagination">
+        @for (index of dotIndexes(); track index) {
+          <button
+            type="button"
+            class="core-collections__dot"
+            [class.core-collections__dot--active]="current() === index"
+            (click)="setSlide(index)"
+            [attr.aria-label]="'Go to slide ' + (index + 1)"
+            [attr.aria-selected]="current() === index"
+            role="tab"
+          ></button>
+        }
+      </div>
     </div>
   </div>
 </section>

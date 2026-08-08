@@ -1,7 +1,8 @@
-import { ChangeDetectionStrategy, Component, OnInit, signal } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component, OnInit, inject, PLATFORM_ID, signal } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { FormsModule, NgForm } from '@angular/forms';
 import { Title, Meta, DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { STUDIO_PHONE_DISPLAY, STUDIO_PHONE_TEL, STUDIO_WHATSAPP_URL } from '../../constants/contact';
 
 interface ContactChannel {
   id: string;
@@ -29,14 +30,18 @@ interface RegionalOffice {
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent implements OnInit {
+  private readonly platformId = inject(PLATFORM_ID);
+
+  readonly whatsappUrl = STUDIO_WHATSAPP_URL;
+
   readonly contactChannels: ContactChannel[] = [
     {
       id: 'phone',
       icon: 'call',
       title: 'Phone',
-      primary: '+91 98738 38630',
+      primary: STUDIO_PHONE_DISPLAY,
       secondary: 'Mon - Sat: 9:00 AM - 6:00 PM',
-      href: 'tel:+919873838630',
+      href: STUDIO_PHONE_TEL,
     },
     {
       id: 'email',
@@ -112,13 +117,15 @@ export class ContactComponent implements OnInit {
     });
     this.meta.updateTag({ name: 'robots', content: 'index,follow' });
 
-    let link: HTMLLinkElement | null = document.querySelector("link[rel='canonical']");
-    if (!link) {
-      link = document.createElement('link');
-      link.setAttribute('rel', 'canonical');
-      document.head.appendChild(link);
+    if (isPlatformBrowser(this.platformId)) {
+      let link: HTMLLinkElement | null = document.querySelector("link[rel='canonical']");
+      if (!link) {
+        link = document.createElement('link');
+        link.setAttribute('rel', 'canonical');
+        document.head.appendChild(link);
+      }
+      link.setAttribute('href', window.location.href);
     }
-    link.setAttribute('href', window.location.href);
   }
 
   onSubmit(contactForm: NgForm): void {

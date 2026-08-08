@@ -1,12 +1,13 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { catalogCategoryRoute } from '../../data/catalog-data';
 import { CATALOG_MENU_ITEMS } from '../../navigation/catalog-menu';
+import { STUDIO_PHONE_DISPLAY, STUDIO_PHONE_TEL } from '../../constants/contact';
 
 interface FooterLink {
   label: string;
-  route: string;
-  queryParams?: Record<string, string>;
+  route: string | string[];
 }
 
 @Component({
@@ -18,10 +19,12 @@ interface FooterLink {
   templateUrl: './footer.component.html',
 })
 export class FooterComponent {
+  readonly phoneDisplay = STUDIO_PHONE_DISPLAY;
+  readonly phoneTel = STUDIO_PHONE_TEL;
+
   readonly categoryLinks = CATALOG_MENU_ITEMS.map((item) => ({
     label: item.label,
-    route: '/catalog',
-    queryParams: { category: item.id },
+    route: catalogCategoryRoute(item.id),
   }));
 
   readonly supportLinks: FooterLink[] = [
