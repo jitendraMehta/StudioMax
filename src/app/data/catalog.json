@@ -74,115 +74,45 @@
       "label": "HF Tweeter",
       "icon": "graphic_eq",
       "showInNav": true,
-      "description": "High-frequency drivers engineered for detail and longevity.",
+      "description": "High-frequency tweeters and compression drivers for detail and efficiency.",
       "tileImage": "/HF-tweeter.png",
-      "overview": "High-frequency tweeters and compression drivers engineered for detail, efficiency, and long service life. Compare every HF model in our range below, including impedance, power ratings, and application notes.",
-      "modelGroupHeading": "Choose Style",
-      "modelGroupHeadingEmphasis": "Style",
-      "modelGroups": [
-        {
-          "id": "standard",
-          "tabLabel": "Standard Range",
-          "sectionTitle": "Standard Range"
-        },
-        {
-          "id": "pro",
-          "tabLabel": "Pro Range",
-          "sectionTitle": "Pro Range"
-        }
-      ]
+      "overview": "StudioMax supplies the Almax Audio HF tweeter range—models for PA, horn loading, and OEM builds. Browse all five models below and contact us for pricing and technical support across India."
     },
     {
       "id": "driver",
       "label": "Driver Unit & Diaphragm",
       "icon": "settings_input_component",
       "showInNav": true,
-      "description": "Driver units and diaphragms for custom speaker builds.",
-      "tileImage": "/PA-driver-unit.png",
-      "overview": "Driver units and diaphragms for custom speaker builds, repairs, and OEM production. The full StudioMax driver catalogue is listed below with specifications for each model so you can match replacements or new designs accurately.",
-      "modelGroupHeading": "Choose Style",
-      "modelGroupHeadingEmphasis": "Style",
-      "modelGroups": [
-        {
-          "id": "standard",
-          "tabLabel": "Standard Range",
-          "sectionTitle": "Standard Range"
-        },
-        {
-          "id": "pro",
-          "tabLabel": "Pro Range",
-          "sectionTitle": "Pro Range"
-        }
-      ]
+      "description": "Driver units and replacement diaphragms for compression drivers and PA systems.",
+      "tileImage": "/driver.png",
+      "overview": "StudioMax supplies Almax Audio driver units and diaphragms for install, repair, and OEM use. Browse all models below and contact us for pricing and compatibility support across India."
     },
     {
       "id": "wires-cables",
       "label": "Wires & Cables",
       "icon": "cable",
       "showInNav": true,
-      "description": "Professional cables for reliable signal and power.",
-      "tileImage": "/driver.jpeg",
-      "overview": "Signal and power cables selected for low noise, secure connectors, and professional install practice. Every cable model in our range is listed below with length, connector, and use-case details plus enquiry options.",
-      "modelGroupHeading": "Choose Style",
-      "modelGroupHeadingEmphasis": "Style",
-      "modelGroups": [
-        {
-          "id": "standard",
-          "tabLabel": "Standard Range",
-          "sectionTitle": "Standard Range"
-        },
-        {
-          "id": "pro",
-          "tabLabel": "Pro Range",
-          "sectionTitle": "Pro Range"
-        }
-      ]
+      "description": "Audio, microphone, speaker, and XLR cables for professional installs.",
+      "tileImage": "/wires.png",
+      "overview": "StudioMax supplies Almax Audio wires and cables for stage, studio, and install work. Browse all four product lines below and contact us for lengths, connectors, and bulk pricing across India."
     },
     {
       "id": "microphones",
       "label": "Microphones",
       "icon": "mic",
       "showInNav": true,
-      "description": "Microphones for vocals, instruments, and speech.",
-      "tileImage": "/driver.jpeg",
-      "overview": "Dynamic and vocal microphones for stage, speech, and instrument capture. See the complete StudioMax microphone range below—each model with description, specs, pricing, and availability.",
-      "modelGroupHeading": "Choose Style",
-      "modelGroupHeadingEmphasis": "Style",
-      "modelGroups": [
-        {
-          "id": "standard",
-          "tabLabel": "Standard Range",
-          "sectionTitle": "Standard Range"
-        },
-        {
-          "id": "pro",
-          "tabLabel": "Pro Range",
-          "sectionTitle": "Pro Range"
-        }
-      ]
+      "description": "Dynamic and XLR microphones for stage, speech, and vocal use.",
+      "tileImage": "/microphone.png",
+      "overview": "StudioMax supplies the Almax Audio microphone range—XLR dynamics and vocal models for events and installs. Browse all four models below and contact us for pricing across India."
     },
     {
       "id": "accessories",
       "label": "Accessories",
       "icon": "extension",
       "showInNav": true,
-      "description": "Essential hardware for mounting, connectivity, and installs.",
-      "tileImage": "/driver.jpeg",
-      "overview": "Mounting hardware, connectors, and install essentials that complete a professional audio deployment. Browse all accessory models below with specifications and direct enquiry for trade and bulk pricing.",
-      "modelGroupHeading": "Choose Style",
-      "modelGroupHeadingEmphasis": "Style",
-      "modelGroups": [
-        {
-          "id": "standard",
-          "tabLabel": "Standard Range",
-          "sectionTitle": "Standard Range"
-        },
-        {
-          "id": "pro",
-          "tabLabel": "Pro Range",
-          "sectionTitle": "Pro Range"
-        }
-      ]
+      "description": "DJ belts, hyce connectors, and install accessories from Almax Audio.",
+      "tileImage": "/accessories.png",
+      "overview": "StudioMax supplies Almax Audio accessories for DJ rigs, speaker builds, and professional installs. Browse all five items below and contact us for pricing and bulk orders across India."
     }
   ],
   "products": [
@@ -1790,7 +1720,7 @@
       "id": "prod-pa-speakers-metal-column-speaker",
       "model": "Metal Column Speaker",
       "categoryId": "pa-speakers",
-      "image": "/pa-speaker.png",
+      "image": "/metal-Column-Speaker.png",
       "specs": [
         {
           "label": "Model variants",
@@ -2563,1079 +2493,948 @@
       ]
     },
     {
-      "id": "prod-hf-tweeter-1",
-      "model": "SM-HF-Pro",
+      "id": "prod-hf-tweeter-al-hf-450d",
+      "model": "AL-HF 450D",
       "categoryId": "hf-tweeter",
-      "categoryLabel": "HF Tweeter",
-      "description": "HF tweeter drivers and assemblies engineered for extended high-frequency detail and longevity.",
-      "longDescription": "HF tweeter drivers and assemblies engineered for extended high-frequency detail and longevity. The SM-HF-Pro is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
-      "brand": "Studio Max",
-      "priceInr": 34062,
-      "powerWatts": 75,
-      "inStock": true,
-      "image": "/trumpet.png",
-      "featured": true,
+      "image": "/HF-tweeter.png",
       "specs": [
         {
-          "label": "Power handling",
-          "value": "75 W RMS"
+          "label": "RMS power",
+          "value": "80 W"
         },
         {
-          "label": "Impedance",
-          "value": "8 Ω"
+          "label": "Voice coil",
+          "value": "72.5 mm 3″"
+        },
+        {
+          "label": "Continuous power capacity",
+          "value": "CCAW Voice Coil"
+        },
+        {
+          "label": "Sensitivity",
+          "value": "106±2dB"
         },
         {
           "label": "Frequency response",
-          "value": "48 Hz – 18 kHz"
+          "value": "1.5 Hz ~ 20 KHz"
         },
         {
-          "label": "Enclosure / build",
-          "value": "Professional grade"
+          "label": "Overall Diameter",
+          "value": "115 MM"
         },
         {
-          "label": "Warranty",
-          "value": "12 months"
+          "label": "Throat Diameters",
+          "value": "25MM / 1 inch"
+        },
+        {
+          "label": "Mounting Type",
+          "value": "Screw-On"
+        },
+        {
+          "label": "Nominal imp / DC resistance",
+          "value": "8 Ω / 6 Ω"
+        },
+        {
+          "label": "Diaphragm Material",
+          "value": "Titanium"
+        },
+        {
+          "label": "Magnet material",
+          "value": "Strontium Ferrite Y35"
+        },
+        {
+          "label": "Net Weight",
+          "value": "1.62 kg"
         }
-      ],
-      "highlights": [
-        "Designed for hf tweeter applications",
-        "Tested for reliability in professional environments",
-        "Pan India shipping available",
-        "Genuine StudioMax authorized distribution"
-      ],
-      "modelGroupId": "standard"
+      ]
     },
     {
-      "id": "prod-hf-tweeter-2",
-      "model": "SM-HF-Plus",
+      "id": "prod-hf-tweeter-al-hf-518d",
+      "model": "AL-HF 518D",
       "categoryId": "hf-tweeter",
-      "categoryLabel": "HF Tweeter",
-      "description": "HF tweeter drivers and assemblies engineered for extended high-frequency detail and longevity.",
-      "longDescription": "HF tweeter drivers and assemblies engineered for extended high-frequency detail and longevity. The SM-HF-Plus is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
-      "brand": "StudioMax",
-      "priceInr": 35199,
-      "powerWatts": 120,
-      "inStock": true,
-      "image": "/trumpet.png",
-      "featured": false,
+      "image": "/HF-tweeter.png",
       "specs": [
         {
-          "label": "Power handling",
-          "value": "120 W RMS"
+          "label": "RMS power",
+          "value": "80 W"
         },
         {
-          "label": "Impedance",
-          "value": "4 Ω"
+          "label": "Voice coil",
+          "value": "51.3 mm 2″"
+        },
+        {
+          "label": "RMS Power Capacity",
+          "value": "CCAW Voice Coil"
+        },
+        {
+          "label": "Sensitivity",
+          "value": "108±2dB"
         },
         {
           "label": "Frequency response",
-          "value": "53 Hz – 19 kHz"
+          "value": "1.2 Hz ~ 20 KHz"
         },
         {
-          "label": "Enclosure / build",
-          "value": "Professional grade"
+          "label": "Overall Diameter",
+          "value": "134 MM"
         },
         {
-          "label": "Warranty",
-          "value": "12 months"
+          "label": "Throat Diameters",
+          "value": "25.4MM / 1 inch"
+        },
+        {
+          "label": "Mounting Type",
+          "value": "Screw-On"
+        },
+        {
+          "label": "Nominal imp / DC resistance",
+          "value": "8 Ω / 7 Ω"
+        },
+        {
+          "label": "Diaphragm Material",
+          "value": "Titanium"
+        },
+        {
+          "label": "Magnet material",
+          "value": "Strontium Ferrite Y35"
+        },
+        {
+          "label": "Net Weight",
+          "value": "2.8 kg"
         }
-      ],
-      "highlights": [
-        "Designed for hf tweeter applications",
-        "Tested for reliability in professional environments",
-        "Bulk order pricing on request",
-        "Genuine StudioMax authorized distribution"
-      ],
-      "modelGroupId": "pro"
+      ]
     },
     {
-      "id": "prod-hf-tweeter-3",
-      "model": "SM-HF-Elite",
+      "id": "prod-hf-tweeter-al-hf-7228d",
+      "model": "AL-HF 7228D",
       "categoryId": "hf-tweeter",
-      "categoryLabel": "HF Tweeter",
-      "description": "HF tweeter drivers and assemblies engineered for extended high-frequency detail and longevity.",
-      "longDescription": "HF tweeter drivers and assemblies engineered for extended high-frequency detail and longevity. The SM-HF-Elite is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
-      "brand": "ProAudio Labs",
-      "priceInr": 36336,
-      "powerWatts": 250,
-      "inStock": true,
-      "image": "/trumpet.png",
-      "featured": false,
+      "image": "/HF-tweeter.png",
       "specs": [
         {
-          "label": "Power handling",
-          "value": "250 W RMS"
+          "label": "RMS power",
+          "value": "140 W"
         },
         {
-          "label": "Impedance",
-          "value": "8 Ω"
+          "label": "Voice coil",
+          "value": "72.5 mm 3″"
+        },
+        {
+          "label": "RMS Power Capacity",
+          "value": "CCAW Voice Coil"
+        },
+        {
+          "label": "Sensitivity",
+          "value": "108±2dB"
         },
         {
           "label": "Frequency response",
-          "value": "58 Hz – 20 kHz"
+          "value": "800 Hz ~ 20 KHz"
         },
         {
-          "label": "Enclosure / build",
-          "value": "Professional grade"
+          "label": "Overall Diameter",
+          "value": "170 MM"
         },
         {
-          "label": "Warranty",
-          "value": "12 months"
+          "label": "Throat Diameters",
+          "value": "50MM / 2 inch"
+        },
+        {
+          "label": "Mounting Type",
+          "value": "Bolt-On"
+        },
+        {
+          "label": "Nominal imp / DC resistance",
+          "value": "8 Ω / 6 Ω"
+        },
+        {
+          "label": "Diaphragm Material",
+          "value": "Titanium"
+        },
+        {
+          "label": "Magnet material",
+          "value": "Strontium Ferrite Y35"
+        },
+        {
+          "label": "Net Weight",
+          "value": "4.9 kg"
         }
-      ],
-      "highlights": [
-        "Designed for hf tweeter applications",
-        "Tested for reliability in professional environments",
-        "Pan India shipping available",
-        "Genuine StudioMax authorized distribution"
-      ],
-      "modelGroupId": "standard"
+      ]
     },
     {
-      "id": "prod-hf-tweeter-4",
-      "model": "SM-HF-Standard",
+      "id": "prod-hf-tweeter-al-hf-750d",
+      "model": "AL-HF 750D",
       "categoryId": "hf-tweeter",
-      "categoryLabel": "HF Tweeter",
-      "description": "HF tweeter drivers and assemblies engineered for extended high-frequency detail and longevity.",
-      "longDescription": "HF tweeter drivers and assemblies engineered for extended high-frequency detail and longevity. The SM-HF-Standard is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
-      "brand": "SoundTech",
-      "priceInr": 37473,
-      "powerWatts": 600,
-      "inStock": true,
-      "image": "/trumpet.png",
-      "featured": false,
+      "image": "/HF-tweeter.png",
       "specs": [
         {
-          "label": "Power handling",
-          "value": "600 W RMS"
+          "label": "RMS power",
+          "value": "120 W"
+        },
+        {
+          "label": "Voice coil",
+          "value": "72.5 mm 3″"
+        },
+        {
+          "label": "RMS Power Capacity",
+          "value": "CCAW Voice Coil"
+        },
+        {
+          "label": "Sensitivity",
+          "value": "108±2dB"
+        },
+        {
+          "label": "Frequency response",
+          "value": "800 Hz ~ 20 KHz"
+        },
+        {
+          "label": "Overall Diameter",
+          "value": "170 MM"
+        },
+        {
+          "label": "Throat Diameters",
+          "value": "50MM / 2 inch"
+        },
+        {
+          "label": "Mounting Type",
+          "value": "Bolt-On"
+        },
+        {
+          "label": "Nominal imp / DC resistance",
+          "value": "8Ω / 6.2Ω"
+        },
+        {
+          "label": "Diaphragm Material",
+          "value": "Titanium"
+        },
+        {
+          "label": "Magnet material",
+          "value": "Strontium Ferrite Y35"
+        },
+        {
+          "label": "Net Weight",
+          "value": "4.65 kg"
+        }
+      ]
+    },
+    {
+      "id": "prod-hf-tweeter-al-hf-d26",
+      "model": "AL-HF D26",
+      "categoryId": "hf-tweeter",
+      "image": "/HF-tweeter.png",
+      "specs": [
+        {
+          "label": "Exit Throat",
+          "value": "1 inch"
+        },
+        {
+          "label": "Mounting Type",
+          "value": "Screw on 1-3 / 8 inch"
+        },
+        {
+          "label": "Nominal Impedance",
+          "value": "8 Ohms"
+        },
+        {
+          "label": "Max Power",
+          "value": "50 Watts"
+        },
+        {
+          "label": "Rms Power",
+          "value": "25 Watts"
+        },
+        {
+          "label": "Sensitivity @ 1W/ 1m",
+          "value": "110 db"
+        },
+        {
+          "label": "Usable Frequency Range",
+          "value": "1.2~20 KHz"
+        },
+        {
+          "label": "Recommended Crossover",
+          "value": "2.5 KHz or Higher 12dB / oct. min"
+        },
+        {
+          "label": "Voice Coil Diameter",
+          "value": "1.0 inch"
+        },
+        {
+          "label": "Voice Coil Material",
+          "value": "CCAW"
+        },
+        {
+          "label": "Voice Coil Former",
+          "value": "Kapton"
+        },
+        {
+          "label": "Flux Density",
+          "value": "1.5 T"
+        },
+        {
+          "label": "Magnet Type",
+          "value": "Strontium Ferrite"
+        },
+        {
+          "label": "Diaphragm Material",
+          "value": "Titanium"
+        }
+      ]
+    },
+    {
+      "id": "prod-driver-al-60xt",
+      "model": "AL- 60XT",
+      "categoryId": "driver",
+      "image": "/hero1.png",
+      "specs": [
+        {
+          "label": "Input Power",
+          "value": "60W Rms/80W Rms"
+        },
+        {
+          "label": "Impedance/Power Taps",
+          "value": "On 100v Line"
+        },
+        {
+          "label": "Magnet Size",
+          "value": "110 * 57 * 20 * Y 35"
+        },
+        {
+          "label": "Frequency Response",
+          "value": "160-7000 HZ"
+        },
+        {
+          "label": "SPL at IKHZ",
+          "value": "113db/1w/1m 130db /50w/1m"
+        },
+        {
+          "label": "Temperature Range",
+          "value": "-30 to + 70 C"
+        },
+        {
+          "label": "Weight",
+          "value": "2.47 kgs"
+        },
+        {
+          "label": "Material",
+          "value": "Die cast, aluminium"
+        }
+      ]
+    },
+    {
+      "id": "prod-driver-al-40-xt",
+      "model": "AL-40 XT",
+      "categoryId": "driver",
+      "image": "/hero1.png",
+      "specs": [
+        {
+          "label": "Input Power",
+          "value": "40W Rms/60W MAX"
+        },
+        {
+          "label": "Impedance/Power Taps",
+          "value": "On 100v Line"
+        },
+        {
+          "label": "Frequency Response",
+          "value": "160-7000 HZ"
+        },
+        {
+          "label": "SPL at IKHZ",
+          "value": "112.5db/1w/1m 128.5db /40w/1m"
+        },
+        {
+          "label": "Temperature Range",
+          "value": "-30 to + 70 C"
         },
         {
           "label": "Impedance",
           "value": "16 Ω"
         },
         {
-          "label": "Frequency response",
-          "value": "63 Hz – 21 kHz"
-        },
-        {
-          "label": "Enclosure / build",
-          "value": "Professional grade"
-        },
-        {
-          "label": "Warranty",
-          "value": "12 months"
+          "label": "Material",
+          "value": "Die cast, aluminium"
         }
-      ],
-      "highlights": [
-        "Designed for hf tweeter applications",
-        "Tested for reliability in professional environments",
-        "Bulk order pricing on request",
-        "Genuine StudioMax authorized distribution"
-      ],
-      "modelGroupId": "pro"
+      ]
     },
     {
-      "id": "prod-hf-tweeter-5",
-      "model": "SM-HF-Max",
-      "categoryId": "hf-tweeter",
-      "categoryLabel": "HF Tweeter",
-      "description": "HF tweeter drivers and assemblies engineered for extended high-frequency detail and longevity.",
-      "longDescription": "HF tweeter drivers and assemblies engineered for extended high-frequency detail and longevity. The SM-HF-Max is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
-      "brand": "Krown",
-      "priceInr": 38610,
-      "powerWatts": 850,
-      "inStock": false,
-      "image": "/trumpet.png",
-      "featured": false,
-      "specs": [
-        {
-          "label": "Power handling",
-          "value": "850 W RMS"
-        },
-        {
-          "label": "Impedance",
-          "value": "8 Ω"
-        },
-        {
-          "label": "Frequency response",
-          "value": "68 Hz – 22 kHz"
-        },
-        {
-          "label": "Enclosure / build",
-          "value": "Professional grade"
-        },
-        {
-          "label": "Warranty",
-          "value": "12 months"
-        }
-      ],
-      "highlights": [
-        "Designed for hf tweeter applications",
-        "Tested for reliability in professional environments",
-        "Pan India shipping available",
-        "Genuine StudioMax authorized distribution"
-      ],
-      "modelGroupId": "standard"
-    },
-    {
-      "id": "prod-driver-1",
-      "model": "SM-DU-Pro",
+      "id": "prod-driver-diaphragms",
+      "model": "Diaphragms",
       "categoryId": "driver",
-      "categoryLabel": "Driver Unit & Diaphragm",
-      "description": "High-performance driver units and diaphragms for clarity, durability, and consistent output.",
-      "longDescription": "High-performance driver units and diaphragms for clarity, durability, and consistent output. The SM-DU-Pro is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
-      "brand": "Studio Max",
-      "priceInr": 39747,
-      "powerWatts": 75,
-      "inStock": true,
-      "image": "/PA-driver-unit.png",
-      "featured": true,
+      "image": "/hero1.png",
       "specs": [
         {
-          "label": "Power handling",
-          "value": "75 W RMS"
-        },
-        {
-          "label": "Impedance",
-          "value": "8 Ω"
-        },
-        {
-          "label": "Frequency response",
-          "value": "48 Hz – 18 kHz"
-        },
-        {
-          "label": "Enclosure / build",
-          "value": "Professional grade"
-        },
-        {
-          "label": "Warranty",
-          "value": "12 months"
+          "label": "Details",
+          "value": "Contact StudioMax for specifications"
         }
-      ],
-      "highlights": [
-        "Designed for driver unit & diaphragm applications",
-        "Tested for reliability in professional environments",
-        "Pan India shipping available",
-        "Genuine StudioMax authorized distribution"
-      ],
-      "modelGroupId": "standard"
+      ]
     },
     {
-      "id": "prod-driver-2",
-      "model": "SM-DU-Plus",
-      "categoryId": "driver",
-      "categoryLabel": "Driver Unit & Diaphragm",
-      "description": "High-performance driver units and diaphragms for clarity, durability, and consistent output.",
-      "longDescription": "High-performance driver units and diaphragms for clarity, durability, and consistent output. The SM-DU-Plus is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
-      "brand": "StudioMax",
-      "priceInr": 40884,
-      "powerWatts": 120,
-      "inStock": true,
-      "image": "/PA-driver-unit.png",
-      "featured": false,
-      "specs": [
-        {
-          "label": "Power handling",
-          "value": "120 W RMS"
-        },
-        {
-          "label": "Impedance",
-          "value": "4 Ω"
-        },
-        {
-          "label": "Frequency response",
-          "value": "53 Hz – 19 kHz"
-        },
-        {
-          "label": "Enclosure / build",
-          "value": "Professional grade"
-        },
-        {
-          "label": "Warranty",
-          "value": "12 months"
-        }
-      ],
-      "highlights": [
-        "Designed for driver unit & diaphragm applications",
-        "Tested for reliability in professional environments",
-        "Bulk order pricing on request",
-        "Genuine StudioMax authorized distribution"
-      ],
-      "modelGroupId": "pro"
-    },
-    {
-      "id": "prod-driver-3",
-      "model": "SM-DU-Elite",
-      "categoryId": "driver",
-      "categoryLabel": "Driver Unit & Diaphragm",
-      "description": "High-performance driver units and diaphragms for clarity, durability, and consistent output.",
-      "longDescription": "High-performance driver units and diaphragms for clarity, durability, and consistent output. The SM-DU-Elite is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
-      "brand": "ProAudio Labs",
-      "priceInr": 42021,
-      "powerWatts": 250,
-      "inStock": true,
-      "image": "/PA-driver-unit.png",
-      "featured": false,
-      "specs": [
-        {
-          "label": "Power handling",
-          "value": "250 W RMS"
-        },
-        {
-          "label": "Impedance",
-          "value": "8 Ω"
-        },
-        {
-          "label": "Frequency response",
-          "value": "58 Hz – 20 kHz"
-        },
-        {
-          "label": "Enclosure / build",
-          "value": "Professional grade"
-        },
-        {
-          "label": "Warranty",
-          "value": "12 months"
-        }
-      ],
-      "highlights": [
-        "Designed for driver unit & diaphragm applications",
-        "Tested for reliability in professional environments",
-        "Pan India shipping available",
-        "Genuine StudioMax authorized distribution"
-      ],
-      "modelGroupId": "standard"
-    },
-    {
-      "id": "prod-driver-4",
-      "model": "SM-DU-Standard",
-      "categoryId": "driver",
-      "categoryLabel": "Driver Unit & Diaphragm",
-      "description": "High-performance driver units and diaphragms for clarity, durability, and consistent output.",
-      "longDescription": "High-performance driver units and diaphragms for clarity, durability, and consistent output. The SM-DU-Standard is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
-      "brand": "SoundTech",
-      "priceInr": 43158,
-      "powerWatts": 600,
-      "inStock": true,
-      "image": "/PA-driver-unit.png",
-      "featured": false,
-      "specs": [
-        {
-          "label": "Power handling",
-          "value": "600 W RMS"
-        },
-        {
-          "label": "Impedance",
-          "value": "16 Ω"
-        },
-        {
-          "label": "Frequency response",
-          "value": "63 Hz – 21 kHz"
-        },
-        {
-          "label": "Enclosure / build",
-          "value": "Professional grade"
-        },
-        {
-          "label": "Warranty",
-          "value": "12 months"
-        }
-      ],
-      "highlights": [
-        "Designed for driver unit & diaphragm applications",
-        "Tested for reliability in professional environments",
-        "Bulk order pricing on request",
-        "Genuine StudioMax authorized distribution"
-      ],
-      "modelGroupId": "pro"
-    },
-    {
-      "id": "prod-driver-5",
-      "model": "SM-DU-Max",
-      "categoryId": "driver",
-      "categoryLabel": "Driver Unit & Diaphragm",
-      "description": "High-performance driver units and diaphragms for clarity, durability, and consistent output.",
-      "longDescription": "High-performance driver units and diaphragms for clarity, durability, and consistent output. The SM-DU-Max is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
-      "brand": "Krown",
-      "priceInr": 44295,
-      "powerWatts": 850,
-      "inStock": false,
-      "image": "/PA-driver-unit.png",
-      "featured": false,
-      "specs": [
-        {
-          "label": "Power handling",
-          "value": "850 W RMS"
-        },
-        {
-          "label": "Impedance",
-          "value": "8 Ω"
-        },
-        {
-          "label": "Frequency response",
-          "value": "68 Hz – 22 kHz"
-        },
-        {
-          "label": "Enclosure / build",
-          "value": "Professional grade"
-        },
-        {
-          "label": "Warranty",
-          "value": "12 months"
-        }
-      ],
-      "highlights": [
-        "Designed for driver unit & diaphragm applications",
-        "Tested for reliability in professional environments",
-        "Pan India shipping available",
-        "Genuine StudioMax authorized distribution"
-      ],
-      "modelGroupId": "standard"
-    },
-    {
-      "id": "prod-wires-cables-1",
-      "model": "SM-WC-Pro",
+      "id": "prod-wires-cables-audio-cables",
+      "model": "Audio Cables",
       "categoryId": "wires-cables",
-      "categoryLabel": "Wires & Cables",
-      "description": "Professional wires and cables for dependable signal and power in install and live applications.",
-      "longDescription": "Professional wires and cables for dependable signal and power in install and live applications. The SM-WC-Pro is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
-      "brand": "Studio Max",
-      "priceInr": 45432,
-      "powerWatts": 75,
-      "inStock": true,
-      "image": "/driver.jpeg",
-      "featured": true,
+      "image": "/wires.png",
       "specs": [
         {
-          "label": "Power handling",
-          "value": "75 W RMS"
-        },
-        {
-          "label": "Impedance",
-          "value": "8 Ω"
-        },
-        {
-          "label": "Frequency response",
-          "value": "48 Hz – 18 kHz"
-        },
-        {
-          "label": "Enclosure / build",
-          "value": "Professional grade"
-        },
-        {
-          "label": "Warranty",
-          "value": "12 months"
+          "label": "Details",
+          "value": "Contact StudioMax for specifications"
         }
-      ],
-      "highlights": [
-        "Designed for wires & cables applications",
-        "Tested for reliability in professional environments",
-        "Pan India shipping available",
-        "Genuine StudioMax authorized distribution"
-      ],
-      "modelGroupId": "standard"
+      ]
     },
     {
-      "id": "prod-wires-cables-2",
-      "model": "SM-WC-Plus",
+      "id": "prod-wires-cables-microphone-wire",
+      "model": "Microphone Wire",
       "categoryId": "wires-cables",
-      "categoryLabel": "Wires & Cables",
-      "description": "Professional wires and cables for dependable signal and power in install and live applications.",
-      "longDescription": "Professional wires and cables for dependable signal and power in install and live applications. The SM-WC-Plus is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
-      "brand": "StudioMax",
-      "priceInr": 46569,
-      "powerWatts": 120,
-      "inStock": true,
-      "image": "/driver.jpeg",
-      "featured": false,
+      "image": "/wires.png",
       "specs": [
         {
-          "label": "Power handling",
-          "value": "120 W RMS"
+          "label": "1940/60",
+          "value": "2 core Micwire"
         },
         {
-          "label": "Impedance",
-          "value": "4 Ω"
+          "label": "1940/80",
+          "value": "Premium Quality Pvc"
         },
         {
-          "label": "Frequency response",
-          "value": "53 Hz – 19 kHz"
-        },
-        {
-          "label": "Enclosure / build",
-          "value": "Professional grade"
-        },
-        {
-          "label": "Warranty",
-          "value": "12 months"
+          "label": "1940/128",
+          "value": "Good Quality Copper Guage"
         }
-      ],
-      "highlights": [
-        "Designed for wires & cables applications",
-        "Tested for reliability in professional environments",
-        "Bulk order pricing on request",
-        "Genuine StudioMax authorized distribution"
-      ],
-      "modelGroupId": "pro"
+      ]
     },
     {
-      "id": "prod-wires-cables-3",
-      "model": "SM-WC-Elite",
+      "id": "prod-wires-cables-speaker-wire",
+      "model": "Speaker Wire",
       "categoryId": "wires-cables",
-      "categoryLabel": "Wires & Cables",
-      "description": "Professional wires and cables for dependable signal and power in install and live applications.",
-      "longDescription": "Professional wires and cables for dependable signal and power in install and live applications. The SM-WC-Elite is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
-      "brand": "ProAudio Labs",
-      "priceInr": 47706,
-      "powerWatts": 250,
-      "inStock": true,
-      "image": "/driver.jpeg",
-      "featured": false,
+      "image": "/wires.png",
       "specs": [
         {
-          "label": "Power handling",
-          "value": "250 W RMS"
+          "label": "Speaker Wire 2 core",
+          "value": "Speaker wire 4 core"
         },
         {
-          "label": "Impedance",
-          "value": "8 Ω"
+          "label": "40/76",
+          "value": "125/48"
         },
         {
-          "label": "Frequency response",
-          "value": "58 Hz – 20 kHz"
-        },
-        {
-          "label": "Enclosure / build",
-          "value": "Professional grade"
-        },
-        {
-          "label": "Warranty",
-          "value": "12 months"
+          "label": "70/76",
+          "value": "200/48"
         }
-      ],
-      "highlights": [
-        "Designed for wires & cables applications",
-        "Tested for reliability in professional environments",
-        "Pan India shipping available",
-        "Genuine StudioMax authorized distribution"
-      ],
-      "modelGroupId": "standard"
+      ]
     },
     {
-      "id": "prod-wires-cables-4",
-      "model": "SM-WC-Standard",
+      "id": "prod-wires-cables-xlr-cables",
+      "model": "XLR Cables",
       "categoryId": "wires-cables",
-      "categoryLabel": "Wires & Cables",
-      "description": "Professional wires and cables for dependable signal and power in install and live applications.",
-      "longDescription": "Professional wires and cables for dependable signal and power in install and live applications. The SM-WC-Standard is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
-      "brand": "SoundTech",
-      "priceInr": 48843,
-      "powerWatts": 600,
-      "inStock": true,
-      "image": "/driver.jpeg",
-      "featured": false,
+      "image": "/wires.png",
       "specs": [
         {
-          "label": "Power handling",
-          "value": "600 W RMS"
-        },
-        {
-          "label": "Impedance",
-          "value": "16 Ω"
-        },
-        {
-          "label": "Frequency response",
-          "value": "63 Hz – 21 kHz"
-        },
-        {
-          "label": "Enclosure / build",
-          "value": "Professional grade"
-        },
-        {
-          "label": "Warranty",
-          "value": "12 months"
+          "label": "Details",
+          "value": "Contact StudioMax for specifications"
         }
-      ],
-      "highlights": [
-        "Designed for wires & cables applications",
-        "Tested for reliability in professional environments",
-        "Bulk order pricing on request",
-        "Genuine StudioMax authorized distribution"
-      ],
-      "modelGroupId": "pro"
+      ]
     },
     {
-      "id": "prod-wires-cables-5",
-      "model": "SM-WC-Max",
-      "categoryId": "wires-cables",
-      "categoryLabel": "Wires & Cables",
-      "description": "Professional wires and cables for dependable signal and power in install and live applications.",
-      "longDescription": "Professional wires and cables for dependable signal and power in install and live applications. The SM-WC-Max is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
-      "brand": "Krown",
-      "priceInr": 49980,
-      "powerWatts": 850,
-      "inStock": false,
-      "image": "/driver.jpeg",
-      "featured": false,
-      "specs": [
-        {
-          "label": "Power handling",
-          "value": "850 W RMS"
-        },
-        {
-          "label": "Impedance",
-          "value": "8 Ω"
-        },
-        {
-          "label": "Frequency response",
-          "value": "68 Hz – 22 kHz"
-        },
-        {
-          "label": "Enclosure / build",
-          "value": "Professional grade"
-        },
-        {
-          "label": "Warranty",
-          "value": "12 months"
-        }
-      ],
-      "highlights": [
-        "Designed for wires & cables applications",
-        "Tested for reliability in professional environments",
-        "Pan India shipping available",
-        "Genuine StudioMax authorized distribution"
-      ],
-      "modelGroupId": "standard"
-    },
-    {
-      "id": "prod-microphones-1",
-      "model": "SM-MC-Pro",
+      "id": "prod-microphones-101xlr",
+      "model": "101XLR",
       "categoryId": "microphones",
-      "categoryLabel": "Microphones",
-      "description": "Microphones tuned for vocals, instruments, and speech in studio and live environments.",
-      "longDescription": "Microphones tuned for vocals, instruments, and speech in studio and live environments. The SM-MC-Pro is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
-      "brand": "Studio Max",
-      "priceInr": 5117,
-      "powerWatts": 75,
-      "inStock": true,
-      "image": "/driver.jpeg",
-      "featured": true,
+      "image": "/microphone.png",
       "specs": [
         {
-          "label": "Power handling",
-          "value": "75 W RMS"
+          "label": "Normal diameter",
+          "value": "15 inch"
         },
         {
-          "label": "Impedance",
-          "value": "8 Ω"
+          "label": "Nominal impedance",
+          "value": "8Ω"
         },
         {
-          "label": "Frequency response",
-          "value": "48 Hz – 18 kHz"
+          "label": "DC resistance",
+          "value": "5.8Ω"
         },
         {
-          "label": "Enclosure / build",
-          "value": "Professional grade"
+          "label": "Nominal Power Handling",
+          "value": "400w"
         },
         {
-          "label": "Warranty",
-          "value": "12 months"
+          "label": "Continuous power Handling",
+          "value": "800w"
+        },
+        {
+          "label": "Sensitivity(1W/1m)",
+          "value": "98dB"
+        },
+        {
+          "label": "Frequency range",
+          "value": "40-4500 Hz"
+        },
+        {
+          "label": "Voice coil diameter",
+          "value": "3 in (75.5 mm)"
+        },
+        {
+          "label": "Voice coil material",
+          "value": "Ccaw"
+        },
+        {
+          "label": "Former material",
+          "value": "Kapton"
+        },
+        {
+          "label": "Winding height",
+          "value": "24mm"
+        },
+        {
+          "label": "Magnet",
+          "value": "Ф190×H25"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
         }
-      ],
-      "highlights": [
-        "Designed for microphones applications",
-        "Tested for reliability in professional environments",
-        "Pan India shipping available",
-        "Genuine StudioMax authorized distribution"
-      ],
-      "modelGroupId": "standard"
+      ]
     },
     {
-      "id": "prod-microphones-2",
-      "model": "SM-MC-Plus",
+      "id": "prod-microphones-98xlr",
+      "model": "98XLR",
       "categoryId": "microphones",
-      "categoryLabel": "Microphones",
-      "description": "Microphones tuned for vocals, instruments, and speech in studio and live environments.",
-      "longDescription": "Microphones tuned for vocals, instruments, and speech in studio and live environments. The SM-MC-Plus is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
-      "brand": "StudioMax",
-      "priceInr": 6254,
-      "powerWatts": 120,
-      "inStock": true,
-      "image": "/driver.jpeg",
-      "featured": false,
+      "image": "/microphone.png",
       "specs": [
         {
-          "label": "Power handling",
-          "value": "120 W RMS"
+          "label": "Normal diameter",
+          "value": "15 inch"
         },
         {
-          "label": "Impedance",
-          "value": "4 Ω"
+          "label": "Nominal impedance",
+          "value": "8Ω"
         },
         {
-          "label": "Frequency response",
-          "value": "53 Hz – 19 kHz"
+          "label": "DC resistance",
+          "value": "5.8Ω"
         },
         {
-          "label": "Enclosure / build",
-          "value": "Professional grade"
+          "label": "Nominal Power Handling",
+          "value": "400w"
         },
         {
-          "label": "Warranty",
-          "value": "12 months"
+          "label": "Continuous power Handling",
+          "value": "800w"
+        },
+        {
+          "label": "Sensitivity(1W/1m)",
+          "value": "98dB"
+        },
+        {
+          "label": "Frequency range",
+          "value": "40-4500 Hz"
+        },
+        {
+          "label": "Voice coil diameter",
+          "value": "3 in (75.5 mm)"
+        },
+        {
+          "label": "Voice coil material",
+          "value": "Ccaw"
+        },
+        {
+          "label": "Former material",
+          "value": "Kapton"
+        },
+        {
+          "label": "Winding height",
+          "value": "24mm"
+        },
+        {
+          "label": "Magnet",
+          "value": "Ф190×H25"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
         }
-      ],
-      "highlights": [
-        "Designed for microphones applications",
-        "Tested for reliability in professional environments",
-        "Bulk order pricing on request",
-        "Genuine StudioMax authorized distribution"
-      ],
-      "modelGroupId": "pro"
+      ]
     },
     {
-      "id": "prod-microphones-3",
-      "model": "SM-MC-Elite",
+      "id": "prod-microphones-dynamic-unidirectional-microphone-99xlr",
+      "model": "Dynamic Unidirectional Microphone 99XLR",
       "categoryId": "microphones",
-      "categoryLabel": "Microphones",
-      "description": "Microphones tuned for vocals, instruments, and speech in studio and live environments.",
-      "longDescription": "Microphones tuned for vocals, instruments, and speech in studio and live environments. The SM-MC-Elite is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
-      "brand": "ProAudio Labs",
-      "priceInr": 7391,
-      "powerWatts": 250,
-      "inStock": true,
-      "image": "/driver.jpeg",
-      "featured": false,
+      "image": "/microphone.png",
       "specs": [
         {
-          "label": "Power handling",
-          "value": "250 W RMS"
+          "label": "Normal diameter",
+          "value": "15 inch"
         },
         {
-          "label": "Impedance",
-          "value": "8 Ω"
+          "label": "Nominal impedance",
+          "value": "8Ω"
         },
         {
-          "label": "Frequency response",
-          "value": "58 Hz – 20 kHz"
+          "label": "DC resistance",
+          "value": "5.8Ω"
         },
         {
-          "label": "Enclosure / build",
-          "value": "Professional grade"
+          "label": "Nominal Power Handling",
+          "value": "400w"
         },
         {
-          "label": "Warranty",
-          "value": "12 months"
+          "label": "Continuous power Handling",
+          "value": "800w"
+        },
+        {
+          "label": "Sensitivity(1W/1m)",
+          "value": "98dB"
+        },
+        {
+          "label": "Frequency range",
+          "value": "40-4500 Hz"
+        },
+        {
+          "label": "Voice coil diameter",
+          "value": "3 in (75.5 mm)"
+        },
+        {
+          "label": "Voice coil material",
+          "value": "Ccaw"
+        },
+        {
+          "label": "Former material",
+          "value": "Kapton"
+        },
+        {
+          "label": "Winding height",
+          "value": "24mm"
+        },
+        {
+          "label": "Magnet",
+          "value": "Ф190×H25"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
         }
-      ],
-      "highlights": [
-        "Designed for microphones applications",
-        "Tested for reliability in professional environments",
-        "Pan India shipping available",
-        "Genuine StudioMax authorized distribution"
-      ],
-      "modelGroupId": "standard"
+      ]
     },
     {
-      "id": "prod-microphones-4",
-      "model": "SM-MC-Standard",
+      "id": "prod-microphones-sv100",
+      "model": "SV100",
       "categoryId": "microphones",
-      "categoryLabel": "Microphones",
-      "description": "Microphones tuned for vocals, instruments, and speech in studio and live environments.",
-      "longDescription": "Microphones tuned for vocals, instruments, and speech in studio and live environments. The SM-MC-Standard is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
-      "brand": "SoundTech",
-      "priceInr": 8528,
-      "powerWatts": 600,
-      "inStock": true,
-      "image": "/driver.jpeg",
-      "featured": false,
+      "image": "/microphone.png",
       "specs": [
         {
-          "label": "Power handling",
-          "value": "600 W RMS"
+          "label": "Normal diameter",
+          "value": "15 inch"
         },
         {
-          "label": "Impedance",
-          "value": "16 Ω"
+          "label": "Nominal impedance",
+          "value": "8Ω"
         },
         {
-          "label": "Frequency response",
-          "value": "63 Hz – 21 kHz"
+          "label": "DC resistance",
+          "value": "5.8Ω"
         },
         {
-          "label": "Enclosure / build",
-          "value": "Professional grade"
+          "label": "Nominal Power Handling",
+          "value": "400w"
         },
         {
-          "label": "Warranty",
-          "value": "12 months"
+          "label": "Continuous power Handling",
+          "value": "800w"
+        },
+        {
+          "label": "Sensitivity(1W/1m)",
+          "value": "98dB"
+        },
+        {
+          "label": "Frequency range",
+          "value": "40-4500 Hz"
+        },
+        {
+          "label": "Voice coil diameter",
+          "value": "3 in (75.5 mm)"
+        },
+        {
+          "label": "Voice coil material",
+          "value": "Ccaw"
+        },
+        {
+          "label": "Former material",
+          "value": "Kapton"
+        },
+        {
+          "label": "Winding height",
+          "value": "24mm"
+        },
+        {
+          "label": "Magnet",
+          "value": "Ф190×H25"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
         }
-      ],
-      "highlights": [
-        "Designed for microphones applications",
-        "Tested for reliability in professional environments",
-        "Bulk order pricing on request",
-        "Genuine StudioMax authorized distribution"
-      ],
-      "modelGroupId": "pro"
+      ]
     },
     {
-      "id": "prod-microphones-5",
-      "model": "SM-MC-Max",
-      "categoryId": "microphones",
-      "categoryLabel": "Microphones",
-      "description": "Microphones tuned for vocals, instruments, and speech in studio and live environments.",
-      "longDescription": "Microphones tuned for vocals, instruments, and speech in studio and live environments. The SM-MC-Max is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
-      "brand": "Krown",
-      "priceInr": 9665,
-      "powerWatts": 850,
-      "inStock": false,
-      "image": "/driver.jpeg",
-      "featured": false,
-      "specs": [
-        {
-          "label": "Power handling",
-          "value": "850 W RMS"
-        },
-        {
-          "label": "Impedance",
-          "value": "8 Ω"
-        },
-        {
-          "label": "Frequency response",
-          "value": "68 Hz – 22 kHz"
-        },
-        {
-          "label": "Enclosure / build",
-          "value": "Professional grade"
-        },
-        {
-          "label": "Warranty",
-          "value": "12 months"
-        }
-      ],
-      "highlights": [
-        "Designed for microphones applications",
-        "Tested for reliability in professional environments",
-        "Pan India shipping available",
-        "Genuine StudioMax authorized distribution"
-      ],
-      "modelGroupId": "standard"
-    },
-    {
-      "id": "prod-accessories-1",
-      "model": "SM-AC-Pro",
+      "id": "prod-accessories-dj-belt",
+      "model": "DJ Belt",
       "categoryId": "accessories",
-      "categoryLabel": "Accessories",
-      "description": "Essential audio accessories for connectivity, mounting, and day-to-day professional use.",
-      "longDescription": "Essential audio accessories for connectivity, mounting, and day-to-day professional use. The SM-AC-Pro is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
-      "brand": "Studio Max",
-      "priceInr": 10802,
-      "powerWatts": 75,
-      "inStock": true,
-      "image": "/driver.jpeg",
-      "featured": true,
+      "image": "/accessories.png",
       "specs": [
         {
-          "label": "Power handling",
-          "value": "75 W RMS"
+          "label": "Size",
+          "value": "5/10/15 MTRS"
         },
         {
-          "label": "Impedance",
-          "value": "8 Ω"
+          "label": "Material",
+          "value": "Polyester"
         },
         {
-          "label": "Frequency response",
-          "value": "48 Hz – 18 kHz"
+          "label": "Colour",
+          "value": "Black, Orange, Yellow"
         },
         {
-          "label": "Enclosure / build",
-          "value": "Professional grade"
-        },
-        {
-          "label": "Warranty",
-          "value": "12 months"
+          "label": "Load Capacity",
+          "value": "1000 kg"
         }
-      ],
-      "highlights": [
-        "Designed for accessories applications",
-        "Tested for reliability in professional environments",
-        "Pan India shipping available",
-        "Genuine StudioMax authorized distribution"
-      ],
-      "modelGroupId": "standard"
+      ]
     },
     {
-      "id": "prod-accessories-2",
-      "model": "SM-AC-Plus",
+      "id": "prod-accessories-hyce-4-10",
+      "model": "Hyce 4 * 10",
       "categoryId": "accessories",
-      "categoryLabel": "Accessories",
-      "description": "Essential audio accessories for connectivity, mounting, and day-to-day professional use.",
-      "longDescription": "Essential audio accessories for connectivity, mounting, and day-to-day professional use. The SM-AC-Plus is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
-      "brand": "StudioMax",
-      "priceInr": 11939,
-      "powerWatts": 120,
-      "inStock": true,
-      "image": "/driver.jpeg",
-      "featured": false,
+      "image": "/accessories.png",
       "specs": [
         {
-          "label": "Power handling",
-          "value": "120 W RMS"
+          "label": "Normal diameter",
+          "value": "15 inch"
         },
         {
-          "label": "Impedance",
-          "value": "4 Ω"
+          "label": "Nominal impedance",
+          "value": "8Ω"
         },
         {
-          "label": "Frequency response",
-          "value": "53 Hz – 19 kHz"
+          "label": "DC resistance",
+          "value": "5.8Ω"
         },
         {
-          "label": "Enclosure / build",
-          "value": "Professional grade"
+          "label": "Nominal Power Handling",
+          "value": "400w"
         },
         {
-          "label": "Warranty",
-          "value": "12 months"
+          "label": "Continuous power Handling",
+          "value": "800w"
+        },
+        {
+          "label": "Sensitivity(1W/1m)",
+          "value": "98dB"
+        },
+        {
+          "label": "Frequency range",
+          "value": "40-4500 Hz"
+        },
+        {
+          "label": "Voice coil diameter",
+          "value": "3 in (75.5 mm)"
+        },
+        {
+          "label": "Voice coil material",
+          "value": "Ccaw"
+        },
+        {
+          "label": "Former material",
+          "value": "Kapton"
+        },
+        {
+          "label": "Winding height",
+          "value": "24mm"
+        },
+        {
+          "label": "Magnet",
+          "value": "Ф190×H25"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
         }
-      ],
-      "highlights": [
-        "Designed for accessories applications",
-        "Tested for reliability in professional environments",
-        "Bulk order pricing on request",
-        "Genuine StudioMax authorized distribution"
-      ],
-      "modelGroupId": "pro"
+      ]
     },
     {
-      "id": "prod-accessories-3",
-      "model": "SM-AC-Elite",
+      "id": "prod-accessories-hyce-8-12-die-cast",
+      "model": "Hyce 8 * 12 Die Cast",
       "categoryId": "accessories",
-      "categoryLabel": "Accessories",
-      "description": "Essential audio accessories for connectivity, mounting, and day-to-day professional use.",
-      "longDescription": "Essential audio accessories for connectivity, mounting, and day-to-day professional use. The SM-AC-Elite is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
-      "brand": "ProAudio Labs",
-      "priceInr": 13076,
-      "powerWatts": 250,
-      "inStock": true,
-      "image": "/driver.jpeg",
-      "featured": false,
+      "image": "/accessories.png",
       "specs": [
         {
-          "label": "Power handling",
-          "value": "250 W RMS"
+          "label": "Normal diameter",
+          "value": "15 inch"
         },
         {
-          "label": "Impedance",
-          "value": "8 Ω"
+          "label": "Nominal impedance",
+          "value": "8Ω"
         },
         {
-          "label": "Frequency response",
-          "value": "58 Hz – 20 kHz"
+          "label": "DC resistance",
+          "value": "5.8Ω"
         },
         {
-          "label": "Enclosure / build",
-          "value": "Professional grade"
+          "label": "Nominal Power Handling",
+          "value": "400w"
         },
         {
-          "label": "Warranty",
-          "value": "12 months"
+          "label": "Continuous power Handling",
+          "value": "800w"
+        },
+        {
+          "label": "Sensitivity(1W/1m)",
+          "value": "98dB"
+        },
+        {
+          "label": "Frequency range",
+          "value": "40-4500 Hz"
+        },
+        {
+          "label": "Voice coil diameter",
+          "value": "3 in (75.5 mm)"
+        },
+        {
+          "label": "Voice coil material",
+          "value": "Ccaw"
+        },
+        {
+          "label": "Former material",
+          "value": "Kapton"
+        },
+        {
+          "label": "Winding height",
+          "value": "24mm"
+        },
+        {
+          "label": "Magnet",
+          "value": "Ф190×H25"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
         }
-      ],
-      "highlights": [
-        "Designed for accessories applications",
-        "Tested for reliability in professional environments",
-        "Pan India shipping available",
-        "Genuine StudioMax authorized distribution"
-      ],
-      "modelGroupId": "standard"
+      ]
     },
     {
-      "id": "prod-accessories-4",
-      "model": "SM-AC-Standard",
+      "id": "prod-accessories-hyce-8-12-double",
+      "model": "Hyce 8 * 12 Double",
       "categoryId": "accessories",
-      "categoryLabel": "Accessories",
-      "description": "Essential audio accessories for connectivity, mounting, and day-to-day professional use.",
-      "longDescription": "Essential audio accessories for connectivity, mounting, and day-to-day professional use. The SM-AC-Standard is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
-      "brand": "SoundTech",
-      "priceInr": 14213,
-      "powerWatts": 600,
-      "inStock": true,
-      "image": "/driver.jpeg",
-      "featured": false,
+      "image": "/accessories.png",
       "specs": [
         {
-          "label": "Power handling",
-          "value": "600 W RMS"
+          "label": "Normal diameter",
+          "value": "15 inch"
         },
         {
-          "label": "Impedance",
-          "value": "16 Ω"
+          "label": "Nominal impedance",
+          "value": "8Ω"
         },
         {
-          "label": "Frequency response",
-          "value": "63 Hz – 21 kHz"
+          "label": "DC resistance",
+          "value": "5.8Ω"
         },
         {
-          "label": "Enclosure / build",
-          "value": "Professional grade"
+          "label": "Nominal Power Handling",
+          "value": "400w"
         },
         {
-          "label": "Warranty",
-          "value": "12 months"
+          "label": "Continuous power Handling",
+          "value": "800w"
+        },
+        {
+          "label": "Sensitivity(1W/1m)",
+          "value": "98dB"
+        },
+        {
+          "label": "Frequency range",
+          "value": "40-4500 Hz"
+        },
+        {
+          "label": "Voice coil diameter",
+          "value": "3 in (75.5 mm)"
+        },
+        {
+          "label": "Voice coil material",
+          "value": "Ccaw"
+        },
+        {
+          "label": "Former material",
+          "value": "Kapton"
+        },
+        {
+          "label": "Winding height",
+          "value": "24mm"
+        },
+        {
+          "label": "Magnet",
+          "value": "Ф190×H25"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
         }
-      ],
-      "highlights": [
-        "Designed for accessories applications",
-        "Tested for reliability in professional environments",
-        "Bulk order pricing on request",
-        "Genuine StudioMax authorized distribution"
-      ],
-      "modelGroupId": "pro"
+      ]
     },
     {
-      "id": "prod-accessories-5",
-      "model": "SM-AC-Max",
+      "id": "prod-accessories-hyce-8-12-metal",
+      "model": "Hyce 8 * 12 Metal",
       "categoryId": "accessories",
-      "categoryLabel": "Accessories",
-      "description": "Essential audio accessories for connectivity, mounting, and day-to-day professional use.",
-      "longDescription": "Essential audio accessories for connectivity, mounting, and day-to-day professional use. The SM-AC-Max is tuned for consistent performance, easy integration, and long service life in rental, install, and studio workflows.",
-      "brand": "Krown",
-      "priceInr": 15350,
-      "powerWatts": 850,
-      "inStock": false,
-      "image": "/driver.jpeg",
-      "featured": false,
+      "image": "/accessories.png",
       "specs": [
         {
-          "label": "Power handling",
-          "value": "850 W RMS"
+          "label": "Normal diameter",
+          "value": "15 inch"
         },
         {
-          "label": "Impedance",
-          "value": "8 Ω"
+          "label": "Nominal impedance",
+          "value": "8Ω"
         },
         {
-          "label": "Frequency response",
-          "value": "68 Hz – 22 kHz"
+          "label": "DC resistance",
+          "value": "5.8Ω"
         },
         {
-          "label": "Enclosure / build",
-          "value": "Professional grade"
+          "label": "Nominal Power Handling",
+          "value": "400w"
         },
         {
-          "label": "Warranty",
-          "value": "12 months"
+          "label": "Continuous power Handling",
+          "value": "800w"
+        },
+        {
+          "label": "Sensitivity(1W/1m)",
+          "value": "98dB"
+        },
+        {
+          "label": "Frequency range",
+          "value": "40-4500 Hz"
+        },
+        {
+          "label": "Voice coil diameter",
+          "value": "3 in (75.5 mm)"
+        },
+        {
+          "label": "Voice coil material",
+          "value": "Ccaw"
+        },
+        {
+          "label": "Former material",
+          "value": "Kapton"
+        },
+        {
+          "label": "Winding height",
+          "value": "24mm"
+        },
+        {
+          "label": "Magnet",
+          "value": "Ф190×H25"
+        },
+        {
+          "label": "Basket",
+          "value": "Aluminium"
         }
-      ],
-      "highlights": [
-        "Designed for accessories applications",
-        "Tested for reliability in professional environments",
-        "Pan India shipping available",
-        "Genuine StudioMax authorized distribution"
-      ],
-      "modelGroupId": "standard"
+      ]
     }
   ]
 }

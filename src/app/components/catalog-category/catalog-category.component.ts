@@ -20,6 +20,8 @@ import {
   CATALOG_TRUST_MARKERS,
   categoryHasModelGroups,
   getCatalogCategoryDefinition,
+  getCategoryHeroFeatures,
+  getCategoryHeroTitleEmphasis,
   getCategoryModelGroupViews,
   getProductsByCategoryId,
   getProductsByModelGroup,
@@ -50,6 +52,8 @@ export class CatalogCategoryComponent implements OnInit {
   readonly categoryId = signal<string | null>(null);
   readonly categoryLabel = signal('');
   readonly categoryOverview = signal('');
+  readonly categoryTileImage = signal('');
+  readonly categoryIcon = signal('speaker');
   readonly modelGroupHeading = signal('Browse models');
   readonly modelGroupHeadingEmphasis = signal('');
   readonly activeGroupId = signal<string | null>(null);
@@ -107,6 +111,32 @@ export class CatalogCategoryComponent implements OnInit {
     return `Professional ${singular}`;
   });
 
+  readonly categoryHeroFeatures = computed(() => {
+    const id = this.categoryId();
+    return id ? getCategoryHeroFeatures(id) : [];
+  });
+
+  readonly categoryTitleEmphasis = computed(() => {
+    const id = this.categoryId();
+    const label = this.categoryLabel();
+    if (!id || !label) {
+      return '';
+    }
+    return getCategoryHeroTitleEmphasis(id, label);
+  });
+
+  readonly categoryTitleRest = computed(() => {
+    const label = this.categoryLabel();
+    const emphasis = this.categoryTitleEmphasis();
+    if (!label || !emphasis) {
+      return label;
+    }
+    const rest = label.slice(emphasis.length).trim();
+    return rest;
+  });
+
+  readonly categoryBadgeLabel = computed(() => this.categoryLabel().toUpperCase());
+
   ngOnInit(): void {
     this.route.paramMap.pipe(takeUntilDestroyed(this.destroyRef)).subscribe((params) => {
       const raw = params.get('categoryId');
@@ -121,6 +151,8 @@ export class CatalogCategoryComponent implements OnInit {
       this.categoryId.set(normalized);
       this.categoryLabel.set(definition.label);
       this.categoryOverview.set(definition.overview);
+      this.categoryTileImage.set(definition.tileImage);
+      this.categoryIcon.set(definition.icon);
       this.modelGroupHeading.set(definition.modelGroupHeading ?? 'Browse models');
       this.modelGroupHeadingEmphasis.set(definition.modelGroupHeadingEmphasis ?? '');
       this.expandedProductId.set(null);

@@ -9,8 +9,54 @@
         <span class="category-detail__breadcrumb-current">{{ categoryLabel() }}</span>
       </nav>
 
-      <h1 class="category-detail__title">{{ categoryLabel() }}</h1>
-      <p class="category-detail__hero-lead">{{ categoryOverview() }}</p>
+      <div class="category-detail__hero-grid">
+        <div class="category-detail__hero-copy">
+          <p class="category-detail__hero-badge">
+            <span class="category-detail__hero-badge-icon" aria-hidden="true">
+              <span class="material-symbols-outlined">{{ categoryIcon() }}</span>
+            </span>
+            {{ categoryBadgeLabel() }}
+          </p>
+
+          <h1 class="category-detail__title">
+            <span class="category-detail__title-em-wrap">
+              <span class="category-detail__title-emphasis">{{ categoryTitleEmphasis() }}</span>
+              <span class="category-detail__title-rule" aria-hidden="true"></span>
+            </span>
+            @if (categoryTitleRest()) {
+              <span class="category-detail__title-rest">&nbsp;{{ categoryTitleRest() }}</span>
+            }
+          </h1>
+
+          <p class="category-detail__hero-lead">{{ categoryOverview() }}</p>
+
+          @if (categoryHeroFeatures().length) {
+            <ul class="category-detail__hero-features" aria-label="Category highlights">
+              @for (item of categoryHeroFeatures(); track item.title) {
+                <li class="category-detail__hero-feature">
+                  <span class="category-detail__hero-feature-icon" aria-hidden="true">
+                    <span class="material-symbols-outlined">{{ item.icon }}</span>
+                  </span>
+                  <span class="category-detail__hero-feature-copy">
+                    <span class="category-detail__hero-feature-title">{{ item.title }}</span>
+                    <span class="category-detail__hero-feature-text">{{ item.text }}</span>
+                  </span>
+                </li>
+              }
+            </ul>
+          }
+        </div>
+        @if (categoryTileImage()) {
+          <figure class="category-detail__hero-media">
+            <img
+              class="category-detail__hero-image"
+              [src]="categoryTileImage()"
+              [alt]="categoryLabel()"
+              loading="eager"
+            />
+          </figure>
+        }
+      </div>
     </div>
   </section>
 

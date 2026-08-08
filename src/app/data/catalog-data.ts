@@ -187,3 +187,93 @@ export const CATALOG_HERO_HIGHLIGHTS: CatalogHeroHighlight[] = [
   { icon: 'settings', title: 'Easy Integration', text: 'Standard impedance & mounting' },
   { icon: 'support_agent', title: 'Expert Support', text: 'Guidance on model selection' },
 ];
+
+/** First part of hero H1 (red + underline), remainder stays dark. */
+export const CATEGORY_HERO_TITLE_EMPHASIS: Record<string, string> = {
+  'dj-speakers': 'DJ',
+  'pa-speakers': 'PA',
+  'microphone-stands': 'Microphone',
+  trumpet: 'Trumpet',
+  'hf-tweeter': 'HF',
+  driver: 'Driver',
+  'wires-cables': 'Wires',
+  microphones: 'Microphones',
+  accessories: 'Accessories',
+};
+
+const DEFAULT_CATEGORY_HERO_FEATURES: CatalogHeroHighlight[] = [
+  { icon: 'verified_user', title: 'Genuine Range', text: 'StudioMax authorized supply' },
+  { icon: 'inventory_2', title: 'Full Catalog', text: 'Models listed with specs' },
+  { icon: 'support_agent', title: 'Expert Support', text: 'Help choosing the right model' },
+  { icon: 'chat', title: 'Easy Enquiry', text: 'WhatsApp pricing support' },
+];
+
+const CATEGORY_HERO_FEATURES: Record<string, CatalogHeroHighlight[]> = {
+  'pa-speakers': [
+    { icon: 'graphic_eq', title: 'Clear Sound', text: 'High clarity audio' },
+    { icon: 'verified_user', title: 'Rugged Build', text: 'Built for durability' },
+    { icon: 'campaign', title: 'Wide Coverage', text: 'Even sound spread' },
+    { icon: 'settings', title: 'Easy Integration', text: 'Seamless setup' },
+  ],
+  'dj-speakers': [
+    { icon: 'speaker', title: 'High Output', text: 'Built for live events' },
+    { icon: 'verified_user', title: 'Pro Grade', text: 'Studio Max speaker line' },
+    { icon: 'straighten', title: 'Multiple Sizes', text: '12″, 15″ & 18″ models' },
+    { icon: 'support_agent', title: 'Expert Support', text: 'Guidance on model choice' },
+  ],
+  'microphone-stands': [
+    { icon: 'height', title: 'Stable Design', text: 'Stage & studio use' },
+    { icon: 'unfold_more', title: 'Table & Floor', text: 'Two stand families' },
+    { icon: 'verified_user', title: 'Durable Build', text: 'Daily professional use' },
+    { icon: 'inventory_2', title: 'Wide Range', text: '20 stand models' },
+  ],
+  trumpet: [
+    { icon: 'campaign', title: 'Focused Output', text: 'Trumpet & reflex horns' },
+    { icon: 'straighten', title: 'Multiple Sizes', text: '12″ through 22″ formats' },
+    { icon: 'precision_manufacturing', title: 'OEM Ready', text: 'Install & retrofit use' },
+    { icon: 'support_agent', title: 'StudioMax Support', text: 'Pricing across India' },
+  ],
+  'hf-tweeter': [
+    { icon: 'graphic_eq', title: 'HF Detail', text: 'Compression driver range' },
+    { icon: 'bolt', title: 'Rated Power', text: 'Specs on every model' },
+    { icon: 'hub', title: 'Horn Loading', text: 'Professional PA builds' },
+    { icon: 'settings', title: 'Easy Integration', text: 'Standard mounting options' },
+  ],
+  driver: [
+    { icon: 'settings_input_component', title: 'Drivers & Parts', text: 'Units and diaphragms' },
+    { icon: 'electrical_services', title: 'Install Audio', text: '100V line drivers' },
+    { icon: 'build', title: 'Quality Build', text: 'Die-cast aluminium options' },
+    { icon: 'support_agent', title: 'Match & Replace', text: 'Technical enquiry support' },
+  ],
+  'wires-cables': [
+    { icon: 'cable', title: 'Signal & Power', text: 'Mic, speaker & XLR lines' },
+    { icon: 'checklist', title: 'Clear Codes', text: 'Gauge & SKU listings' },
+    { icon: 'verified_user', title: 'Pro Grade', text: 'Copper & PVC specs' },
+    { icon: 'chat', title: 'Bulk Orders', text: 'WhatsApp for pricing' },
+  ],
+  microphones: [
+    { icon: 'mic', title: 'Dynamic Range', text: 'XLR stage microphones' },
+    { icon: 'verified_user', title: 'Almax Models', text: 'Four models in catalog' },
+    { icon: 'volume_up', title: 'Live Ready', text: 'Events & speech use' },
+    { icon: 'support_agent', title: 'Pan-India', text: 'Enquiry & pricing help' },
+  ],
+  accessories: [
+    { icon: 'extension', title: 'DJ & Rigging', text: 'Belts and hyce hardware' },
+    { icon: 'construction', title: 'Metal Options', text: 'Die-cast & double hyce' },
+    { icon: 'local_shipping', title: 'StudioMax Supply', text: 'Trade & bulk orders' },
+    { icon: 'chat', title: 'Quick Enquiry', text: 'Share your requirement' },
+  ],
+};
+
+export function getCategoryHeroFeatures(categoryId: string): CatalogHeroHighlight[] {
+  return CATEGORY_HERO_FEATURES[categoryId] ?? DEFAULT_CATEGORY_HERO_FEATURES;
+}
+
+export function getCategoryHeroTitleEmphasis(categoryId: string, label: string): string {
+  const mapped = CATEGORY_HERO_TITLE_EMPHASIS[categoryId];
+  if (mapped) {
+    return mapped;
+  }
+  const first = label.split(/\s+/)[0] ?? label;
+  return first;
+}
