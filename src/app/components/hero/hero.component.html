@@ -42,7 +42,7 @@
 
             <div class="hero-actions">
 
-              <a *ngIf="s.cta" class="hero-btn hero-btn--primary" href="#">
+              <a *ngIf="s.cta" class="hero-btn hero-btn--primary" [routerLink]="s.ctaRoute">
 
                 {{ s.cta }}
 
@@ -50,7 +50,7 @@
 
               </a>
 
-              <a class="hero-btn hero-btn--secondary" href="#">Request Quote</a>
+              <a class="hero-btn hero-btn--secondary" routerLink="/contact">Request Quote</a>
 
             </div>
 
@@ -64,7 +64,12 @@
 
             <div class="hero-media__frame">
 
-              <img loading="lazy" class="hero-image" alt="Hero image {{ i }}" [src]="s.image" />
+              <img
+                loading="lazy"
+                class="hero-image"
+                [alt]="s.subtitle ? s.subtitle + ' — StudioMax' : 'Hero slide ' + (i + 1)"
+                [src]="s.image"
+              />
 
             </div>
 

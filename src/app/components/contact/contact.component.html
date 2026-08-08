@@ -38,7 +38,9 @@
       <div class="contact-form-card">
         <header class="contact-form-card__head">
           <h2 class="contact-form-card__title">Send Us a Message</h2>
-          <p class="contact-form-card__sub">Fill out the form and our team will get back to you.</p>
+          <p class="contact-form-card__sub">
+            Fill out the form — we’ll open WhatsApp with your details ready to send.
+          </p>
         </header>
 
         <form class="contact-form" (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" novalidate>
@@ -117,8 +119,8 @@
           </div>
 
           <button class="contact-form__submit" type="submit" [disabled]="submitting()">
-            <span class="material-symbols-outlined contact-form__submit-icon" aria-hidden="true">send</span>
-            {{ submitting() ? 'Sending…' : 'Send Message' }}
+            <span class="material-symbols-outlined contact-form__submit-icon" aria-hidden="true">chat</span>
+            {{ submitting() ? 'Opening WhatsApp…' : 'Send via WhatsApp' }}
           </button>
 
           @if (status()) {

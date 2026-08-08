@@ -1,5 +1,7 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnDestroy, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { catalogCategoryRoute } from '../../data/catalog-data';
 
 interface Slide {
   title: string;
@@ -7,13 +9,14 @@ interface Slide {
   subtitle?: string;
   description?: string;
   cta?: string;
+  ctaRoute: string[];
   image: string;
 }
 
 @Component({
   selector: 'studio-hero',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './hero.component.html',
   styleUrls: ['./hero.component.scss'],
@@ -29,6 +32,7 @@ export class HeroComponent implements OnInit, OnDestroy {
       description:
         "Trusted products from leading brands including Krown and Almax Audio, backed by expert consultation and nationwide delivery.",
       cta: 'Explore Products',
+      ctaRoute: ['/catalog'],
       image: '/hero1.png',
     },
     {
@@ -37,7 +41,28 @@ export class HeroComponent implements OnInit, OnDestroy {
       subtitle: 'PROFESSIONAL AUDIO COMPONENTS',
       description: 'Deliver exceptional vocal clarity and high-frequency performance with StudioMax compression drivers. Designed for auditoriums, public address systems, places of worship, educational institutions, and professional audio installations where reliability matters most.',
       cta: 'Explore Components',
+      ctaRoute: catalogCategoryRoute('hf-tweeter'),
       image: '/hero2.png',
+    },
+    {
+      title: 'Powerful PA Speakers for Every Venue',
+      titleAccent: 'Every Venue',
+      subtitle: 'PUBLIC ADDRESS SYSTEMS',
+      description:
+        'Almax Audio PA speakers for clear speech, announcements, and background music—from compact cube enclosures to column models for auditoriums, retail, worship, and commercial installs across India.',
+      cta: 'Explore PA Speakers',
+      ctaRoute: catalogCategoryRoute('pa-speakers'),
+      image: '/pa-speaker.png',
+    },
+    {
+      title: 'Focused Projection with Trumpet & Reflex Horns',
+      titleAccent: 'Trumpet & Reflex Horns',
+      subtitle: 'TRUMPET & REFLEX HORNS',
+      description:
+        'Direct high-energy output where it matters with Almax Audio trumpet and reflex horns in 12″, 18″, and 22″ formats—built for PA rigs and permanent installations that need reliable, long-throw coverage.',
+      cta: 'Explore Horns',
+      ctaRoute: catalogCategoryRoute('trumpet'),
+      image: '/trumpet.png',
     },
   ];
 

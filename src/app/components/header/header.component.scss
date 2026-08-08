@@ -35,16 +35,7 @@
   );
 }
 
-.search-input {
-  background: transparent;
-  border: none;
-  outline: none;
-  color: inherit;
-}
 
-.search-input::placeholder {
-  color: rgba(100, 116, 139, 0.75);
-}
 
 .header-link {
   transition: color 0.25s ease;
@@ -151,6 +142,12 @@ nav a {
   }
 }
 
+.header-catalog__link--active {
+  background: #fef2f2;
+  color: var(--primary);
+  font-weight: 600;
+}
+
 .header-catalog__link--all {
   font-weight: 700;
   color: #0f172a;
@@ -206,4 +203,10 @@ nav a {
     font-weight: 600;
     color: #0f172a;
   }
+}
+
+.header-drawer-catalog__link--active {
+  background: #fef2f2;
+  color: var(--primary);
+  font-weight: 600;
 }

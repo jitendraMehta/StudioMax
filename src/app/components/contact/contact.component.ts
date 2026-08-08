@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, OnInit, inject, PLATFORM_ID, signal
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { FormsModule, NgForm } from '@angular/forms';
 import { Title, Meta, DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import { STUDIO_PHONE_DISPLAY, STUDIO_PHONE_TEL, STUDIO_WHATSAPP_URL } from '../../constants/contact';
+import { STUDIO_PHONE_DISPLAY, STUDIO_PHONE_TEL, STUDIO_WHATSAPP_URL, buildWhatsAppContactUrl } from '../../constants/contact';
 import { PageHeroComponent } from '../page-hero/page-hero.component';
 
 interface ContactChannel {
@@ -73,15 +73,15 @@ export class ContactComponent implements OnInit {
     {
       id: 'delhi',
       city: 'Delhi NCR',
-      address: '456 Sound Avenue, Delhi, India',
-      phone: '+91 98765 43210',
-      tel: '+919876543210',
+      address: 'Vishwash Nagar, Shahdara, Delhi, India',
+      phone: '+91 98738 38630',
+      tel: '+9198738 38630',
     }
   ];
 
   readonly headOffice = {
     title: 'StudioMax Head Office',
-    address: '1234 Audio Lane, Sound City, SC 56789, India',
+    address: 'Gali No. 9, Vishwash Nagar, Shahdara, Delhi, India',
     directionsUrl:
       'https://www.google.com/maps/search/?api=1&query=1234+Audio+Lane+Sound+City+SC+56789+India',
   };
@@ -105,7 +105,7 @@ export class ContactComponent implements OnInit {
     sanitizer: DomSanitizer,
   ) {
     this.mapEmbedUrl = sanitizer.bypassSecurityTrustResourceUrl(
-      'https://www.openstreetmap.org/export/embed.html?bbox=77.08%2C28.55%2C77.28%2C28.68&layer=mapnik&marker=28.6139%2C77.2090',
+      'https://www.openstreetmap.org/export/embed?bbox=77.2887969017029%2C28.66174653000802%2C77.29381799697877%2C28.66475902917384&amp;layer=mapnik&amp;marker=28.663252938942293%2C77.29130744934082',
     );
   }
 
@@ -134,21 +134,27 @@ export class ContactComponent implements OnInit {
       return;
     }
 
+    if (!isPlatformBrowser(this.platformId)) {
+      return;
+    }
+
     this.submitting.set(true);
     this.status.set(null);
 
-    setTimeout(() => {
-      this.status.set('Thank you! Our team will get back to you shortly.');
-      this.submitting.set(false);
-      this.model = {
-        name: '',
-        email: '',
-        phone: '',
-        subject: '',
-        message: '',
-      };
-      contactForm.resetForm(this.model);
-      setTimeout(() => this.status.set(null), 7000);
-    }, 1200);
+    const url = buildWhatsAppContactUrl(this.model);
+    window.open(url, '_blank', 'noopener,noreferrer');
+
+    this.status.set('WhatsApp is opening — tap Send there to deliver your message to our team.');
+    this.submitting.set(false);
+
+    this.model = {
+      name: '',
+      email: '',
+      phone: '',
+      subject: '',
+      message: '',
+    };
+    contactForm.resetForm(this.model);
+    setTimeout(() => this.status.set(null), 10000);
   }
 }
