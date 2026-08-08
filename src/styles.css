@@ -38,6 +38,11 @@ body {
     padding-right: 48px;
 }
 
+/** Consistent space between sticky header and routed page content. */
+.site-page {
+    padding-top: var(--site-page-top);
+}
+
 .py-section-gap {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -77,6 +82,11 @@ body {
 }
 
 @media (max-width: 640px) {
+    :root,
+    :root.theme-light {
+        --site-page-top: 1rem;
+    }
+
     .px-margin-desktop {
         padding-left: 1rem;
         padding-right: 1rem;

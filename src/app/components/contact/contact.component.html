@@ -1,17 +1,16 @@
-<main class="contact-page">
-  <!-- Hero: info + form -->
-  <section class="contact-hero" aria-labelledby="contact-hero-heading">
-    <div class="max-w-container-max mx-auto px-margin-desktop contact-hero__grid">
-      <div class="contact-hero__info">
-        <p class="contact-hero__eyebrow">Contact Us</p>
-        <h1 id="contact-hero-heading" class="contact-hero__title">
-          We're Here to <span class="contact-hero__title-accent">Help You</span>
-        </h1>
-        <p class="contact-hero__lead">
-          Whether you have a question about a product, need technical assistance, or want to place a bulk order,
-          our team is ready to assist you.
-        </p>
+<main class="contact-page site-page">
+  <studio-page-hero
+    headingId="contact-page-heading"
+    eyebrow="Contact Us"
+    titleBefore="We're Here to "
+    titleAccent="Help You"
+    lead="Whether you have a question about a product, need technical assistance, or want to place a bulk order, our team is ready to assist you."
+  />
 
+  <section class="contact-body" aria-label="Contact options">
+    <div class="max-w-container-max mx-auto px-margin-desktop contact-body__grid">
+      <div class="contact-body__channels-wrap">
+        <h2 class="contact-body__channels-heading">Get in touch</h2>
         <ul class="contact-hero__channels">
           @for (channel of contactChannels; track channel.id) {
             <li class="contact-channel">

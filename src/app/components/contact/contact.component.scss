@@ -2,13 +2,12 @@
   background-color: #fff;
 }
 
-/* Hero */
-.contact-hero {
-  padding: 2rem 0 4rem;
-  background: linear-gradient(180deg, #f7f8fa 0%, #fff 100%);
+.contact-body {
+  padding: 0 0 4rem;
+  background: #fff;
 }
 
-.contact-hero__grid {
+.contact-body__grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2.5rem;
@@ -16,39 +15,17 @@
 }
 
 @media (min-width: 1024px) {
-  .contact-hero__grid {
+  .contact-body__grid {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
     gap: 3rem 3.5rem;
   }
 }
 
-.contact-hero__eyebrow {
-  margin: 0 0 0.75rem;
-  font-size: 0.75rem;
+.contact-body__channels-heading {
+  margin: 0 0 1.5rem;
+  font-size: 1.125rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--primary);
-}
-
-.contact-hero__title {
-  margin: 0 0 1rem;
-  font-size: clamp(1.75rem, 3.5vw, 2.35rem);
-  font-weight: 700;
-  line-height: 1.15;
   color: #0f172a;
-}
-
-.contact-hero__title-accent {
-  color: var(--primary);
-}
-
-.contact-hero__lead {
-  margin: 0 0 2rem;
-  max-width: 26rem;
-  font-size: 0.9375rem;
-  line-height: 1.65;
-  color: #64748b;
 }
 
 .contact-hero__channels {
@@ -580,10 +557,6 @@
 }
 
 @media (max-width: 639px) {
-  .contact-page {
-    padding-top: 5.5rem;
-  }
-
   .contact-assist__btn {
     width: 100%;
   }

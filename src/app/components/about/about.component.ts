@@ -28,10 +28,12 @@ interface GalleryImage {
   tall?: boolean;
 }
 
+import { PageHeroComponent } from '../page-hero/page-hero.component';
+
 @Component({
   selector: 'studio-about',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, PageHeroComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss'],

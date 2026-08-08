@@ -1,6 +1,5 @@
 .about-page {
   background-color: #fff;
-  padding-top: 6.5rem;
 }
 
 /* Shared title styles */
@@ -33,21 +32,21 @@
   margin: 0 auto 2.5rem;
 }
 
-.about-section-head__rule {
-  display: block;
-  width: 2.75rem;
-  height: 3px;
-  margin: 0 auto 1rem;
-  border-radius: 9999px;
-  background-color: var(--primary);
-}
-
 .about-section-head__title {
   margin: 0 0 0.85rem;
   font-size: clamp(1.35rem, 2.5vw, 1.75rem);
   font-weight: 700;
   color: #0f172a;
   line-height: 1.25;
+}
+
+.about-section-head__rule {
+  display: block;
+  width: 3.25rem;
+  height: 3px;
+  margin: 0 auto 1rem;
+  border-radius: 9999px;
+  background-color: var(--primary);
 }
 
 .about-section-head__accent {
@@ -216,7 +215,7 @@
 
 /* Why section */
 .about-why {
-  padding: 3rem 0 4rem;
+  padding: 0 0 4rem;
   background-color: #fff;
 }
 
@@ -761,10 +760,6 @@
 }
 
 @media (max-width: 639px) {
-  .about-page {
-    padding-top: 5.5rem;
-  }
-
   .about-cta__actions {
     flex-direction: column;
     align-items: stretch;

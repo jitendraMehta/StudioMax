@@ -3,6 +3,7 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { FormsModule, NgForm } from '@angular/forms';
 import { Title, Meta, DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { STUDIO_PHONE_DISPLAY, STUDIO_PHONE_TEL, STUDIO_WHATSAPP_URL } from '../../constants/contact';
+import { PageHeroComponent } from '../page-hero/page-hero.component';
 
 interface ContactChannel {
   id: string;
@@ -24,7 +25,7 @@ interface RegionalOffice {
 @Component({
   selector: 'studio-contact',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, PageHeroComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],

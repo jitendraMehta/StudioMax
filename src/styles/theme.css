@@ -1,4 +1,6 @@
 :root, :root.theme-light {
+  /* Gap below sticky header before page content (header stays in document flow). */
+  --site-page-top: 1.25rem;
   --surface: #f8fafc;
   --on-surface: #0f172a;
   --on-surface-variant: #475569;

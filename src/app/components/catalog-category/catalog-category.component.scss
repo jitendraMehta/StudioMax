@@ -1,6 +1,5 @@
 .category-detail {
   background: #fff;
-  padding-top: 4.75rem;
   padding-bottom: 0;
   overflow-x: clip;
 }
@@ -10,7 +9,7 @@
 }
 
 .category-detail__hero {
-  padding: 0.35rem 0 2.25rem;
+  padding: 0 0 2.25rem;
   border-bottom: 1px solid #eef2f7;
 }
 
@@ -724,12 +723,6 @@
   font-size: 0.8125rem;
   font-weight: 700;
   color: #334155;
-}
-
-@media (max-width: 639px) {
-  .category-detail {
-    padding-top: 4.25rem;
-  }
 }
 
 @media (max-width: 639px) {

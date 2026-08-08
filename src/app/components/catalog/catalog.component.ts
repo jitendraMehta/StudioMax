@@ -6,10 +6,12 @@ import { CATALOG_CATEGORY_TILES, catalogCategoryRoute } from '../../data/catalog
 import type { CatalogCategoryTile } from '../../data/catalog-data';
 import { normalizeCategoryId } from '../../navigation/catalog-menu';
 
+import { PageHeroComponent } from '../page-hero/page-hero.component';
+
 @Component({
   selector: 'studio-catalog',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, PageHeroComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './catalog.component.html',
   styleUrls: ['./catalog.component.scss'],
