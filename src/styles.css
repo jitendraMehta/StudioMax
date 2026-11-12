@@ -9,8 +9,6 @@ body {
     color: #0f172a;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
-    font-size: 1000rem;
-    background-color: #000;
 }
 
 .gallery-shadow {
